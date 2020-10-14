@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="utf-8" />
+    <title>勤怠管理</title>
+</head>
+ 
+<body>
+    <h1>勤怠管理</h1>
+    お疲れ様です。
+    <p>{{ message }}さん！！<p />
+    {% if request.user.is_superuser %}
+        これは管理者アカウントです。
+    {% elif request.user.is_authenticated %}
+        これは一般ユーザーアカウントです。
+    {% else %}
+        このアカウントはログインしていません。
+
+    {% endif %}
+    <p />
+    {% if data_flag %}
+        次のシフトは
+        {{data.scheduled_attend_time}}から
+        {{data.scheduled_leave_time}}<p />
+    {% else %}
+        「勤怠管理データ」にてデータ登録してください。<p />
+    {% endif %}
+    {% if attend_flag == False and leave_flag　== False %}
+        出退勤できません。<p />
+    {% elif attend_flag == True %}
+        出勤できます。出勤ボタンを押してください。<p />
+    {% elif leave_flag == True %}
+        退勤できます。退勤ボタンを押してください。<p />
+    {% endif %}
+    注:出勤予定時刻の30分前にならないと出勤できません。
+    <p />
+    <a href='time'>現在時刻</a><p />
+    {% if attend_flag %}
+        <a href='attendance_time'>出勤</a><p />
+    {% endif %}
+    {% if leave_flag %}
+        <a href='leave_time'>退勤</a><p />
+    {% endif %}
+    <a href='list'>勤怠管理データ</a><p />
+    <a href='../myapp'>ログアウト</a><p />
+</body>
+
+</html>
