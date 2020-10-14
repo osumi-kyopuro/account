@@ -1,0 +1,304 @@
+[2019-06-21 22:56:54.197]: entering -- org.netbeans.installer.Installer.main():81
+[2019-06-21 22:56:54.200]: initializing the installer engine
+[2019-06-21 22:56:54.200]:     entering -- org.netbeans.installer.Installer.<init>():116
+[2019-06-21 22:56:54.200]:     ... initializing ErrorHandler
+[2019-06-21 22:56:54.202]:     ... end of ErrorHandler initialization
+[2019-06-21 22:56:54.202]:     exiting -- org.netbeans.installer.Installer.<init>():116
+[2019-06-21 22:56:54.202]:     entering -- org.netbeans.installer.Installer.<init>():117
+[2019-06-21 22:56:54.202]:     dumping target system information
+[2019-06-21 22:56:54.202]:         system properties:
+[2019-06-21 22:56:54.209]:             awt.toolkit => sun.awt.windows.WToolkit
+[2019-06-21 22:56:54.209]:             file.encoding => MS932
+[2019-06-21 22:56:54.209]:             file.encoding.pkg => sun.io
+[2019-06-21 22:56:54.209]:             file.separator => \
+[2019-06-21 22:56:54.209]:             java.awt.graphicsenv => sun.awt.Win32GraphicsEnvironment
+[2019-06-21 22:56:54.209]:             java.awt.printerjob => sun.awt.windows.WPrinterJob
+[2019-06-21 22:56:54.210]:             java.class.path => C:\Users\Owner\AppData\Local\Temp\\NBI08420.tmp\bundle.jar
+[2019-06-21 22:56:54.210]:             java.class.version => 52.0
+[2019-06-21 22:56:54.210]:             java.endorsed.dirs => C:\Program Files\Java\jre1.8.0_211\lib\endorsed
+[2019-06-21 22:56:54.210]:             java.ext.dirs => C:\Program Files\Java\jre1.8.0_211\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+[2019-06-21 22:56:54.210]:             java.home => C:\Program Files\Java\jre1.8.0_211
+[2019-06-21 22:56:54.210]:             java.io.tmpdir => C:\Users\Owner\AppData\Local\Temp\
+[2019-06-21 22:56:54.210]:             java.library.path => C:\Program Files\Java\jre1.8.0_211\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files (x86)\Git\cmd;C:\MinGW\bin;C:\Users\Owner;C:\Program Files\Java\jdk-12.0.1\bin;C:\Users\Owner\AppData\Local\Microsoft\WindowsApps;C:\Users\Owner\AppData\Local\Programs\Microsoft VS Code\bin;.
+[2019-06-21 22:56:54.211]:             java.runtime.name => Java(TM) SE Runtime Environment
+[2019-06-21 22:56:54.211]:             java.runtime.version => 1.8.0_211-b12
+[2019-06-21 22:56:54.211]:             java.specification.name => Java Platform API Specification
+[2019-06-21 22:56:54.211]:             java.specification.vendor => Oracle Corporation
+[2019-06-21 22:56:54.211]:             java.specification.version => 1.8
+[2019-06-21 22:56:54.211]:             java.vendor => Oracle Corporation
+[2019-06-21 22:56:54.212]:             java.vendor.url => http://java.oracle.com/
+[2019-06-21 22:56:54.212]:             java.vendor.url.bug => http://bugreport.sun.com/bugreport/
+[2019-06-21 22:56:54.212]:             java.version => 1.8.0_211
+[2019-06-21 22:56:54.212]:             java.vm.info => mixed mode
+[2019-06-21 22:56:54.212]:             java.vm.name => Java HotSpot(TM) 64-Bit Server VM
+[2019-06-21 22:56:54.212]:             java.vm.specification.name => Java Virtual Machine Specification
+[2019-06-21 22:56:54.212]:             java.vm.specification.vendor => Oracle Corporation
+[2019-06-21 22:56:54.212]:             java.vm.specification.version => 1.8
+[2019-06-21 22:56:54.212]:             java.vm.vendor => Oracle Corporation
+[2019-06-21 22:56:54.213]:             java.vm.version => 25.211-b12
+[2019-06-21 22:56:54.213]:             line.separator => 
+[2019-06-21 22:56:54.213]:             netbeans.default_cachedir_root => C:\Users\Owner\AppData\Local\NetBeans\Cache
+[2019-06-21 22:56:54.213]:             netbeans.default_userdir_root => C:\Users\Owner\AppData\Roaming\NetBeans
+[2019-06-21 22:56:54.213]:             os.arch => amd64
+[2019-06-21 22:56:54.213]:             os.name => Windows 10
+[2019-06-21 22:56:54.214]:             os.version => 10.0
+[2019-06-21 22:56:54.214]:             path.separator => ;
+[2019-06-21 22:56:54.214]:             sun.arch.data.model => 64
+[2019-06-21 22:56:54.214]:             sun.boot.class.path => C:\Program Files\Java\jre1.8.0_211\lib\resources.jar;C:\Program Files\Java\jre1.8.0_211\lib\rt.jar;C:\Program Files\Java\jre1.8.0_211\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_211\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_211\lib\jce.jar;C:\Program Files\Java\jre1.8.0_211\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_211\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_211\classes
+[2019-06-21 22:56:54.214]:             sun.boot.library.path => C:\Program Files\Java\jre1.8.0_211\bin
+[2019-06-21 22:56:54.214]:             sun.cpu.endian => little
+[2019-06-21 22:56:54.214]:             sun.cpu.isalist => amd64
+[2019-06-21 22:56:54.214]:             sun.desktop => windows
+[2019-06-21 22:56:54.214]:             sun.io.unicode.encoding => UnicodeLittle
+[2019-06-21 22:56:54.215]:             sun.java.command => org.netbeans.installer.Installer
+[2019-06-21 22:56:54.215]:             sun.java.launcher => SUN_STANDARD
+[2019-06-21 22:56:54.215]:             sun.jnu.encoding => MS932
+[2019-06-21 22:56:54.215]:             sun.management.compiler => HotSpot 64-Bit Tiered Compilers
+[2019-06-21 22:56:54.215]:             sun.os.patch.level => 
+[2019-06-21 22:56:54.215]:             user.country => JP
+[2019-06-21 22:56:54.215]:             user.dir => C:\Users\Owner\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\TempState\Downloads
+[2019-06-21 22:56:54.216]:             user.home => C:\Users\Owner
+[2019-06-21 22:56:54.216]:             user.language => ja
+[2019-06-21 22:56:54.216]:             user.name => Owner
+[2019-06-21 22:56:54.216]:             user.script => 
+[2019-06-21 22:56:54.216]:             user.timezone => Asia/Tokyo
+[2019-06-21 22:56:54.216]:             user.variant => 
+[2019-06-21 22:56:54.216]:     ... end of target system information
+[2019-06-21 22:56:54.216]:     exiting -- org.netbeans.installer.Installer.<init>():117
+[2019-06-21 22:56:54.291]:     loading jni library
+[2019-06-21 22:56:54.291]:         library resource path: native/jnilib/windows/windows-x64.dll
+[2019-06-21 22:56:54.953]:         library file path: C:\Users\Owner\AppData\Local\Temp\nbi-6036929038245744842.tmp
+[2019-06-21 22:56:55.170]:         ... successfully loaded the library
+[2019-06-21 22:56:55.195]:     entering -- org.netbeans.installer.Installer.<init>():122
+[2019-06-21 22:56:55.196]:     parsing command-line arguments
+[2019-06-21 22:56:55.209]:         ... no command line arguments were specified
+[2019-06-21 22:56:55.209]:     ... finished parsing command line arguments
+[2019-06-21 22:56:55.209]:     exiting -- org.netbeans.installer.Installer.<init>():122
+[2019-06-21 22:56:55.210]:     entering -- org.netbeans.installer.Installer.<init>():123
+[2019-06-21 22:56:55.210]:     loading engine properties
+[2019-06-21 22:56:55.210]:         loading engine properties
+[2019-06-21 22:56:55.221]:             loading NWP.welcome.page.type => javaee
+[2019-06-21 22:56:55.221]:             loading nbi.wizard.ui.swing.frame.title.prefix => NetBeans IDEのインストーラ
+[2019-06-21 22:56:55.221]:             loading nbi.product.suggest.install => true
+[2019-06-21 22:56:55.221]:             loading nbi.wizard.ui.swing.frame.width.gtk => 704
+[2019-06-21 22:56:55.221]:             loading nbi.wizard.ui.swing.frame.minimum.width.nimbus => 624
+[2019-06-21 22:56:55.221]:             loading nbi.wizard.ui.swing.frame.minimum.height.nimbus => 512
+[2019-06-21 22:56:55.222]:             loading nbi.wizard.ui.swing.frame.width.win.xp => 600
+[2019-06-21 22:56:55.223]:             loading nbi.overall.license.jdk5.resource => org/netbeans/installer/product/components/netbeans-license-jdk5.txt
+[2019-06-21 22:56:55.223]:             loading nbi.wizard.ui.swing.frame.minimum.width.default => 600
+[2019-06-21 22:56:55.223]:             loading nbi.wizard.ui.swing.frame.minimum.height.aqua => 480
+[2019-06-21 22:56:55.223]:             loading nbi.wizard.ui.swing.frame.minimum.height.default => 500
+[2019-06-21 22:56:55.223]:             loading nbi.overall.license.mysql.resource => org/netbeans/installer/product/components/netbeans-license-mysql.txt
+[2019-06-21 22:56:55.223]:             loading nbi.wizard.ui.swing.frame.icon => resource:org/netbeans/installer/wizard/wizard-icon.png
+[2019-06-21 22:56:55.224]:             loading nbi.wizard.ui.swing.frame.minimum.height.gtk => 528
+[2019-06-21 22:56:55.225]:             loading nbi.wizard.ui.swing.frame.width.aqua => 640
+[2019-06-21 22:56:55.225]:             loading nbi.wizard.ui.swing.frame.minimum.height.motif => 470
+[2019-06-21 22:56:55.225]:             loading nbi.wizard.ui.swing.welcome.left.bottom.image => resource:org/netbeans/installer/wizard/components/panels/netbeans/resources/welcome-left-bottom.png
+[2019-06-21 22:56:55.225]:             loading nbi.wizard.ui.swing.frame.height.gtk => 528
+[2019-06-21 22:56:55.225]:             loading nbi.wizard.ui.swing.frame.minimum.width.motif => 624
+[2019-06-21 22:56:55.225]:             loading nbi.wizard.ui.swing.frame.minimum.width.gtk => 704
+[2019-06-21 22:56:55.226]:             loading nbi.junit.license.resource => org/netbeans/installer/product/components/junit-license.txt
+[2019-06-21 22:56:55.226]:             loading nbi.wizard.ui.swing.frame.width.metal => 624
+[2019-06-21 22:56:55.226]:             loading nbi.wizard.ui.swing.frame.height.win.xp => 450
+[2019-06-21 22:56:55.226]:             loading nbi.wizard.ui.swing.frame.height.nimbus => 512
+[2019-06-21 22:56:55.227]:             loading nbi.overall.license.javafx.resource => org/netbeans/installer/product/components/netbeans-license-javafx.txt
+[2019-06-21 22:56:55.227]:             loading nbi.wizard.ui.swing.frame.minimum.width.aqua => 640
+[2019-06-21 22:56:55.227]:             loading nbi.wizard.ui.swing.frame.width.default => 600
+[2019-06-21 22:56:55.227]:             loading nbi.wizard.ui.swing.frame.head.right.image => resource:org/netbeans/installer/wizard/wizard-description-background.png
+[2019-06-21 22:56:55.228]:             loading nbi.wizard.ui.swing.frame.minimum.height.win.xp => 450
+[2019-06-21 22:56:55.228]:             loading nbi.wizard.ui.swing.frame.width.nimbus => 624
+[2019-06-21 22:56:55.228]:             loading nbi.wizard.ui.swing.frame.minimum.height.win.classic => 442
+[2019-06-21 22:56:55.229]:             loading nbi.overall.license.jtb.resource => org/netbeans/installer/product/components/netbeans-license-jtb.txt
+[2019-06-21 22:56:55.229]:             loading nbi.wizard.ui.swing.frame.height.motif => 470
+[2019-06-21 22:56:55.229]:             loading nbi.wizard.ui.swing.frame.height.aqua => 480
+[2019-06-21 22:56:55.230]:             loading nbi.wizard.ui.swing.frame.minimum.width.win.xp => 600
+[2019-06-21 22:56:55.230]:             loading nbi.overall.license.jdk6.resource => org/netbeans/installer/product/components/netbeans-license-jdk6.txt
+[2019-06-21 22:56:55.230]:             loading nbi.wizard.ui.swing.frame.width.motif => 624
+[2019-06-21 22:56:55.230]:             loading nbi.product.remove.corrupted.products.silently => true
+[2019-06-21 22:56:55.231]:             loading nbi.wizard.ui.swing.frame.minimum.width.win.classic => 588
+[2019-06-21 22:56:55.231]:             loading nbi.overall.license.resource => org/netbeans/installer/product/components/netbeans-license.txt
+[2019-06-21 22:56:55.231]:             loading nbi.macosx.application.directory.name => NetBeans IDE Installer
+[2019-06-21 22:56:55.231]:             loading nbi.wizard.ui.swing.frame.minimum.width.metal => 624
+[2019-06-21 22:56:55.232]:             loading nbi.wizard.ui.swing.frame.height.metal => 470
+[2019-06-21 22:56:55.232]:             loading nbi.wizard.ui.swing.frame.height.win.classic => 442
+[2019-06-21 22:56:55.232]:             loading nbi.wizard.ui.swing.frame.height.default => 500
+[2019-06-21 22:56:55.232]:             loading nbi.wizard.ui.swing.frame.title.pattern => {0}
+[2019-06-21 22:56:55.233]:             loading nbi.wizard.ui.swing.frame.width.win.classic => 588
+[2019-06-21 22:56:55.233]:             loading nbi.wizard.ui.swing.frame.minimum.height.metal => 470
+[2019-06-21 22:56:55.234]:     ... finished loading engine properties
+[2019-06-21 22:56:55.234]:     exiting -- org.netbeans.installer.Installer.<init>():123
+[2019-06-21 22:56:55.234]:     initializing the local directory
+[2019-06-21 22:56:55.234]:         ... custom local directory was not specified, using the default
+[2019-06-21 22:56:55.235]:         ... local directory: C:\Users\Owner\.nbi
+[2019-06-21 22:56:55.237]:     ... finished initializing local directory
+[2019-06-21 22:56:55.294]:     entering -- org.netbeans.installer.Installer.<init>():129
+[2019-06-21 22:56:55.295]:     ... initializing DownloadManager
+[2019-06-21 22:56:55.319]:         file not exist, queue is empty!
+[2019-06-21 22:56:55.363]:     ... end of initializing DownloadManager
+[2019-06-21 22:56:55.363]:     exiting -- org.netbeans.installer.Installer.<init>():129
+[2019-06-21 22:56:55.364]:     entering -- org.netbeans.installer.Installer.<init>():130
+[2019-06-21 22:56:55.364]:     ... initializing Registry
+[2019-06-21 22:56:55.424]:     ... end of initializing ErrorHandler
+[2019-06-21 22:56:55.425]:     exiting -- org.netbeans.installer.Installer.<init>():130
+[2019-06-21 22:56:55.425]:     entering -- org.netbeans.installer.Installer.<init>():131
+[2019-06-21 22:56:55.426]:     ... initializing Wizard
+[2019-06-21 22:56:56.103]:         ... loading registry from resource:data/registry.xml
+[2019-06-21 22:56:56.315]:         entering -- org.netbeans.installer.product.Registry.loadProductRegistry():1001
+[2019-06-21 22:56:56.315]:         validating previous installations
+[2019-06-21 22:56:56.315]:         ... validating installations finished
+[2019-06-21 22:56:56.315]:         exiting -- org.netbeans.installer.product.Registry.loadProductRegistry():1001
+[2019-06-21 22:56:56.320]:         Can`t load message in bundle org.netbeans.installer.wizard.components.panels.netbeans.Bundle for key NPrISP.installation.folders using [sun.misc.Launcher$AppClassLoader@5c647e05] classloader
+[2019-06-21 22:56:56.329]:     ... end of initializing Wizard
+[2019-06-21 22:56:56.329]:     exiting -- org.netbeans.installer.Installer.<init>():131
+[2019-06-21 22:56:56.329]:     creating lock file
+[2019-06-21 22:56:56.330]:         ... created lock file: C:\Users\Owner\.nbi\.nbilock
+[2019-06-21 22:56:56.330]:     finished creating lock file
+[2019-06-21 22:56:56.330]: ... finished initializing the engine
+[2019-06-21 22:56:56.330]: exiting -- org.netbeans.installer.Installer.main():81
+[2019-06-21 22:56:56.330]: entering -- org.netbeans.installer.Installer.main():81
+[2019-06-21 22:56:56.330]: starting the installer
+[2019-06-21 22:56:56.334]:     ... initializing look and feel
+[2019-06-21 22:56:56.334]:         ... custom look and feel class name was not specified, using system default
+[2019-06-21 22:56:56.564]:         ... class name: com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+[2019-06-21 22:56:56.565]:         ... get installed L&Fs
+[2019-06-21 22:56:56.646]:         ... set specified L&F
+[2019-06-21 22:56:56.735]:         ... check headless
+[2019-06-21 22:56:56.736]:         ... creating JFileChooser object to check possible issues with UI
+[2019-06-21 22:57:00.445]:         ... getting default Toolkit to check possible issues with UI
+[2019-06-21 22:57:00.446]:         ... creating JProgressBar object to check possible issues with UI
+[2019-06-21 22:57:00.463]:         ... all UI checks done
+[2019-06-21 22:57:00.463]:         ... L&F is set
+[2019-06-21 22:57:00.464]:     ... initializing L&F finished
+[2019-06-21 22:57:00.875]:     NameResolver - to parse ヘルプ(&H)
+[2019-06-21 22:57:00.882]:     NameResolver - to parse < 戻る(&B)
+[2019-06-21 22:57:00.885]:     NameResolver - to parse 次(&N) >
+[2019-06-21 22:57:00.887]:     NameResolver - to parse 取消
+[2019-06-21 22:57:00.890]:     NameResolver - to parse インストーラを構成しています...
+[2019-06-21 22:57:00.892]:     NameResolver - to parse インストーラを構成しています...
+[2019-06-21 22:57:00.901]:     NameResolver - to parse インストーラを構成しています...
+[2019-06-21 22:57:00.902]:     NameResolver - to parse インストーラを構成しています...
+[2019-06-21 22:57:00.903]:     NameResolver - to parse NetBeans IDEのインストーラを初期化しています。しばらくお待ちください。
+[2019-06-21 22:57:00.937]:     NameResolver - to parse インストーラを構成しています...
+[2019-06-21 22:57:00.938]:     NameResolver - to parse NetBeans IDEのインストーラを初期化しています。しばらくお待ちください。
+[2019-06-21 22:57:00.939]: ... finished starting the installer
+[2019-06-21 22:57:00.939]: exiting -- org.netbeans.installer.Installer.main():81
+[2019-06-21 22:57:00.940]: NameResolver - to parse インストーラを構成しています...
+[2019-06-21 22:57:00.942]: entering -- org.netbeans.installer.wizard.components.actions.InitializeRegistryAction.execute():73
+[2019-06-21 22:57:00.943]: initializing product registry
+[2019-06-21 22:57:00.943]:     entering -- org.netbeans.installer.product.Registry.initializeRegistry():190
+[2019-06-21 22:57:00.943]:     initializing product registry properties
+[2019-06-21 22:57:00.943]:         initializing local product cache directory
+[2019-06-21 22:57:00.944]:         ... C:\Users\Owner\.nbi\product-cache
+[2019-06-21 22:57:00.944]:         initializing local product registry file
+[2019-06-21 22:57:00.944]:             ... C:\Users\Owner\.nbi\registry.xml
+[2019-06-21 22:57:00.944]:             initializing local product registry stub uri
+[2019-06-21 22:57:00.944]:             ... resource:org/netbeans/installer/product/default-registry.xml
+[2019-06-21 22:57:00.945]:             initializing bundled product registry uri
+[2019-06-21 22:57:00.945]:             ... resource:data/registry.xml
+[2019-06-21 22:57:00.945]:             initializing product registry schema uri
+[2019-06-21 22:57:00.945]:             ... resource:org/netbeans/installer/product/registry.xsd
+[2019-06-21 22:57:00.945]:             initializing remote product registries uris
+[2019-06-21 22:57:00.945]:             initializing state file schema uri
+[2019-06-21 22:57:00.945]:             ... resource:org/netbeans/installer/product/state-file.xsd
+[2019-06-21 22:57:00.945]:             initializing default state file uri
+[2019-06-21 22:57:00.945]:             ... resource:org/netbeans/installer/product/default-state-file.xml
+[2019-06-21 22:57:00.945]:             initializing target platform
+[2019-06-21 22:57:00.945]:             ... windows-x64
+[2019-06-21 22:57:00.945]:     initializing product registry properties
+[2019-06-21 22:57:00.945]:     exiting -- org.netbeans.installer.product.Registry.initializeRegistry():190
+[2019-06-21 22:57:00.948]:     ... loading registry from file:/C:/Users/Owner/.nbi/registry.xml
+[2019-06-21 22:57:01.050]:     entering -- org.netbeans.installer.product.Registry.loadProductRegistry():1001
+[2019-06-21 22:57:01.050]:     validating previous installations
+[2019-06-21 22:57:01.386]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:01.443]:         NameResolver - to parse C:\Program Files\NetBeans 8.0.2
+[2019-06-21 22:57:01.500]:         NameResolver - to parse C:\Program Files\Java\jdk1.7.0_80
+[2019-06-21 22:57:01.502]:         NameResolver - to parse C:\Program Files\Java\jdk1.7.0_80
+[2019-06-21 22:57:01.509]:         executing command: C:\Program Files\Java\jdk1.7.0_80\bin\java.exe -classpath C:\Users\Owner\.nbi\tmp TestJDK, in directory: .
+[2019-06-21 22:57:04.209]:             [stdout]: 1.7.0_80
+[2019-06-21 22:57:04.209]:             [stdout]: 24.80-b11
+[2019-06-21 22:57:04.210]:             [stdout]: Oracle Corporation
+[2019-06-21 22:57:04.210]:             [stdout]: Windows 8.1
+[2019-06-21 22:57:04.210]:             [stdout]: amd64
+[2019-06-21 22:57:04.210]:             [return]: 0
+[2019-06-21 22:57:04.211]:         ... command execution finished
+[2019-06-21 22:57:04.214]:         ... java.version    = 1.7.0_80
+[2019-06-21 22:57:04.215]:         ... java.vm.version = 24.80-b11
+[2019-06-21 22:57:04.215]:         ... java.vendor     = Oracle Corporation
+[2019-06-21 22:57:04.215]:         ... os.name         = Windows 8.1
+[2019-06-21 22:57:04.215]:         ... os.arch         = amd64
+[2019-06-21 22:57:04.216]:         ... version string : 1.7.0_80
+[2019-06-21 22:57:04.217]:         ... put jdk info to the Java map
+[2019-06-21 22:57:04.332]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:04.413]:         NameResolver - to parse C:\Program Files\NetBeans 8.0.2
+[2019-06-21 22:57:04.467]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:04.526]:         NameResolver - to parse C:\Program Files\NetBeans 8.0.2
+[2019-06-21 22:57:04.556]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:04.595]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:04.619]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:04.642]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:04.684]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:04.714]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:04.754]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:04.855]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:04.980]:         NameResolver - to parse C:\Program Files (x86)\glassfish-4.1.1
+[2019-06-21 22:57:05.031]:         NameResolver - to parse C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-06-21 22:57:05.034]:     ... validating installations finished
+[2019-06-21 22:57:05.034]:     exiting -- org.netbeans.installer.product.Registry.loadProductRegistry():1001
+[2019-06-21 22:57:05.034]:     ... loading registry from resource:data/registry.xml
+[2019-06-21 22:57:05.076]:     entering -- org.netbeans.installer.product.Registry.loadProductRegistry():1001
+[2019-06-21 22:57:05.076]:     validating previous installations
+[2019-06-21 22:57:05.076]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:05.077]:         NameResolver - to parse C:\Program Files\NetBeans 8.0.2
+[2019-06-21 22:57:05.078]:         NameResolver - to parse C:\Program Files\Java\jdk1.7.0_80
+[2019-06-21 22:57:05.079]:         NameResolver - to parse C:\Program Files\Java\jdk1.7.0_80
+[2019-06-21 22:57:05.080]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:05.081]:         NameResolver - to parse C:\Program Files\NetBeans 8.0.2
+[2019-06-21 22:57:05.081]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:05.082]:         NameResolver - to parse C:\Program Files\NetBeans 8.0.2
+[2019-06-21 22:57:05.083]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:05.084]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:05.085]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:05.086]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:05.087]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:05.087]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:05.088]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:05.088]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-06-21 22:57:05.089]:         NameResolver - to parse C:\Program Files (x86)\glassfish-4.1.1
+[2019-06-21 22:57:05.090]:         NameResolver - to parse C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-06-21 22:57:05.091]:     ... validating installations finished
+[2019-06-21 22:57:05.091]:     exiting -- org.netbeans.installer.product.Registry.loadProductRegistry():1001
+[2019-06-21 22:57:05.093]: ... product registry initialization complete
+[2019-06-21 22:57:05.094]: exiting -- org.netbeans.installer.wizard.components.actions.InitializeRegistryAction.execute():73
+[2019-06-21 22:57:05.094]: ... bundledProductSkip = null
+[2019-06-21 22:57:05.094]: ... bundledProductToInstall = null
+[2019-06-21 22:57:05.109]: NameResolver - to parse resource:org/netbeans/installer/wizard/components/panels/netbeans/resources/welcome-left-bottom.png
+[2019-06-21 22:57:05.118]: NameResolver - to parse {0}<span style="color: gray">(インストール済み)</span><br>
+[2019-06-21 22:57:05.207]: NameResolver - to parse {0}<span style="color: gray">(インストール済み)</span><br>
+[2019-06-21 22:57:05.211]: NameResolver - to parse ヘルプ(&H)
+[2019-06-21 22:57:05.211]: NameResolver - to parse < 戻る(&B)
+[2019-06-21 22:57:05.212]: NameResolver - to parse 次(&N) >
+[2019-06-21 22:57:05.212]: NameResolver - to parse 取消
+[2019-06-21 22:57:05.212]: NameResolver - to parse <html><h2 style=''color: #FF8E00; bold''>NetBeans IDE 8.2インストーラへようこそ</h2>
+[2019-06-21 22:57:05.212]: NameResolver - to parse </html>
+[2019-06-21 22:57:05.212]: NameResolver - to parse text/html
+[2019-06-21 22:57:05.216]: NameResolver - to parse <html>
+[2019-06-21 22:57:05.216]: NameResolver - to parse このインストーラは、NetBeans IDE、Java EEパック、および選択したアプリケーション・サーバーをインストールします。<br><br>IDEとともにインストールするアプリケーション・サーバーを選択:<br><br>
+[2019-06-21 22:57:05.216]: NameResolver - to parse text/html
+[2019-06-21 22:57:05.218]: NameResolver - to parse <html>
+[2019-06-21 22:57:05.219]: NameResolver - to parse </html>
+[2019-06-21 22:57:05.219]: NameResolver - to parse text/html
+[2019-06-21 22:57:05.221]: NameResolver - to parse カスタマイズ(&C)...
+[2019-06-21 22:57:05.229]: NameResolver - to parse 使用可能なすべてのコンポーネントはすでにインストールされています。「取消し」をクリックしてインストーラを終了します。
+[2019-06-21 22:57:05.230]: NameResolver - to parse 使用可能なすべてのコンポーネントはすでにインストールされています。「取消し」をクリックしてインストーラを終了します。
+[2019-06-21 22:57:05.240]: NameResolver - to parse <仮の説明>
+[2019-06-21 22:57:07.230]: NameResolver - to parse 使用可能なすべてのコンポーネントはすでにインストールされています。「取消し」をクリックしてインストーラを終了します。
+[2019-06-21 22:57:09.231]: NameResolver - to parse 使用可能なすべてのコンポーネントはすでにインストールされています。「取消し」をクリックしてインストーラを終了します。
+[2019-06-21 22:57:11.233]: NameResolver - to parse 使用可能なすべてのコンポーネントはすでにインストールされています。「取消し」をクリックしてインストーラを終了します。
+[2019-06-21 22:57:13.234]: NameResolver - to parse 使用可能なすべてのコンポーネントはすでにインストールされています。「取消し」をクリックしてインストーラを終了します。
+[2019-06-21 22:57:15.235]: NameResolver - to parse 使用可能なすべてのコンポーネントはすでにインストールされています。「取消し」をクリックしてインストーラを終了します。
+[2019-06-21 22:57:15.769]: NameResolver - to parse 取消
+[2019-06-21 22:57:15.769]: NameResolver - to parse 本当に取消しますか?
+[2019-06-21 22:57:15.769]: ... showing Yes/No dialog
+[2019-06-21 22:57:15.769]:     title: 取消
+[2019-06-21 22:57:15.769]:     message: 本当に取消しますか?
+[2019-06-21 22:57:19.250]: ... dialog closed, choice : yes

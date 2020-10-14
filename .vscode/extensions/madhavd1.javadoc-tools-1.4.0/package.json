@@ -1,0 +1,138 @@
+{
+	"name": "javadoc-tools",
+	"displayName": "Javadoc Tools",
+	"description": "This extension provides tools to the user for creating Javadocs for classes.",
+	"author": "Madhav Dhingra",
+	"publisher": "madhavd1",
+	"version": "1.4.0",
+	"preview": false,
+	"license": "MIT",
+	"icon": "img/logo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/madhavd1/vscode-javadoc-tools"
+	},
+	"engines": {
+		"vscode": "^1.33.0"
+	},
+	"categories": [
+		"Other",
+		"Snippets",
+		"Programming Languages"
+	],
+	"activationEvents": [
+		"onCommand:javadoc-tools.jdocGenerate",
+		"onCommand:javadoc-tools.generateCommentsForWorkspace",
+		"onLanguage:java",
+		"workspaceContains:**/*.java",
+		"onCommand:javadoc-tools.generateCommentsForMethod"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "javadoc-tools.jdocGenerate",
+				"title": "Generate Javadoc Comments for Open File",
+				"category": "Javadoc Tools"
+			},
+			{
+				"command": "javadoc-tools.generateCommentsForWorkspace",
+				"title": "Generate Javadoc Comments for Workspace",
+				"category": "Javadoc Tools"
+			},
+			{
+				"command": "javadoc-tools.jdocGenerateFromContext",
+				"title": "Generate Javadoc Comments"
+			},
+			{
+				"command": "javadoc-tools.generateCommentsForMethod",
+				"title": "Generate Comments for Select methods",
+				"category": "Javadoc Tools"
+			},
+			{
+				"command": "javadoc-tools.exportJavadoc",
+				"title": "Export Javadoc",
+				"category": "Javadoc Tools"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "javadoc-tools.jdocGenerateFromContext",
+					"when": "resourceExtname == .java"
+				}
+			],
+			"commandPalette": [
+				{
+					"command": "javadoc-tools.jdocGenerateFromContext",
+					"when": "false"
+				},
+				{
+					"command": "javadoc-tools.jdocGenerate",
+					"when": "editorLangId == java"
+				},
+				{
+					"command": "javadoc-tools.generateCommentsForMethod",
+					"when": "editorLangId == java"
+				},
+				{
+					"command": "javadoc-tools.exportJavadoc",
+					"when": "editorLangId == java"
+				}
+			]
+		},
+		"configuration": {
+			"title": "Javadoc Tools",
+			"properties": {
+				"javadoc-tools.generateJavadoc.workspaceSourceFolder": {
+					"type": "string",
+					"description": "Sets the default \"source\" folder which is read when Generating the Javadoc. Default value is the \"src\" folder in Workspace Root"
+				},
+				"javadoc-tools.generateJavadoc.targetFolder": {
+					"type": "string",
+					"description": "Sets the target folder where the Javadoc will be generated. Default path will be ${WorkspaceRoot}\\javadoc"
+				},
+				"javadoc-tools.generateJavadoc.runMode": {
+					"type": "string",
+					"enum": [
+						"-package",
+						"-private",
+						"-protected",
+						"-public"
+					],
+					"default": "-public",
+					"description": "Set value to run in corresponding mode. Default value is \"-public\". [\"-package\",\"-private\",\"-protected\",\"-public\"]"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"tslint": "^5.12.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	},
+	"extensionDependencies": [
+		"redhat.java"
+	],
+	"keywords": [
+		"java",
+		"javadoc"
+	],
+	"dependencies": {
+		"open": "^6.4.0"
+	},
+	"__metadata": {
+		"id": "6d8f5969-5018-4eb8-a07f-3698085d0177",
+		"publisherId": "02bf204d-2a4d-4eca-8bd4-5bdb63b544d6",
+		"publisherDisplayName": "Madhav D"
+	}
+}

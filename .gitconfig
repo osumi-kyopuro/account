@@ -1,0 +1,9 @@
+[user]
+	name = osumi-kyopuro
+	email = osumiyuki1123@gmail.com
+[core]
+	editor = code --wait
+[merge]
+	tool = code --wait \"$MERGED\"
+[push]
+	default = simple

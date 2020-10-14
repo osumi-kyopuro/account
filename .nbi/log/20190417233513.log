@@ -1,0 +1,1336 @@
+[2019-04-17 23:35:13.748]: entering -- org.netbeans.installer.Installer.main():81
+[2019-04-17 23:35:13.769]: initializing the installer engine
+[2019-04-17 23:35:13.769]:     entering -- org.netbeans.installer.Installer.<init>():116
+[2019-04-17 23:35:13.769]:     ... initializing ErrorHandler
+[2019-04-17 23:35:13.769]:     ... end of ErrorHandler initialization
+[2019-04-17 23:35:13.769]:     exiting -- org.netbeans.installer.Installer.<init>():116
+[2019-04-17 23:35:13.769]:     entering -- org.netbeans.installer.Installer.<init>():117
+[2019-04-17 23:35:13.769]:     dumping target system information
+[2019-04-17 23:35:13.769]:         system properties:
+[2019-04-17 23:35:13.786]:             awt.toolkit => sun.awt.windows.WToolkit
+[2019-04-17 23:35:13.786]:             file.encoding => MS932
+[2019-04-17 23:35:13.786]:             file.encoding.pkg => sun.io
+[2019-04-17 23:35:13.786]:             file.separator => \
+[2019-04-17 23:35:13.786]:             java.awt.graphicsenv => sun.awt.Win32GraphicsEnvironment
+[2019-04-17 23:35:13.786]:             java.awt.printerjob => sun.awt.windows.WPrinterJob
+[2019-04-17 23:35:13.786]:             java.class.path => C:\Users\Owner\AppData\Local\Temp\\NBI34975.tmp\bundle.jar
+[2019-04-17 23:35:13.786]:             java.class.version => 52.0
+[2019-04-17 23:35:13.786]:             java.endorsed.dirs => C:\Program Files (x86)\Java\jre1.8.0_171\lib\endorsed
+[2019-04-17 23:35:13.786]:             java.ext.dirs => C:\Program Files (x86)\Java\jre1.8.0_171\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+[2019-04-17 23:35:13.786]:             java.home => C:\Program Files (x86)\Java\jre1.8.0_171
+[2019-04-17 23:35:13.786]:             java.io.tmpdir => C:\Users\Owner\AppData\Local\Temp\
+[2019-04-17 23:35:13.786]:             java.library.path => C:\Program Files (x86)\Java\jre1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Apple\Apple Application Support;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Fujitsu\FJAgent\Core\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\Owner\AppData\Local\Microsoft\WindowsApps;.
+[2019-04-17 23:35:13.786]:             java.runtime.name => Java(TM) SE Runtime Environment
+[2019-04-17 23:35:13.786]:             java.runtime.version => 1.8.0_171-b11
+[2019-04-17 23:35:13.786]:             java.specification.name => Java Platform API Specification
+[2019-04-17 23:35:13.786]:             java.specification.vendor => Oracle Corporation
+[2019-04-17 23:35:13.786]:             java.specification.version => 1.8
+[2019-04-17 23:35:13.786]:             java.vendor => Oracle Corporation
+[2019-04-17 23:35:13.786]:             java.vendor.url => http://java.oracle.com/
+[2019-04-17 23:35:13.786]:             java.vendor.url.bug => http://bugreport.sun.com/bugreport/
+[2019-04-17 23:35:13.786]:             java.version => 1.8.0_171
+[2019-04-17 23:35:13.786]:             java.vm.info => mixed mode
+[2019-04-17 23:35:13.786]:             java.vm.name => Java HotSpot(TM) Client VM
+[2019-04-17 23:35:13.786]:             java.vm.specification.name => Java Virtual Machine Specification
+[2019-04-17 23:35:13.786]:             java.vm.specification.vendor => Oracle Corporation
+[2019-04-17 23:35:13.786]:             java.vm.specification.version => 1.8
+[2019-04-17 23:35:13.786]:             java.vm.vendor => Oracle Corporation
+[2019-04-17 23:35:13.786]:             java.vm.version => 25.171-b11
+[2019-04-17 23:35:13.786]:             line.separator => 
+[2019-04-17 23:35:13.786]:             netbeans.default_cachedir_root => C:\Users\Owner\AppData\Local\NetBeans\Cache
+[2019-04-17 23:35:13.786]:             netbeans.default_userdir_root => C:\Users\Owner\AppData\Roaming\NetBeans
+[2019-04-17 23:35:13.786]:             os.arch => x86
+[2019-04-17 23:35:13.786]:             os.name => Windows 10
+[2019-04-17 23:35:13.786]:             os.version => 10.0
+[2019-04-17 23:35:13.801]:             path.separator => ;
+[2019-04-17 23:35:13.801]:             sun.arch.data.model => 32
+[2019-04-17 23:35:13.801]:             sun.boot.class.path => C:\Program Files (x86)\Java\jre1.8.0_171\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_171\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_171\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_171\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_171\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_171\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_171\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_171\classes
+[2019-04-17 23:35:13.801]:             sun.boot.library.path => C:\Program Files (x86)\Java\jre1.8.0_171\bin
+[2019-04-17 23:35:13.801]:             sun.cpu.endian => little
+[2019-04-17 23:35:13.801]:             sun.cpu.isalist => pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86
+[2019-04-17 23:35:13.801]:             sun.desktop => windows
+[2019-04-17 23:35:13.801]:             sun.io.unicode.encoding => UnicodeLittle
+[2019-04-17 23:35:13.801]:             sun.java.command => org.netbeans.installer.Installer
+[2019-04-17 23:35:13.801]:             sun.java.launcher => SUN_STANDARD
+[2019-04-17 23:35:13.801]:             sun.jnu.encoding => MS932
+[2019-04-17 23:35:13.801]:             sun.management.compiler => HotSpot Client Compiler
+[2019-04-17 23:35:13.801]:             sun.os.patch.level => 
+[2019-04-17 23:35:13.801]:             user.country => JP
+[2019-04-17 23:35:13.801]:             user.dir => C:\Users\Owner\Desktop
+[2019-04-17 23:35:13.801]:             user.home => C:\Users\Owner
+[2019-04-17 23:35:13.801]:             user.language => ja
+[2019-04-17 23:35:13.801]:             user.name => Owner
+[2019-04-17 23:35:13.801]:             user.script => 
+[2019-04-17 23:35:13.801]:             user.timezone => Asia/Tokyo
+[2019-04-17 23:35:13.801]:             user.variant => 
+[2019-04-17 23:35:13.801]:     ... end of target system information
+[2019-04-17 23:35:13.801]:     exiting -- org.netbeans.installer.Installer.<init>():117
+[2019-04-17 23:35:13.868]:     loading jni library
+[2019-04-17 23:35:13.868]:         library resource path: native/jnilib/windows/windows-x86.dll
+[2019-04-17 23:35:14.392]:         library file path: C:\Users\Owner\AppData\Local\Temp\nbi-6736043575648166913.tmp
+[2019-04-17 23:35:14.422]:         ... successfully loaded the library
+[2019-04-17 23:35:14.423]:     entering -- org.netbeans.installer.Installer.<init>():122
+[2019-04-17 23:35:14.423]:     parsing command-line arguments
+[2019-04-17 23:35:14.437]:         ... no command line arguments were specified
+[2019-04-17 23:35:14.437]:     ... finished parsing command line arguments
+[2019-04-17 23:35:14.437]:     exiting -- org.netbeans.installer.Installer.<init>():122
+[2019-04-17 23:35:14.437]:     entering -- org.netbeans.installer.Installer.<init>():123
+[2019-04-17 23:35:14.437]:     loading engine properties
+[2019-04-17 23:35:14.437]:         loading engine properties
+[2019-04-17 23:35:14.446]:             loading NWP.welcome.page.type => javaee
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.title.prefix => NetBeans IDEのインストーラ
+[2019-04-17 23:35:14.446]:             loading nbi.product.suggest.install => true
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.width.gtk => 704
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.minimum.width.nimbus => 624
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.minimum.height.nimbus => 512
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.width.win.xp => 600
+[2019-04-17 23:35:14.446]:             loading nbi.overall.license.jdk5.resource => org/netbeans/installer/product/components/netbeans-license-jdk5.txt
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.minimum.width.default => 600
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.minimum.height.aqua => 480
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.minimum.height.default => 500
+[2019-04-17 23:35:14.446]:             loading nbi.overall.license.mysql.resource => org/netbeans/installer/product/components/netbeans-license-mysql.txt
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.icon => resource:org/netbeans/installer/wizard/wizard-icon.png
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.minimum.height.gtk => 528
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.width.aqua => 640
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.minimum.height.motif => 470
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.welcome.left.bottom.image => resource:org/netbeans/installer/wizard/components/panels/netbeans/resources/welcome-left-bottom.png
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.height.gtk => 528
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.minimum.width.motif => 624
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.minimum.width.gtk => 704
+[2019-04-17 23:35:14.446]:             loading nbi.junit.license.resource => org/netbeans/installer/product/components/junit-license.txt
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.width.metal => 624
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.height.win.xp => 450
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.height.nimbus => 512
+[2019-04-17 23:35:14.446]:             loading nbi.overall.license.javafx.resource => org/netbeans/installer/product/components/netbeans-license-javafx.txt
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.minimum.width.aqua => 640
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.width.default => 600
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.head.right.image => resource:org/netbeans/installer/wizard/wizard-description-background.png
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.minimum.height.win.xp => 450
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.width.nimbus => 624
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.minimum.height.win.classic => 442
+[2019-04-17 23:35:14.446]:             loading nbi.overall.license.jtb.resource => org/netbeans/installer/product/components/netbeans-license-jtb.txt
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.height.motif => 470
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.height.aqua => 480
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.minimum.width.win.xp => 600
+[2019-04-17 23:35:14.446]:             loading nbi.overall.license.jdk6.resource => org/netbeans/installer/product/components/netbeans-license-jdk6.txt
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.width.motif => 624
+[2019-04-17 23:35:14.446]:             loading nbi.product.remove.corrupted.products.silently => true
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.minimum.width.win.classic => 588
+[2019-04-17 23:35:14.446]:             loading nbi.overall.license.resource => org/netbeans/installer/product/components/netbeans-license.txt
+[2019-04-17 23:35:14.446]:             loading nbi.macosx.application.directory.name => NetBeans IDE Installer
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.minimum.width.metal => 624
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.height.metal => 470
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.height.win.classic => 442
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.height.default => 500
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.title.pattern => {0}
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.width.win.classic => 588
+[2019-04-17 23:35:14.446]:             loading nbi.wizard.ui.swing.frame.minimum.height.metal => 470
+[2019-04-17 23:35:14.446]:     ... finished loading engine properties
+[2019-04-17 23:35:14.446]:     exiting -- org.netbeans.installer.Installer.<init>():123
+[2019-04-17 23:35:14.446]:     initializing the local directory
+[2019-04-17 23:35:14.446]:         ... custom local directory was not specified, using the default
+[2019-04-17 23:35:14.446]:         ... local directory: C:\Users\Owner\.nbi
+[2019-04-17 23:35:14.446]:     ... finished initializing local directory
+[2019-04-17 23:35:14.513]:     entering -- org.netbeans.installer.Installer.<init>():129
+[2019-04-17 23:35:14.513]:     ... initializing DownloadManager
+[2019-04-17 23:35:14.528]:         file not exist, queue is empty!
+[2019-04-17 23:35:14.559]:     ... end of initializing DownloadManager
+[2019-04-17 23:35:14.559]:     exiting -- org.netbeans.installer.Installer.<init>():129
+[2019-04-17 23:35:14.559]:     entering -- org.netbeans.installer.Installer.<init>():130
+[2019-04-17 23:35:14.559]:     ... initializing Registry
+[2019-04-17 23:35:14.584]:     ... end of initializing ErrorHandler
+[2019-04-17 23:35:14.584]:     exiting -- org.netbeans.installer.Installer.<init>():130
+[2019-04-17 23:35:14.584]:     entering -- org.netbeans.installer.Installer.<init>():131
+[2019-04-17 23:35:14.584]:     ... initializing Wizard
+[2019-04-17 23:35:15.254]:         ... loading registry from resource:data/registry.xml
+[2019-04-17 23:35:15.363]:         entering -- org.netbeans.installer.product.Registry.loadProductRegistry():1001
+[2019-04-17 23:35:15.363]:         validating previous installations
+[2019-04-17 23:35:15.363]:         ... validating installations finished
+[2019-04-17 23:35:15.363]:         exiting -- org.netbeans.installer.product.Registry.loadProductRegistry():1001
+[2019-04-17 23:35:15.363]:         Can`t load message in bundle org.netbeans.installer.wizard.components.panels.netbeans.Bundle for key NPrISP.installation.folders using [sun.misc.Launcher$AppClassLoader@647e05] classloader
+[2019-04-17 23:35:15.371]:     ... end of initializing Wizard
+[2019-04-17 23:35:15.371]:     exiting -- org.netbeans.installer.Installer.<init>():131
+[2019-04-17 23:35:15.371]:     creating lock file
+[2019-04-17 23:35:15.371]:         ... created lock file: C:\Users\Owner\.nbi\.nbilock
+[2019-04-17 23:35:15.377]:     finished creating lock file
+[2019-04-17 23:35:15.377]: ... finished initializing the engine
+[2019-04-17 23:35:15.377]: exiting -- org.netbeans.installer.Installer.main():81
+[2019-04-17 23:35:15.377]: entering -- org.netbeans.installer.Installer.main():81
+[2019-04-17 23:35:15.377]: starting the installer
+[2019-04-17 23:35:15.382]:     ... initializing look and feel
+[2019-04-17 23:35:15.383]:         ... custom look and feel class name was not specified, using system default
+[2019-04-17 23:35:15.802]:         ... class name: com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+[2019-04-17 23:35:15.802]:         ... get installed L&Fs
+[2019-04-17 23:35:15.923]:         ... set specified L&F
+[2019-04-17 23:35:16.047]:         ... check headless
+[2019-04-17 23:35:16.047]:         ... creating JFileChooser object to check possible issues with UI
+[2019-04-17 23:35:19.015]:         ... getting default Toolkit to check possible issues with UI
+[2019-04-17 23:35:19.015]:         ... creating JProgressBar object to check possible issues with UI
+[2019-04-17 23:35:19.026]:         ... all UI checks done
+[2019-04-17 23:35:19.026]:         ... L&F is set
+[2019-04-17 23:35:19.027]:     ... initializing L&F finished
+[2019-04-17 23:35:19.751]:     NameResolver - to parse ヘルプ(&H)
+[2019-04-17 23:35:19.759]:     NameResolver - to parse < 戻る(&B)
+[2019-04-17 23:35:19.761]:     NameResolver - to parse 次(&N) >
+[2019-04-17 23:35:19.762]:     NameResolver - to parse 取消
+[2019-04-17 23:35:19.767]:     NameResolver - to parse インストーラを構成しています...
+[2019-04-17 23:35:19.767]:     NameResolver - to parse インストーラを構成しています...
+[2019-04-17 23:35:19.780]:     NameResolver - to parse インストーラを構成しています...
+[2019-04-17 23:35:19.782]:     NameResolver - to parse インストーラを構成しています...
+[2019-04-17 23:35:19.783]:     NameResolver - to parse NetBeans IDEのインストーラを初期化しています。しばらくお待ちください。
+[2019-04-17 23:35:19.822]:     NameResolver - to parse インストーラを構成しています...
+[2019-04-17 23:35:19.822]:     NameResolver - to parse NetBeans IDEのインストーラを初期化しています。しばらくお待ちください。
+[2019-04-17 23:35:19.824]: ... finished starting the installer
+[2019-04-17 23:35:19.826]: exiting -- org.netbeans.installer.Installer.main():81
+[2019-04-17 23:35:19.826]: NameResolver - to parse インストーラを構成しています...
+[2019-04-17 23:35:19.829]: entering -- org.netbeans.installer.wizard.components.actions.InitializeRegistryAction.execute():73
+[2019-04-17 23:35:19.830]: initializing product registry
+[2019-04-17 23:35:19.830]:     entering -- org.netbeans.installer.product.Registry.initializeRegistry():190
+[2019-04-17 23:35:19.830]:     initializing product registry properties
+[2019-04-17 23:35:19.830]:         initializing local product cache directory
+[2019-04-17 23:35:19.830]:         ... C:\Users\Owner\.nbi\product-cache
+[2019-04-17 23:35:19.830]:         initializing local product registry file
+[2019-04-17 23:35:19.831]:             ... C:\Users\Owner\.nbi\registry.xml
+[2019-04-17 23:35:19.831]:             initializing local product registry stub uri
+[2019-04-17 23:35:19.831]:             ... resource:org/netbeans/installer/product/default-registry.xml
+[2019-04-17 23:35:19.831]:             initializing bundled product registry uri
+[2019-04-17 23:35:19.831]:             ... resource:data/registry.xml
+[2019-04-17 23:35:19.831]:             initializing product registry schema uri
+[2019-04-17 23:35:19.832]:             ... resource:org/netbeans/installer/product/registry.xsd
+[2019-04-17 23:35:19.832]:             initializing remote product registries uris
+[2019-04-17 23:35:19.833]:             initializing state file schema uri
+[2019-04-17 23:35:19.833]:             ... resource:org/netbeans/installer/product/state-file.xsd
+[2019-04-17 23:35:19.833]:             initializing default state file uri
+[2019-04-17 23:35:19.833]:             ... resource:org/netbeans/installer/product/default-state-file.xml
+[2019-04-17 23:35:19.833]:             initializing target platform
+[2019-04-17 23:35:19.833]:             ... windows-x86
+[2019-04-17 23:35:19.833]:     initializing product registry properties
+[2019-04-17 23:35:19.834]:     exiting -- org.netbeans.installer.product.Registry.initializeRegistry():190
+[2019-04-17 23:35:19.849]:     ... loading registry from file:/C:/Users/Owner/.nbi/registry.xml
+[2019-04-17 23:35:19.908]:     entering -- org.netbeans.installer.product.Registry.loadProductRegistry():1001
+[2019-04-17 23:35:19.908]:     validating previous installations
+[2019-04-17 23:35:20.058]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-04-17 23:35:20.073]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-04-17 23:35:20.088]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-04-17 23:35:20.104]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-04-17 23:35:20.118]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-04-17 23:35:20.168]:         NameResolver - to parse C:\Program Files (x86)\glassfish-4.1.1
+[2019-04-17 23:35:20.171]:     ... validating installations finished
+[2019-04-17 23:35:20.171]:     exiting -- org.netbeans.installer.product.Registry.loadProductRegistry():1001
+[2019-04-17 23:35:20.171]:     ... loading registry from resource:data/registry.xml
+[2019-04-17 23:35:20.219]:     entering -- org.netbeans.installer.product.Registry.loadProductRegistry():1001
+[2019-04-17 23:35:20.219]:     validating previous installations
+[2019-04-17 23:35:20.219]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-04-17 23:35:20.219]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-04-17 23:35:20.219]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-04-17 23:35:20.219]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-04-17 23:35:20.219]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-04-17 23:35:20.219]:         NameResolver - to parse C:\Program Files (x86)\glassfish-4.1.1
+[2019-04-17 23:35:20.229]:     ... validating installations finished
+[2019-04-17 23:35:20.229]:     exiting -- org.netbeans.installer.product.Registry.loadProductRegistry():1001
+[2019-04-17 23:35:20.231]: ... product registry initialization complete
+[2019-04-17 23:35:20.231]: exiting -- org.netbeans.installer.wizard.components.actions.InitializeRegistryAction.execute():73
+[2019-04-17 23:35:20.231]: NameResolver - to parse {0}の構成ロジックを抽出しています
+[2019-04-17 23:35:20.512]: ... bundledProductSkip = null
+[2019-04-17 23:35:20.512]: ... bundledProductToInstall = null
+[2019-04-17 23:35:20.535]: NameResolver - to parse resource:org/netbeans/installer/wizard/components/panels/netbeans/resources/welcome-left-bottom.png
+[2019-04-17 23:35:20.546]: NameResolver - to parse {0}<span style="color: gray">(インストール済み)</span><br>
+[2019-04-17 23:35:20.619]: NameResolver - to parse {0}<br>
+[2019-04-17 23:35:20.619]: NameResolver - to parse ヘルプ(&H)
+[2019-04-17 23:35:20.627]: NameResolver - to parse < 戻る(&B)
+[2019-04-17 23:35:20.629]: NameResolver - to parse 次(&N) >
+[2019-04-17 23:35:20.629]: NameResolver - to parse 取消
+[2019-04-17 23:35:20.630]: NameResolver - to parse <html><h2 style=''color: #FF8E00; bold''>NetBeans IDE 8.2インストーラへようこそ</h2>
+[2019-04-17 23:35:20.630]: NameResolver - to parse </html>
+[2019-04-17 23:35:20.632]: NameResolver - to parse text/html
+[2019-04-17 23:35:20.638]: NameResolver - to parse <html>
+[2019-04-17 23:35:20.639]: NameResolver - to parse このインストーラは、NetBeans IDE、Java EEパック、および選択したアプリケーション・サーバーをインストールします。<br><br>IDEとともにインストールするアプリケーション・サーバーを選択:<br><br>
+[2019-04-17 23:35:20.639]: NameResolver - to parse text/html
+[2019-04-17 23:35:20.642]: NameResolver - to parse <html>
+[2019-04-17 23:35:20.642]: NameResolver - to parse </html>
+[2019-04-17 23:35:20.642]: NameResolver - to parse text/html
+[2019-04-17 23:35:20.658]: NameResolver - to parse カスタマイズ(&C)...
+[2019-04-17 23:35:20.666]: NameResolver - to parse NetBeans IDE 8.2は既にインストールされています。インストールするランタイムを1つ以上選択してください。
+[2019-04-17 23:35:20.677]: NameResolver - to parse NetBeans IDE 8.2は既にインストールされています。インストールするランタイムを1つ以上選択してください。
+[2019-04-17 23:35:20.705]: NameResolver - to parse <仮の説明>
+[2019-04-17 23:35:22.682]: NameResolver - to parse NetBeans IDE 8.2は既にインストールされています。インストールするランタイムを1つ以上選択してください。
+[2019-04-17 23:35:24.704]: NameResolver - to parse NetBeans IDE 8.2は既にインストールされています。インストールするランタイムを1つ以上選択してください。
+[2019-04-17 23:35:26.709]: NameResolver - to parse NetBeans IDE 8.2は既にインストールされています。インストールするランタイムを1つ以上選択してください。
+[2019-04-17 23:35:26.873]: NameResolver - to parse インストール・データを抽出するためのディスク容量が不十分です。追加の{1}が{0}に必要です。
+[2019-04-17 23:35:26.876]: NameResolver - to parse インストール・サイズ: {0}
+[2019-04-17 23:35:28.202]: NameResolver - to parse インストール・データを抽出するためのディスク容量が不十分です。追加の{1}が{0}に必要です。
+[2019-04-17 23:35:28.208]: NameResolver - to parse ヘルプ(&H)
+[2019-04-17 23:35:28.213]: NameResolver - to parse < 戻る(&B)
+[2019-04-17 23:35:28.214]: NameResolver - to parse 次(&N) >
+[2019-04-17 23:35:28.214]: NameResolver - to parse 取消
+[2019-04-17 23:35:28.214]: NameResolver - to parse ライセンス契約条件に同意する(&A)
+[2019-04-17 23:35:28.214]: NameResolver - to parse org/netbeans/installer/product/components/netbeans-license.txt
+[2019-04-17 23:35:28.214]: NameResolver - to parse $R{org/netbeans/installer/product/components/netbeans-license.txt;UTF-8}
+[2019-04-17 23:35:28.220]: NameResolver - to parse {0}
+[2019-04-17 23:35:28.307]: NameResolver - to parse ライセンス契約
+[2019-04-17 23:35:28.307]: NameResolver - to parse ライセンス契約
+[2019-04-17 23:35:28.312]: NameResolver - to parse ライセンス契約
+[2019-04-17 23:35:28.312]: NameResolver - to parse ライセンス契約
+[2019-04-17 23:35:28.312]: NameResolver - to parse 以下の使用許諾契約書をよくお読みください。
+[2019-04-17 23:35:28.361]: NameResolver - to parse ライセンス契約
+[2019-04-17 23:35:28.361]: NameResolver - to parse 以下の使用許諾契約書をよくお読みください。
+[2019-04-17 23:35:31.855]: NameResolver - to parse $E{ProgramFiles}/Apache Software Foundation/Apache Tomcat 8.0.27
+[2019-04-17 23:35:32.044]: NameResolver - to parse ヘルプ(&H)
+[2019-04-17 23:35:32.044]: NameResolver - to parse < 戻る(&B)
+[2019-04-17 23:35:32.045]: NameResolver - to parse 次(&N) >
+[2019-04-17 23:35:32.045]: NameResolver - to parse 取消
+[2019-04-17 23:35:32.045]: NameResolver - to parse Apache Tomcatのインストール先(&I):
+[2019-04-17 23:35:32.045]: NameResolver - to parse 参照(&R)...
+[2019-04-17 23:35:32.050]: NameResolver - to parse Apache Tomcat 8.0.27のインストール
+[2019-04-17 23:35:32.050]: NameResolver - to parse Apache Tomcat 8.0.27のインストール
+[2019-04-17 23:35:32.051]: NameResolver - to parse Apache Tomcat 8.0.27のインストール
+[2019-04-17 23:35:32.052]: NameResolver - to parse Apache Tomcat 8.0.27のインストール
+[2019-04-17 23:35:32.052]: NameResolver - to parse インストール先フォルダを選択します。
+[2019-04-17 23:35:32.055]: NameResolver - to parse Apache Tomcat 8.0.27のインストール
+[2019-04-17 23:35:32.055]: NameResolver - to parse インストール先フォルダを選択します。
+[2019-04-17 23:35:34.723]: NameResolver - to parse ヘルプ(&H)
+[2019-04-17 23:35:34.723]: NameResolver - to parse < 戻る(&B)
+[2019-04-17 23:35:34.723]: NameResolver - to parse インストール(&I)
+[2019-04-17 23:35:34.723]: NameResolver - to parse 取消
+[2019-04-17 23:35:34.723]: NameResolver - to parse インストール(&I)
+[2019-04-17 23:35:34.723]: NameResolver - to parse {0}インストール・フォルダ:
+[2019-04-17 23:35:34.723]: NameResolver - to parse C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:34.724]: NameResolver - to parse 次のコンポーネントはアンインストールされます:
+[2019-04-17 23:35:34.725]: NameResolver - to parse インストール・サイズ合計:
+[2019-04-17 23:35:34.725]: NameResolver - to parse ダウンロード・サイズ合計:
+[2019-04-17 23:35:34.727]: NameResolver - to parse C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:34.727]: Roots : C:\
+[2019-04-17 23:35:34.727]: NameResolver - to parse C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:34.727]:     [C:\] <- C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:34.727]: NameResolver - to parse サマリー
+[2019-04-17 23:35:34.727]: NameResolver - to parse サマリー
+[2019-04-17 23:35:34.729]: NameResolver - to parse C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:34.729]: NameResolver - to parse サマリー
+[2019-04-17 23:35:34.729]: Roots : C:\
+[2019-04-17 23:35:34.729]: NameResolver - to parse C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:34.729]: NameResolver - to parse サマリー
+[2019-04-17 23:35:34.729]:     [C:\] <- C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:34.729]: NameResolver - to parse 「インストール」をクリックしてインストールを開始します。
+[2019-04-17 23:35:34.732]: NameResolver - to parse サマリー
+[2019-04-17 23:35:34.732]: NameResolver - to parse 「インストール」をクリックしてインストールを開始します。
+[2019-04-17 23:35:36.208]: NameResolver - to parse C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:36.208]: Roots : C:\
+[2019-04-17 23:35:36.208]: NameResolver - to parse C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:36.208]:     [C:\] <- C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:36.209]: NameResolver - to parse ヘルプ(&H)
+[2019-04-17 23:35:36.211]: NameResolver - to parse < 戻る(&B)
+[2019-04-17 23:35:36.211]: NameResolver - to parse 次(&N) >
+[2019-04-17 23:35:36.211]: NameResolver - to parse 取消
+[2019-04-17 23:35:36.216]: NameResolver - to parse インストール・データを準備中...
+[2019-04-17 23:35:36.216]: NameResolver - to parse インストール・データを準備中...
+[2019-04-17 23:35:36.217]: NameResolver - to parse インストール・データを準備中...
+[2019-04-17 23:35:36.217]: NameResolver - to parse インストール・データを準備中...
+[2019-04-17 23:35:36.217]: NameResolver - to parse ウィザードがインストール・データを準備しています。しばらくお待ちください。
+[2019-04-17 23:35:36.220]: NameResolver - to parse インストール・データを準備中...
+[2019-04-17 23:35:36.220]: NameResolver - to parse ウィザードがインストール・データを準備しています。しばらくお待ちください。
+[2019-04-17 23:35:36.221]: entering -- org.netbeans.installer.wizard.components.WizardAction$1.run():123
+[2019-04-17 23:35:36.221]: getting all installation data
+[2019-04-17 23:35:36.221]:     NameResolver - to parse {0}のインストール・データを抽出しています
+[2019-04-17 23:35:36.467]: ... finished getting of the installation data
+[2019-04-17 23:35:36.467]: exiting -- org.netbeans.installer.wizard.components.WizardAction$1.run():123
+[2019-04-17 23:35:36.469]: NameResolver - to parse ヘルプ(&H)
+[2019-04-17 23:35:36.471]: NameResolver - to parse < 戻る(&B)
+[2019-04-17 23:35:36.473]: NameResolver - to parse 次(&N) >
+[2019-04-17 23:35:36.474]: NameResolver - to parse 取消
+[2019-04-17 23:35:36.477]: NameResolver - to parse インストール
+[2019-04-17 23:35:36.478]: NameResolver - to parse インストール
+[2019-04-17 23:35:36.479]: NameResolver - to parse インストール
+[2019-04-17 23:35:36.480]: NameResolver - to parse インストール
+[2019-04-17 23:35:36.480]: NameResolver - to parse NetBeans IDEとランタイムをインストールしています。お待ちください。
+[2019-04-17 23:35:36.487]: NameResolver - to parse インストール
+[2019-04-17 23:35:36.487]: NameResolver - to parse NetBeans IDEとランタイムをインストールしています。お待ちください。
+[2019-04-17 23:35:36.489]: Start products installation
+[2019-04-17 23:35:36.491]:     NameResolver - to parse {0}をインストールしています...
+[2019-04-17 23:35:36.493]:     Start installation of Apache Tomcat 8.0.27(tomcat/8.0.27.0.0)
+[2019-04-17 23:35:36.494]:         NameResolver - to parse C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:36.494]:         NameResolver - to parse C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:36.501]:         NameResolver - to parse C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:36.501]:         NameResolver - to parse C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:36.502]:         ... extracting files from the data archives
+[2019-04-17 23:35:36.502]:         NameResolver - to parse C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:36.733]:         deleting file: C:\Users\Owner\AppData\Local\Temp\nbi-5038734582726977902.tmp
+[2019-04-17 23:35:36.745]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\wsmessages\AbstractWebsocketMessage.class
+[2019-04-17 23:35:36.748]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\wsmessages\AbstractWebsocketMessage.java
+[2019-04-17 23:35:36.750]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\wsmessages\BinaryWebsocketMessage.class
+[2019-04-17 23:35:36.758]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\wsmessages\StringWebsocketMessage.class
+[2019-04-17 23:35:36.763]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\echo\EchoEndpoint$EchoMessageHandlerBinary.class
+[2019-04-17 23:35:36.766]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\wsmessages\BinaryWebsocketMessage.java
+[2019-04-17 23:35:36.769]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\wsmessages\CloseWebsocketMessage.class
+[2019-04-17 23:35:36.770]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\wsmessages\StringWebsocketMessage.java
+[2019-04-17 23:35:36.772]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\compressionFilters\CompressionServletResponseWrapper.class
+[2019-04-17 23:35:36.776]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\wsmessages\CloseWebsocketMessage.java
+[2019-04-17 23:35:36.779]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\compressionFilters\CompressionServletResponseWrapper.java
+[2019-04-17 23:35:36.782]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\echo\EchoEndpoint$EchoMessageHandlerText.class
+[2019-04-17 23:35:36.784]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\echo\EchoAsyncAnnotation$CompletedFuture.class
+[2019-04-17 23:35:36.786]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\compressionFilters\CompressionFilterTestServlet.class
+[2019-04-17 23:35:36.788]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\DrawMessage$ParseException.class
+[2019-04-17 23:35:36.790]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\compressionFilters\CompressionFilterTestServlet.java
+[2019-04-17 23:35:36.792]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\nonblocking\NumberWriter$NumberWriterListener.class
+[2019-04-17 23:35:36.794]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\DrawboardContextListener.class
+[2019-04-17 23:35:36.797]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\compressionFilters\CompressionResponseStream.class
+[2019-04-17 23:35:36.799]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\simpletag\HelloWorldSimpleTag.class
+[2019-04-17 23:35:36.803]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\DrawboardContextListener.java
+[2019-04-17 23:35:36.807]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\compressionFilters\CompressionResponseStream.java
+[2019-04-17 23:35:36.809]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\simpletag\HelloWorldSimpleTag.java
+[2019-04-17 23:35:36.811]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\simpletag\FindBookSimpleTag.class
+[2019-04-17 23:35:36.813]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\simpletag\EchoAttributesTag.class
+[2019-04-17 23:35:36.814]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\DrawboardEndpoint$3$1.class
+[2019-04-17 23:35:36.817]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\simpletag\EchoAttributesTag.java
+[2019-04-17 23:35:36.818]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\simpletag\ShuffleSimpleTag.class
+[2019-04-17 23:35:36.820]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\simpletag\FindBookSimpleTag.java
+[2019-04-17 23:35:36.821]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\nonblocking\ByteCounter$CounterListener.class
+[2019-04-17 23:35:36.823]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\simpletag\RepeatSimpleTag.class
+[2019-04-17 23:35:36.825]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\simpletag\ShuffleSimpleTag.java
+[2019-04-17 23:35:36.826]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\DrawboardEndpoint$1.class
+[2019-04-17 23:35:36.828]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\DrawboardEndpoint$3.class
+[2019-04-17 23:35:36.830]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\DrawboardEndpoint$2.class
+[2019-04-17 23:35:36.832]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\simpletag\RepeatSimpleTag.java
+[2019-04-17 23:35:36.834]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\simpletag\TileSimpleTag.class
+[2019-04-17 23:35:36.837]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\DrawboardEndpoint.class
+[2019-04-17 23:35:36.844]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\simpletag\TileSimpleTag.java
+[2019-04-17 23:35:36.846]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\echo\EchoAsyncAnnotation$1.class
+[2019-04-17 23:35:36.847]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\Room$MessageType.class
+[2019-04-17 23:35:36.848]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\DrawboardEndpoint.java
+[2019-04-17 23:35:36.850]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\compressionFilters\CompressionFilter.class
+[2019-04-17 23:35:36.851]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\echo\EchoStreamAnnotation.class
+[2019-04-17 23:35:36.853]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\compressionFilters\CompressionFilter.java
+[2019-04-17 23:35:36.855]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\echo\EchoAsyncAnnotation.class
+[2019-04-17 23:35:36.857]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\echo\EchoStreamAnnotation.java
+[2019-04-17 23:35:36.859]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\echo\EchoAsyncAnnotation.java
+[2019-04-17 23:35:36.860]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\snake\SnakeAnnotation.class
+[2019-04-17 23:35:36.862]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\Room$Player.class
+[2019-04-17 23:35:36.863]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\DrawMessage.class
+[2019-04-17 23:35:36.865]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async\Stockticker$TickListener.class
+[2019-04-17 23:35:36.867]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\chat\ChatServlet$MessageSender.class
+[2019-04-17 23:35:36.869]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\snake\SnakeAnnotation.java
+[2019-04-17 23:35:36.871]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\DrawMessage.java
+[2019-04-17 23:35:36.872]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\lib\taglibs-standard-spec-1.2.5.jar.pack.gz
+[2019-04-17 23:35:36.873]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\lib\taglibs-standard-spec-1.2.5.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\lib\taglibs-standard-spec-1.2.5.jar, in directory: .
+[2019-04-17 23:35:37.008]:             [return]: 0
+[2019-04-17 23:35:37.008]:         ... command execution finished
+[2019-04-17 23:35:37.009]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\lib\taglibs-standard-spec-1.2.5.jar.pack.gz
+[2019-04-17 23:35:37.012]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\lib\taglibs-standard-impl-1.2.5.jar.pack.gz
+[2019-04-17 23:35:37.017]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\lib\taglibs-standard-impl-1.2.5.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\lib\taglibs-standard-impl-1.2.5.jar, in directory: .
+[2019-04-17 23:35:37.200]:             [return]: 0
+[2019-04-17 23:35:37.200]:         ... command execution finished
+[2019-04-17 23:35:37.200]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\lib\taglibs-standard-impl-1.2.5.jar.pack.gz
+[2019-04-17 23:35:37.203]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\chat\ChatAnnotation.class
+[2019-04-17 23:35:37.218]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\echo\EchoAnnotation.class
+[2019-04-17 23:35:37.225]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\echo\EchoEndpoint$1.class
+[2019-04-17 23:35:37.237]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspattribute\HelloWorldSimpleTag.java.html
+[2019-04-17 23:35:37.261]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\chat\ChatAnnotation.java
+[2019-04-17 23:35:37.269]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\snake\SnakeTimer$1.class
+[2019-04-17 23:35:37.276]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\echo\EchoAnnotation.java
+[2019-04-17 23:35:37.283]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\Client$1.class
+[2019-04-17 23:35:37.289]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\Room$1$1.class
+[2019-04-17 23:35:37.293]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\architecture\requestProcess\authentication-process.png
+[2019-04-17 23:35:37.301]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\echo\EchoEndpoint.class
+[2019-04-17 23:35:37.306]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\nonblocking\NumberWriter$1.class
+[2019-04-17 23:35:37.310]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\el\Functions.class
+[2019-04-17 23:35:37.315]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\snake\Location$1.class
+[2019-04-17 23:35:37.319]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\snake\SnakeTimer.class
+[2019-04-17 23:35:37.322]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\echo\EchoEndpoint.java
+[2019-04-17 23:35:37.327]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\Room$2.class
+[2019-04-17 23:35:37.329]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\Room$1.class
+[2019-04-17 23:35:37.331]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\Client.class
+[2019-04-17 23:35:37.334]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\simpletag\HelloWorldSimpleTag.java.html
+[2019-04-17 23:35:37.335]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspattribute\ShuffleSimpleTag.java.html
+[2019-04-17 23:35:37.337]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\nonblocking\ByteCounter$1.class
+[2019-04-17 23:35:37.339]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\el\Functions.java
+[2019-04-17 23:35:37.340]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\listeners\ContextListener.class
+[2019-04-17 23:35:37.342]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\listeners\SessionListener.class
+[2019-04-17 23:35:37.344]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\validators\DebugValidator.class
+[2019-04-17 23:35:37.345]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\snake\SnakeTimer.java
+[2019-04-17 23:35:37.347]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\snake\Direction.class
+[2019-04-17 23:35:37.347]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\Client.java
+[2019-04-17 23:35:37.349]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\examples\FooTagExtraInfo.class
+[2019-04-17 23:35:37.351]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\nonblocking\NumberWriter.class
+[2019-04-17 23:35:37.352]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\ValuesBean.class
+[2019-04-17 23:35:37.354]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\listeners\ContextListener.java
+[2019-04-17 23:35:37.355]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\listeners\SessionListener.java
+[2019-04-17 23:35:37.356]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\validators\DebugValidator.java
+[2019-04-17 23:35:37.359]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\snake\Location.class
+[2019-04-17 23:35:37.360]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\snake\Direction.java
+[2019-04-17 23:35:37.361]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\Room.class
+[2019-04-17 23:35:37.362]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\wsmessages
+[2019-04-17 23:35:37.363]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\ExamplesConfig.class
+[2019-04-17 23:35:37.364]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\simpletag\FindBookSimpleTag.java.html
+[2019-04-17 23:35:37.366]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\examples\ExampleTagBase.class
+[2019-04-17 23:35:37.367]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\examples\FooTagExtraInfo.java
+[2019-04-17 23:35:37.368]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\nonblocking\NumberWriter.java
+[2019-04-17 23:35:37.369]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\nonblocking\ByteCounter.class
+[2019-04-17 23:35:37.372]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async\Stockticker$Stock.class
+[2019-04-17 23:35:37.373]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async\AsyncStockServlet.class
+[2019-04-17 23:35:37.375]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\ValuesBean.java
+[2019-04-17 23:35:37.376]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\snake\Location.java
+[2019-04-17 23:35:37.377]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard\Room.java
+[2019-04-17 23:35:37.378]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\ExamplesConfig.java
+[2019-04-17 23:35:37.379]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspattribute\TileSimpleTag.java.html
+[2019-04-17 23:35:37.381]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\examples\ExampleTagBase.java
+[2019-04-17 23:35:37.382]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\nonblocking\ByteCounter.java
+[2019-04-17 23:35:37.384]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async\AsyncStockServlet.java
+[2019-04-17 23:35:37.386]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\BookBean.class
+[2019-04-17 23:35:37.387]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\simpletag\RepeatSimpleTag.java.html
+[2019-04-17 23:35:37.388]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\filters\ExampleFilter.class
+[2019-04-17 23:35:37.389]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\BookBean.java
+[2019-04-17 23:35:37.391]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\FooBean.class
+[2019-04-17 23:35:37.392]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\snake\Snake.class
+[2019-04-17 23:35:37.393]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\echo\servers.json
+[2019-04-17 23:35:37.394]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspattribute\jspattribute.jsp.html
+[2019-04-17 23:35:37.396]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\architecture\requestProcess\request-process.png
+[2019-04-17 23:35:37.399]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\filters\ExampleFilter.java
+[2019-04-17 23:35:37.399]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\RequestHeaderExample.class
+[2019-04-17 23:35:37.401]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\LocalStrings_es.properties
+[2019-04-17 23:35:37.402]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\FooBean.java
+[2019-04-17 23:35:37.403]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\colors\ColorGameBean.class
+[2019-04-17 23:35:37.405]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\LocalStrings_fr.properties
+[2019-04-17 23:35:37.406]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\LocalStrings_pt.properties
+[2019-04-17 23:35:37.407]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\snake\Snake.java
+[2019-04-17 23:35:37.408]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\LocalStrings_en.properties
+[2019-04-17 23:35:37.409]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\tagfiles\displayProducts.tag.html
+[2019-04-17 23:35:37.411]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\examples\ShowSource.class
+[2019-04-17 23:35:37.412]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\num\NumberGuessBean.class
+[2019-04-17 23:35:37.414]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\colors\ColorGameBean.java
+[2019-04-17 23:35:37.415]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\RequestHeaderExample.java
+[2019-04-17 23:35:37.417]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\RequestParamExample.class
+[2019-04-17 23:35:37.418]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\misc\EchoAttributesTag.java.html
+[2019-04-17 23:35:37.420]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\examples\ValuesTag.class
+[2019-04-17 23:35:37.421]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\examples\ShowSource.java
+[2019-04-17 23:35:37.423]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\sessions\DummyCart.class
+[2019-04-17 23:35:37.424]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\RequestInfoExample.class
+[2019-04-17 23:35:37.425]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\num\NumberGuessBean.java
+[2019-04-17 23:35:37.426]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\checkbox\CheckTest.class
+[2019-04-17 23:35:37.428]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\RequestParamExample.java
+[2019-04-17 23:35:37.430]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\examples\ValuesTag.java
+[2019-04-17 23:35:37.431]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\dates\JspCalendar.class
+[2019-04-17 23:35:37.433]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\util\CookieFilter.class
+[2019-04-17 23:35:37.434]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\sessions\DummyCart.java
+[2019-04-17 23:35:37.435]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async\Stockticker.class
+[2019-04-17 23:35:37.436]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\LocalStrings.properties
+[2019-04-17 23:35:37.438]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\simpletag
+[2019-04-17 23:35:37.438]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\HelloWorldExample.class
+[2019-04-17 23:35:37.440]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\checkbox\CheckTest.java
+[2019-04-17 23:35:37.442]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\RequestInfoExample.java
+[2019-04-17 23:35:37.443]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspattribute\FooBean.java.html
+[2019-04-17 23:35:37.444]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspattribute\jspattribute.html
+[2019-04-17 23:35:37.445]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\dates\JspCalendar.java
+[2019-04-17 23:35:37.446]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\HelloWorldExample.java
+[2019-04-17 23:35:37.447]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\util\CookieFilter.java
+[2019-04-17 23:35:37.447]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async\Stockticker.java
+[2019-04-17 23:35:37.449]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\chat\ChatServlet.class
+[2019-04-17 23:35:37.450]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\simpletag\Functions.java.html
+[2019-04-17 23:35:37.451]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\basic-comparisons.jsp.html
+[2019-04-17 23:35:37.453]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspattribute\jspattribute.jsp
+[2019-04-17 23:35:37.454]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspattribute\shuffle.jsp.html
+[2019-04-17 23:35:37.456]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\examples\LogTag.class
+[2019-04-17 23:35:37.457]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\examples\FooTag.class
+[2019-04-17 23:35:37.458]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\util\HTMLFilter.class
+[2019-04-17 23:35:37.460]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\chat\ChatServlet.java
+[2019-04-17 23:35:37.462]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\cal\JspCalendar.class
+[2019-04-17 23:35:37.463]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\nonblocking\bytecounter.html
+[2019-04-17 23:35:37.465]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\simpletag\BookBean.java.html
+[2019-04-17 23:35:37.466]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\basic-arithmetic.jsp.html
+[2019-04-17 23:35:37.469]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\implicit-objects.jsp.html
+[2019-04-17 23:35:37.471]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\tagfiles\helloWorld.tag.html
+[2019-04-17 23:35:37.472]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\security\protected\login.jsp.html
+[2019-04-17 23:35:37.475]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\security\protected\error.jsp.html
+[2019-04-17 23:35:37.476]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\security\protected\index.jsp.html
+[2019-04-17 23:35:37.478]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\examples\FooTag.java
+[2019-04-17 23:35:37.479]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\examples\LogTag.java
+[2019-04-17 23:35:37.481]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\util\HTMLFilter.java
+[2019-04-17 23:35:37.482]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async\Async0$1.class
+[2019-04-17 23:35:37.484]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async\Async2$1.class
+[2019-04-17 23:35:37.485]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async\Async1$1.class
+[2019-04-17 23:35:37.486]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\SessionExample.class
+[2019-04-17 23:35:37.487]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\cal\JspCalendar.java
+[2019-04-17 23:35:37.489]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\jsp2\jsp2-example-taglib.tld
+[2019-04-17 23:35:37.490]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsptoserv\ServletToJsp.java.html
+[2019-04-17 23:35:37.491]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\CookieExample.class
+[2019-04-17 23:35:37.493]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\SessionExample.java
+[2019-04-17 23:35:37.494]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\drawboard
+[2019-04-17 23:35:37.495]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\cal\TableBean.class
+[2019-04-17 23:35:37.495]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsptoserv\jsptoservlet.jsp.html
+[2019-04-17 23:35:37.496]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\misc\dynamicattrs.jsp.html
+[2019-04-17 23:35:37.499]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\tagfiles\products.jsp.html
+[2019-04-17 23:35:37.501]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async\Async1.class
+[2019-04-17 23:35:37.502]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async\Async2.class
+[2019-04-17 23:35:37.504]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async\Async0.class
+[2019-04-17 23:35:37.506]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async\Async3.class
+[2019-04-17 23:35:37.507]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\ServletToJsp.class
+[2019-04-17 23:35:37.508]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\CookieExample.java
+[2019-04-17 23:35:37.510]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\cal\TableBean.java
+[2019-04-17 23:35:37.511]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\compressionFilters
+[2019-04-17 23:35:37.512]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\simpletag\repeat.jsp.html
+[2019-04-17 23:35:37.513]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\basic-comparisons.html
+[2019-04-17 23:35:37.515]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspattribute\shuffle.html
+[2019-04-17 23:35:37.516]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspx\textRotate.jspx.html
+[2019-04-17 23:35:37.518]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\architecture\startup\serverStartup.pdf
+[2019-04-17 23:35:37.520]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\architecture\startup\serverStartup.txt
+[2019-04-17 23:35:37.521]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\sample\src\mypackage\Hello.java
+[2019-04-17 23:35:37.525]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\ServletToJsp.java
+[2019-04-17 23:35:37.525]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async\Async1.java
+[2019-04-17 23:35:37.526]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async\Async0.java
+[2019-04-17 23:35:37.526]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async\Async2.java
+[2019-04-17 23:35:37.527]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async\Async3.java
+[2019-04-17 23:35:37.529]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\error\Smart.class
+[2019-04-17 23:35:37.532]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\cal\Entries.class
+[2019-04-17 23:35:37.533]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\simpletag\hello.jsp.html
+[2019-04-17 23:35:37.535]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\basic-comparisons.jsp
+[2019-04-17 23:35:37.535]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\basic-arithmetic.html
+[2019-04-17 23:35:37.536]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\implicit-objects.html
+[2019-04-17 23:35:37.538]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspattribute\shuffle.jsp
+[2019-04-17 23:35:37.539]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\checkbox\checkresult.jsp.html
+[2019-04-17 23:35:37.541]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples\el
+[2019-04-17 23:35:37.541]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\error\Smart.java
+[2019-04-17 23:35:37.543]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\cal\Entries.java
+[2019-04-17 23:35:37.544]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\tags\displayProducts.tag
+[2019-04-17 23:35:37.545]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\simpletag\book.jsp.html
+[2019-04-17 23:35:37.547]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\implicit-objects.jsp
+[2019-04-17 23:35:37.548]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\basic-arithmetic.jsp
+[2019-04-17 23:35:37.549]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\ValuesBean.java.html
+[2019-04-17 23:35:37.550]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\tagfiles\panel.jsp.html
+[2019-04-17 23:35:37.551]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\tagfiles\panel.tag.html
+[2019-04-17 23:35:37.553]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\tagfiles\hello.jsp.html
+[2019-04-17 23:35:37.554]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\security\protected\error.jsp
+[2019-04-17 23:35:37.555]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\security\protected\index.jsp
+[2019-04-17 23:35:37.557]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\security\protected\login.jsp
+[2019-04-17 23:35:37.559]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\snake
+[2019-04-17 23:35:37.559]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\cal\Entry.class
+[2019-04-17 23:35:37.560]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\ValuesTag.java.html
+[2019-04-17 23:35:37.562]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\Functions.java.html
+[2019-04-17 23:35:37.563]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\misc\prelude.jspf.html
+[2019-04-17 23:35:37.599]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\misc\dynamicattrs.html
+[2019-04-17 23:35:37.601]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\tagfiles\products.html
+[2019-04-17 23:35:37.603]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\WEB-INF\jsp\connectorCiphers.jsp
+[2019-04-17 23:35:37.606]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\jndi-datasource-examples-howto.html
+[2019-04-17 23:35:37.608]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\sample\web\images\tomcat.gif
+[2019-04-17 23:35:37.612]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\fonts\OpenSans600italic.woff
+[2019-04-17 23:35:37.615]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\fonts\OpenSans400italic.woff
+[2019-04-17 23:35:37.618]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\fonts\OpenSans700italic.woff
+[2019-04-17 23:35:37.620]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\chat
+[2019-04-17 23:35:37.620]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket\echo
+[2019-04-17 23:35:37.620]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\cal\Entry.java
+[2019-04-17 23:35:37.622]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\jsp\applet\Clock2.java
+[2019-04-17 23:35:37.625]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\jsp\example-taglib.tld
+[2019-04-17 23:35:37.626]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\plugin\applet\Clock2.class
+[2019-04-17 23:35:37.629]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsptoserv\jsptoservlet.jsp
+[2019-04-17 23:35:37.631]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\simpletag\repeat.html
+[2019-04-17 23:35:37.634]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\composite.jsp.html
+[2019-04-17 23:35:37.636]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\functions.jsp.html
+[2019-04-17 23:35:37.638]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\misc\dynamicattrs.jsp
+[2019-04-17 23:35:37.640]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\tagfiles\products.jsp
+[2019-04-17 23:35:37.641]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\tagplugin\foreach.jsp.html
+[2019-04-17 23:35:37.644]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2\examples
+[2019-04-17 23:35:37.646]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\plugin\applet\Clock2.java
+[2019-04-17 23:35:37.648]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\simpletag\hello.html
+[2019-04-17 23:35:37.649]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\simpletag\repeat.jsp
+[2019-04-17 23:35:37.651]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspx\textRotate.html
+[2019-04-17 23:35:37.653]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspx\textRotate.jspx
+[2019-04-17 23:35:37.654]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspx\svgexample.html
+[2019-04-17 23:35:37.655]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspx\basic.jspx.html
+[2019-04-17 23:35:37.658]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\misc\config.jsp.html
+[2019-04-17 23:35:37.660]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\colors\ColorGameBean.html
+[2019-04-17 23:35:37.667]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\tagplugin\choose.jsp.html
+[2019-04-17 23:35:37.669]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\cal\JspCalendar.java.html
+[2019-04-17 23:35:37.671]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\sample\web\WEB-INF\web.xml
+[2019-04-17 23:35:37.674]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\jsp\debug-taglib.tld
+[2019-04-17 23:35:37.676]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\chat\login.jsp.html
+[2019-04-17 23:35:37.678]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\chat\index.jsp.html
+[2019-04-17 23:35:37.683]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\forward\forward.jsp.html
+[2019-04-17 23:35:37.684]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsptoserv\hello.jsp.html
+[2019-04-17 23:35:37.686]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\simpletag\book.html
+[2019-04-17 23:35:37.688]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\simpletag\hello.jsp
+[2019-04-17 23:35:37.690]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspx\textRotate.jpg
+[2019-04-17 23:35:37.693]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\misc\coda.jspf.html
+[2019-04-17 23:35:37.695]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\tagfiles\panel.html
+[2019-04-17 23:35:37.697]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\tagfiles\hello.html
+[2019-04-17 23:35:37.699]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\include\include.jsp.html
+[2019-04-17 23:35:37.702]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\checkbox\checkresult.jsp
+[2019-04-17 23:35:37.704]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\WEB-INF\jsp\sessionDetail.jsp
+[2019-04-17 23:35:37.706]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\architecture\requestProcess.html
+[2019-04-17 23:35:37.707]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\automatic-deployment.html
+[2019-04-17 23:35:37.710]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\nonblocking
+[2019-04-17 23:35:37.711]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\tags\helloWorld.tag
+[2019-04-17 23:35:37.712]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\chat\post.jsp.html
+[2019-04-17 23:35:37.714]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\images\execute.gif
+[2019-04-17 23:35:37.716]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\sessions\DummyCart.html
+[2019-04-17 23:35:37.718]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\sessions\carts.jsp.html
+[2019-04-17 23:35:37.721]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\simpletag\book.jsp
+[2019-04-17 23:35:37.722]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\tagfiles\hello.jsp
+[2019-04-17 23:35:37.724]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\tagfiles\panel.jsp
+[2019-04-17 23:35:37.729]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\checkbox\CheckTest.html
+[2019-04-17 23:35:37.730]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\error\errorpge.jsp.html
+[2019-04-17 23:35:37.733]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\cal\TableBean.java.html
+[2019-04-17 23:35:37.735]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\WEB-INF\jsp\sessionsList.jsp
+[2019-04-17 23:35:37.737]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\funcspecs\fs-admin-objects.html
+[2019-04-17 23:35:37.740]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\cluster-interceptor.html
+[2019-04-17 23:35:37.742]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\validators
+[2019-04-17 23:35:37.742]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\images\return.gif
+[2019-04-17 23:35:37.744]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\simpletag\foo.jsp.html
+[2019-04-17 23:35:37.746]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\plugin\plugin.jsp.html
+[2019-04-17 23:35:37.748]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\functions.html
+[2019-04-17 23:35:37.750]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\composite.html
+[2019-04-17 23:35:37.752]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\misc\prelude.jspf
+[2019-04-17 23:35:37.754]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\tagplugin\foreach.html
+[2019-04-17 23:35:37.756]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\funcspecs\fs-memory-realm.html
+[2019-04-17 23:35:37.758]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\sessionidgenerator.html
+[2019-04-17 23:35:37.761]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\cluster-membership.html
+[2019-04-17 23:35:37.762]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\listeners
+[2019-04-17 23:35:37.764]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\websocket
+[2019-04-17 23:35:37.765]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\websocket\drawboard.xhtml
+[2019-04-17 23:35:37.768]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\async\async3.jsp.html
+[2019-04-17 23:35:37.771]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\async\async1.jsp.html
+[2019-04-17 23:35:37.773]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\composite.jsp
+[2019-04-17 23:35:37.777]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el\functions.jsp
+[2019-04-17 23:35:37.778]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\misc\config.html
+[2019-04-17 23:35:37.779]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\num\numguess.jsp.html
+[2019-04-17 23:35:37.782]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\colors\colrs.jsp.html
+[2019-04-17 23:35:37.783]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\checkbox\cresult.html
+[2019-04-17 23:35:37.785]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\tagplugin\if.jsp.html
+[2019-04-17 23:35:37.787]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\tagplugin\foreach.jsp
+[2019-04-17 23:35:37.788]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\tagplugin\choose.html
+[2019-04-17 23:35:37.790]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\cal\Entries.java.html
+[2019-04-17 23:35:37.791]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\funcspecs\fs-admin-opers.html
+[2019-04-17 23:35:37.793]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\sample\docs\README.txt
+[2019-04-17 23:35:37.794]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\credentialhandler.html
+[2019-04-17 23:35:37.796]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\fonts\OpenSans600.woff
+[2019-04-17 23:35:37.797]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\fonts\OpenSans400.woff
+[2019-04-17 23:35:37.799]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\fonts\OpenSans700.woff
+[2019-04-17 23:35:37.800]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\examples
+[2019-04-17 23:35:37.800]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\sessions
+[2019-04-17 23:35:37.801]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\checkbox
+[2019-04-17 23:35:37.801]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\reqheaders.html
+[2019-04-17 23:35:37.802]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\helloworld.html
+[2019-04-17 23:35:37.804]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\images\code.gif
+[2019-04-17 23:35:37.805]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\forward\one.jsp.html
+[2019-04-17 23:35:37.813]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\async\index.jsp.html
+[2019-04-17 23:35:37.814]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspx\basic.html
+[2019-04-17 23:35:37.816]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspx\basic.jspx
+[2019-04-17 23:35:37.818]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\misc\config.jsp
+[2019-04-17 23:35:37.819]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\include\foo.jsp.html
+[2019-04-17 23:35:37.820]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\tagplugin\choose.jsp
+[2019-04-17 23:35:37.821]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\tagplugin\howto.html
+[2019-04-17 23:35:37.822]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\tagplugin\notes.html
+[2019-04-17 23:35:37.823]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\META-INF\context.xml
+[2019-04-17 23:35:37.825]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\mbeans-descriptor-howto.html
+[2019-04-17 23:35:37.827]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\funcspecs\fs-admin-apps.html
+[2019-04-17 23:35:37.828]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\funcspecs\fs-jdbc-realm.html
+[2019-04-17 23:35:37.830]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\funcspecs\fs-jndi-realm.html
+[2019-04-17 23:35:37.831]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\sample\web\index.html
+[2019-04-17 23:35:37.833]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\cluster-listener.html
+[2019-04-17 23:35:37.834]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\cluster-deployer.html
+[2019-04-17 23:35:37.836]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\cluster-receiver.html
+[2019-04-17 23:35:37.837]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\cookie-processor.html
+[2019-04-17 23:35:37.837]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\filters
+[2019-04-17 23:35:37.838]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\chat\index.jsp
+[2019-04-17 23:35:37.839]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\chat\login.jsp
+[2019-04-17 23:35:37.840]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\reqparams.html
+[2019-04-17 23:35:37.841]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\dates\date.jsp.html
+[2019-04-17 23:35:37.843]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\sessions\carts.html
+[2019-04-17 23:35:37.843]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\forward\forward.jsp
+[2019-04-17 23:35:37.846]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsptoserv\hello.jsp
+[2019-04-17 23:35:37.848]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\misc\coda.jspf
+[2019-04-17 23:35:37.849]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\include\include.jsp
+[2019-04-17 23:35:37.851]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\checkbox\check.html
+[2019-04-17 23:35:37.852]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\cal\Entry.java.html
+[2019-04-17 23:35:37.853]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\WEB-INF\jsp\401.jsp
+[2019-04-17 23:35:37.856]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\WEB-INF\jsp\404.jsp
+[2019-04-17 23:35:37.857]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\WEB-INF\jsp\403.jsp
+[2019-04-17 23:35:37.857]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\images\asf-logo.gif
+[2019-04-17 23:35:37.859]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\architecture\requestProcess
+[2019-04-17 23:35:37.859]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\security-manager-howto.html
+[2019-04-17 23:35:37.860]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\sample\web\hello.jsp
+[2019-04-17 23:35:37.861]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\sample\src\mypackage
+[2019-04-17 23:35:37.861]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\cluster-manager.html
+[2019-04-17 23:35:37.863]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\cluster-channel.html
+[2019-04-17 23:35:37.865]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\jar-scan-filter.html
+[2019-04-17 23:35:37.867]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\globalresources.html
+[2019-04-17 23:35:37.868]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\colors
+[2019-04-17 23:35:37.868]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\tags\panel.tag
+[2019-04-17 23:35:37.869]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\chat\post.jsp
+[2019-04-17 23:35:37.871]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\sessions.html
+[2019-04-17 23:35:37.872]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\simpletag\foo.html
+[2019-04-17 23:35:37.874]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\sessions\carts.jsp
+[2019-04-17 23:35:37.875]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\plugin\plugin.html
+[2019-04-17 23:35:37.877]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsptoserv\jts.html
+[2019-04-17 23:35:37.878]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\snp\snoop.jsp.html
+[2019-04-17 23:35:37.880]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\colors\colors.html
+[2019-04-17 23:35:37.881]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\error\err.jsp.html
+[2019-04-17 23:35:37.883]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\error\errorpge.jsp
+[2019-04-17 23:35:37.885]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\security\protected
+[2019-04-17 23:35:37.885]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\images\execute.gif
+[2019-04-17 23:35:37.886]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\funcspecs\mbean-names.html
+[2019-04-17 23:35:37.887]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\architecture\overview.html
+[2019-04-17 23:35:37.889]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\windows-service-howto.html
+[2019-04-17 23:35:37.890]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\cluster-sender.html
+[2019-04-17 23:35:37.892]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\docs-stylesheet.css
+[2019-04-17 23:35:37.893]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\virtual-hosting-howto.html
+[2019-04-17 23:35:37.895]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\dates
+[2019-04-17 23:35:37.896]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\async
+[2019-04-17 23:35:37.896]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\error
+[2019-04-17 23:35:37.897]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\cookies.html
+[2019-04-17 23:35:37.898]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\reqinfo.html
+[2019-04-17 23:35:37.899]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\websocket\index.xhtml
+[2019-04-17 23:35:37.901]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\websocket\snake.xhtml
+[2019-04-17 23:35:37.902]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\simpletag\foo.jsp
+[2019-04-17 23:35:37.903]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\sessions\crt.html
+[2019-04-17 23:35:37.904]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\plugin\plugin.jsp
+[2019-04-17 23:35:37.905]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspattribute
+[2019-04-17 23:35:37.905]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\num\numguess.html
+[2019-04-17 23:35:37.908]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\tagplugin\if.html
+[2019-04-17 23:35:37.911]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\images\return.gif
+[2019-04-17 23:35:37.912]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\cal\cal2.jsp.html
+[2019-04-17 23:35:37.914]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\cal\cal1.jsp.html
+[2019-04-17 23:35:37.915]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\cal\calendar.html
+[2019-04-17 23:35:37.916]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\images\design.gif
+[2019-04-17 23:35:37.917]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\images\tomcat.gif
+[2019-04-17 23:35:37.919]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\images\update.gif
+[2019-04-17 23:35:37.920]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\funcspecs\fs-default.html
+[2019-04-17 23:35:37.921]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\jndi-resources-howto.html
+[2019-04-17 23:35:37.924]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\architecture\startup.html
+[2019-04-17 23:35:37.925]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\sample\web\WEB-INF
+[2019-04-17 23:35:37.926]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\cluster-valve.html
+[2019-04-17 23:35:37.927]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\cors-flowchart.png
+[2019-04-17 23:35:37.929]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\util
+[2019-04-17 23:35:37.929]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\chat
+[2019-04-17 23:35:37.930]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\jsp2
+[2019-04-17 23:35:37.930]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\nonblocking
+[2019-04-17 23:35:37.930]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\websocket\chat.xhtml
+[2019-04-17 23:35:37.932]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\websocket\echo.xhtml
+[2019-04-17 23:35:37.933]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\forward\two.html
+[2019-04-17 23:35:37.934]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\forward\fwd.html
+[2019-04-17 23:35:37.935]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\async\async1.jsp
+[2019-04-17 23:35:37.936]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\async\async3.jsp
+[2019-04-17 23:35:37.937]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\num\numguess.jsp
+[2019-04-17 23:35:37.939]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\colors\colrs.jsp
+[2019-04-17 23:35:37.940]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\include\inc.html
+[2019-04-17 23:35:37.941]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\include\foo.html
+[2019-04-17 23:35:37.942]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\error\error.html
+[2019-04-17 23:35:37.944]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\tagplugin\if.jsp
+[2019-04-17 23:35:37.944]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\xml\xml.jsp.html
+[2019-04-17 23:35:37.946]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\installation.html
+[2019-04-17 23:35:37.947]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\introduction.html
+[2019-04-17 23:35:37.949]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\sample\sample.war
+[2019-04-17 23:35:37.950]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\sample\index.html
+[2019-04-17 23:35:37.951]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\sample\web\images
+[2019-04-17 23:35:37.952]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\tribes\interceptors.html
+[2019-04-17 23:35:37.953]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\tribes\introduction.html
+[2019-04-17 23:35:37.955]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina-storeconfig.jar.pack.gz
+[2019-04-17 23:35:37.956]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina-storeconfig.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina-storeconfig.jar, in directory: .
+[2019-04-17 23:35:38.070]:             [return]: 0
+[2019-04-17 23:35:38.070]:         ... command execution finished
+[2019-04-17 23:35:38.070]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina-storeconfig.jar.pack.gz
+[2019-04-17 23:35:38.071]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\num
+[2019-04-17 23:35:38.071]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes\cal
+[2019-04-17 23:35:38.072]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\index.html
+[2019-04-17 23:35:38.073]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\dates\date.html
+[2019-04-17 23:35:38.074]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\forward\one.jsp
+[2019-04-17 23:35:38.076]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\async\index.jsp
+[2019-04-17 23:35:38.077]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\colors\clr.html
+[2019-04-17 23:35:38.078]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\include\foo.jsp
+[2019-04-17 23:35:38.080]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\images\read.gif
+[2019-04-17 23:35:38.082]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\images\code.gif
+[2019-04-17 23:35:38.085]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\source.jsp.html
+[2019-04-17 23:35:38.086]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\META-INF\context.xml
+[2019-04-17 23:35:38.088]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\WEB-INF\web.xml
+[2019-04-17 23:35:38.090]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\images\code.gif
+[2019-04-17 23:35:38.092]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\images\docs.gif
+[2019-04-17 23:35:38.093]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\images\void.gif
+[2019-04-17 23:35:38.095]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\windows-auth-howto.html
+[2019-04-17 23:35:38.097]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\websocketapi\index.html
+[2019-04-17 23:35:38.100]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\class-loader-howto.html
+[2019-04-17 23:35:38.102]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\architecture\index.html
+[2019-04-17 23:35:38.104]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\sample\build.xml
+[2019-04-17 23:35:38.106]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\jar-scanner.html
+[2019-04-17 23:35:38.108]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\systemprops.html
+[2019-04-17 23:35:38.110]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\html-manager-howto.html
+[2019-04-17 23:35:38.112]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\jsp\applet
+[2019-04-17 23:35:38.113]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\dates\date.jsp
+[2019-04-17 23:35:38.115]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\snp\snoop.html
+[2019-04-17 23:35:38.117]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\simpletag
+[2019-04-17 23:35:38.118]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\cal\login.html
+[2019-04-17 23:35:38.120]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\WEB-INF\jsp\401.jsp
+[2019-04-17 23:35:38.122]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\WEB-INF\jsp\404.jsp
+[2019-04-17 23:35:38.125]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\WEB-INF\jsp\403.jsp
+[2019-04-17 23:35:38.126]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\images\asf-logo.gif
+[2019-04-17 23:35:38.129]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\images\fix.gif
+[2019-04-17 23:35:38.132]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\images\add.gif
+[2019-04-17 23:35:38.134]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\deployment.html
+[2019-04-17 23:35:38.136]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\asf-feather.png
+[2019-04-17 23:35:38.137]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\fonts\fonts.css
+[2019-04-17 23:35:38.139]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\tribes\developers.html
+[2019-04-17 23:35:38.141]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\tribes\membership.html
+[2019-04-17 23:35:38.143]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\plugin\applet
+[2019-04-17 23:35:38.144]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\snp\snoop.jsp
+[2019-04-17 23:35:38.146]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\tagfiles
+[2019-04-17 23:35:38.146]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\error\er.html
+[2019-04-17 23:35:38.148]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\error\err.jsp
+[2019-04-17 23:35:38.151]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\servletapi\index.html
+[2019-04-17 23:35:38.153]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\web-socket-howto.html
+[2019-04-17 23:35:38.155]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\processes.html
+[2019-04-17 23:35:38.157]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\resources.html
+[2019-04-17 23:35:38.160]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\listeners.html
+[2019-04-17 23:35:38.162]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\tribes\transport.html
+[2019-04-17 23:35:38.165]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\cal\cal1.jsp
+[2019-04-17 23:35:38.167]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\cal\cal2.jsp
+[2019-04-17 23:35:38.169]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\xml\xml.html
+[2019-04-17 23:35:38.171]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\images\design.gif
+[2019-04-17 23:35:38.173]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\images\tomcat.gif
+[2019-04-17 23:35:38.175]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\images\update.gif
+[2019-04-17 23:35:38.176]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\funcspecs\index.html
+[2019-04-17 23:35:38.179]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\default-servlet.html
+[2019-04-17 23:35:38.181]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\architecture\startup
+[2019-04-17 23:35:38.182]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\build.xml.txt
+[2019-04-17 23:35:38.184]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\executor.html
+[2019-04-17 23:35:38.187]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-websocket.jar.pack.gz
+[2019-04-17 23:35:38.189]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-websocket.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-websocket.jar, in directory: .
+[2019-04-17 23:35:38.350]:             [return]: 0
+[2019-04-17 23:35:38.350]:         ... command execution finished
+[2019-04-17 23:35:38.350]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-websocket.jar.pack.gz
+[2019-04-17 23:35:38.351]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-util-scan.jar.pack.gz
+[2019-04-17 23:35:38.352]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-util-scan.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-util-scan.jar, in directory: .
+[2019-04-17 23:35:38.458]:             [return]: 0
+[2019-04-17 23:35:38.458]:         ... command execution finished
+[2019-04-17 23:35:38.458]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-util-scan.jar.pack.gz
+[2019-04-17 23:35:38.459]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\classes
+[2019-04-17 23:35:38.459]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\web.xml
+[2019-04-17 23:35:38.460]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\images
+[2019-04-17 23:35:38.461]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\xml\xml.jsp
+[2019-04-17 23:35:38.462]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\manager.xml
+[2019-04-17 23:35:38.463]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\WEB-INF\jsp
+[2019-04-17 23:35:38.463]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\security-howto.html
+[2019-04-17 23:35:38.468]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\deployer-howto.html
+[2019-04-17 23:35:38.469]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\balancer-howto.html
+[2019-04-17 23:35:38.470]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\cluster.html
+[2019-04-17 23:35:38.472]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\service.html
+[2019-04-17 23:35:38.474]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\manager.html
+[2019-04-17 23:35:38.475]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\context.html
+[2019-04-17 23:35:38.477]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\asf-logo.gif
+[2019-04-17 23:35:38.478]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\commons-daemon-native.tar.gz
+[2019-04-17 23:35:38.480]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\annotations-api.jar.pack.gz
+[2019-04-17 23:35:38.481]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\annotations-api.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\annotations-api.jar, in directory: .
+[2019-04-17 23:35:38.554]:             [return]: 0
+[2019-04-17 23:35:38.554]:         ... command execution finished
+[2019-04-17 23:35:38.554]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\annotations-api.jar.pack.gz
+[2019-04-17 23:35:38.554]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina-tribes.jar.pack.gz
+[2019-04-17 23:35:38.555]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina-tribes.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina-tribes.jar, in directory: .
+[2019-04-17 23:35:38.666]:             [return]: 0
+[2019-04-17 23:35:38.667]:         ... command execution finished
+[2019-04-17 23:35:38.667]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina-tribes.jar.pack.gz
+[2019-04-17 23:35:38.670]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\index.html
+[2019-04-17 23:35:38.673]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\source.jsp
+[2019-04-17 23:35:38.682]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\WEB-INF\web.xml
+[2019-04-17 23:35:38.685]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\images\code.gif
+[2019-04-17 23:35:38.688]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\images\docs.gif
+[2019-04-17 23:35:38.692]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\images\void.gif
+[2019-04-17 23:35:38.696]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\web.xml.txt
+[2019-04-17 23:35:38.700]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\source.html
+[2019-04-17 23:35:38.705]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\sample\docs
+[2019-04-17 23:35:38.706]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\engine.html
+[2019-04-17 23:35:38.710]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\loader.html
+[2019-04-17 23:35:38.714]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\filter.html
+[2019-04-17 23:35:38.721]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\server.html
+[2019-04-17 23:35:38.725]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\printer.gif
+[2019-04-17 23:35:38.730]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\tribes\status.html
+[2019-04-17 23:35:38.734]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\cluster-howto.html
+[2019-04-17 23:35:38.737]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\manager-howto.html
+[2019-04-17 23:35:38.740]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-i18n-fr.jar.pack.gz
+[2019-04-17 23:35:38.742]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-i18n-fr.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-i18n-fr.jar, in directory: .
+[2019-04-17 23:35:38.917]:             [return]: 0
+[2019-04-17 23:35:38.917]:         ... command execution finished
+[2019-04-17 23:35:38.917]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-i18n-fr.jar.pack.gz
+[2019-04-17 23:35:38.920]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-i18n-es.jar.pack.gz
+[2019-04-17 23:35:38.924]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-i18n-es.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-i18n-es.jar, in directory: .
+[2019-04-17 23:35:39.175]:             [return]: 0
+[2019-04-17 23:35:39.175]:         ... command execution finished
+[2019-04-17 23:35:39.175]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-i18n-es.jar.pack.gz
+[2019-04-17 23:35:39.177]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-i18n-ja.jar.pack.gz
+[2019-04-17 23:35:39.179]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-i18n-ja.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-i18n-ja.jar, in directory: .
+[2019-04-17 23:35:39.414]:             [return]: 0
+[2019-04-17 23:35:39.414]:         ... command execution finished
+[2019-04-17 23:35:39.414]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-i18n-ja.jar.pack.gz
+[2019-04-17 23:35:39.417]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets\chat
+[2019-04-17 23:35:39.418]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\simpletag
+[2019-04-17 23:35:39.422]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsptoserv
+[2019-04-17 23:35:39.425]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\jspx
+[2019-04-17 23:35:39.426]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\misc
+[2019-04-17 23:35:39.426]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\tagplugin
+[2019-04-17 23:35:39.429]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\images\fix.gif
+[2019-04-17 23:35:39.436]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\images\add.gif
+[2019-04-17 23:35:39.442]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\asf-logo-wide.gif
+[2019-04-17 23:35:39.451]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\RELEASE-NOTES.txt
+[2019-04-17 23:35:39.455]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\index.jsp
+[2019-04-17 23:35:39.460]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\RELEASE-NOTES.txt
+[2019-04-17 23:35:39.465]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\introduction.html
+[2019-04-17 23:35:39.470]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\jspapi\index.html
+[2019-04-17 23:35:39.477]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\index.html
+[2019-04-17 23:35:39.481]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\sample\web
+[2019-04-17 23:35:39.483]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\sample\src
+[2019-04-17 23:35:39.483]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\realm.html
+[2019-04-17 23:35:39.487]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\index.html
+[2019-04-17 23:35:39.489]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\valve.html
+[2019-04-17 23:35:39.492]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\jasper-howto.html
+[2019-04-17 23:35:39.496]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\design.gif
+[2019-04-17 23:35:39.500]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\tomcat.gif
+[2019-04-17 23:35:39.502]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\tomcat.svg
+[2019-04-17 23:35:39.507]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\tomcat.png
+[2019-04-17 23:35:39.509]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\update.gif
+[2019-04-17 23:35:39.511]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\tribes\setup.html
+[2019-04-17 23:35:39.513]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\commons-daemon.jar.pack.gz
+[2019-04-17 23:35:39.515]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\commons-daemon.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\commons-daemon.jar, in directory: .
+[2019-04-17 23:35:39.624]:             [return]: 0
+[2019-04-17 23:35:39.626]:         ... command execution finished
+[2019-04-17 23:35:39.627]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\commons-daemon.jar.pack.gz
+[2019-04-17 23:35:39.628]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-coyote.jar.pack.gz
+[2019-04-17 23:35:39.630]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-coyote.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-coyote.jar, in directory: .
+[2019-04-17 23:35:39.994]:             [return]: 0
+[2019-04-17 23:35:39.994]:         ... command execution finished
+[2019-04-17 23:35:39.994]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-coyote.jar.pack.gz
+[2019-04-17 23:35:39.995]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\websocket-api.jar.pack.gz
+[2019-04-17 23:35:39.996]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\websocket-api.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\websocket-api.jar, in directory: .
+[2019-04-17 23:35:40.167]:             [return]: 0
+[2019-04-17 23:35:40.167]:         ... command execution finished
+[2019-04-17 23:35:40.168]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\websocket-api.jar.pack.gz
+[2019-04-17 23:35:40.171]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\jsp2
+[2019-04-17 23:35:40.172]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\tags
+[2019-04-17 23:35:40.173]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\sessions
+[2019-04-17 23:35:40.173]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\checkbox
+[2019-04-17 23:35:40.177]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\security
+[2019-04-17 23:35:40.178]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\tomcat-power.gif
+[2019-04-17 23:35:40.190]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\META-INF
+[2019-04-17 23:35:40.193]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\proxy-howto.html
+[2019-04-17 23:35:40.301]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\elapi\index.html
+[2019-04-17 23:35:40.304]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\realm-howto.html
+[2019-04-17 23:35:40.311]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\http.html
+[2019-04-17 23:35:40.315]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\host.html
+[2019-04-17 23:35:40.318]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina-ant.jar.pack.gz
+[2019-04-17 23:35:40.320]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina-ant.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina-ant.jar, in directory: .
+[2019-04-17 23:35:40.525]:             [return]: 0
+[2019-04-17 23:35:40.525]:         ... command execution finished
+[2019-04-17 23:35:40.526]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina-ant.jar.pack.gz
+[2019-04-17 23:35:40.529]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\lib
+[2019-04-17 23:35:40.530]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF\jsp
+[2019-04-17 23:35:40.532]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\forward
+[2019-04-17 23:35:40.533]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2\el
+[2019-04-17 23:35:40.535]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\include
+[2019-04-17 23:35:40.536]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\WEB-INF\web.xml
+[2019-04-17 23:35:40.550]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\bg-nav-item.png
+[2019-04-17 23:35:40.556]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\WEB-INF
+[2019-04-17 23:35:40.558]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\developers.html
+[2019-04-17 23:35:40.565]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\WEB-INF\web.xml
+[2019-04-17 23:35:40.578]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\maven-jars.html
+[2019-04-17 23:35:40.584]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\connectors.html
+[2019-04-17 23:35:40.600]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\monitoring.html
+[2019-04-17 23:35:40.611]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config\ajp.html
+[2019-04-17 23:35:40.619]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\code.gif
+[2019-04-17 23:35:40.626]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\docs.gif
+[2019-04-17 23:35:40.631]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\void.gif
+[2019-04-17 23:35:40.637]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\tribes\faq.html
+[2019-04-17 23:35:40.642]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-util.jar.pack.gz
+[2019-04-17 23:35:40.646]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-util.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-util.jar, in directory: .
+[2019-04-17 23:35:40.870]:             [return]: 0
+[2019-04-17 23:35:40.870]:         ... command execution finished
+[2019-04-17 23:35:40.870]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-util.jar.pack.gz
+[2019-04-17 23:35:40.873]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-dbcp.jar.pack.gz
+[2019-04-17 23:35:40.879]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-dbcp.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-dbcp.jar, in directory: .
+[2019-04-17 23:35:41.229]:             [return]: 0
+[2019-04-17 23:35:41.229]:         ... command execution finished
+[2019-04-17 23:35:41.230]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-dbcp.jar.pack.gz
+[2019-04-17 23:35:41.233]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-jdbc.jar.pack.gz
+[2019-04-17 23:35:41.239]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-jdbc.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-jdbc.jar, in directory: .
+[2019-04-17 23:35:41.596]:             [return]: 0
+[2019-04-17 23:35:41.596]:         ... command execution finished
+[2019-04-17 23:35:41.596]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-jdbc.jar.pack.gz
+[2019-04-17 23:35:41.598]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina-ha.jar.pack.gz
+[2019-04-17 23:35:41.600]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina-ha.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina-ha.jar, in directory: .
+[2019-04-17 23:35:41.834]:             [return]: 0
+[2019-04-17 23:35:41.834]:         ... command execution finished
+[2019-04-17 23:35:41.834]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina-ha.jar.pack.gz
+[2019-04-17 23:35:41.836]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\servlet-api.jar.pack.gz
+[2019-04-17 23:35:41.839]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\servlet-api.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\servlet-api.jar, in directory: .
+[2019-04-17 23:35:42.096]:             [return]: 0
+[2019-04-17 23:35:42.097]:         ... command execution finished
+[2019-04-17 23:35:42.097]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\servlet-api.jar.pack.gz
+[2019-04-17 23:35:42.098]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\index.html
+[2019-04-17 23:35:42.104]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\plugin
+[2019-04-17 23:35:42.104]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\colors
+[2019-04-17 23:35:42.105]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\images
+[2019-04-17 23:35:42.105]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\WEB-INF\jsp
+[2019-04-17 23:35:42.105]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager\images
+[2019-04-17 23:35:42.105]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\api\index.html
+[2019-04-17 23:35:42.106]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\ssl-howto.html
+[2019-04-17 23:35:42.107]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\ssi-howto.html
+[2019-04-17 23:35:42.109]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\cgi-howto.html
+[2019-04-17 23:35:42.112]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\changelog.html
+[2019-04-17 23:35:42.115]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\fix.gif
+[2019-04-17 23:35:42.116]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\add.gif
+[2019-04-17 23:35:42.118]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\jdbc-pool.html
+[2019-04-17 23:35:42.119]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\tomcat-juli.jar.pack.gz
+[2019-04-17 23:35:42.120]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\tomcat-juli.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\tomcat-juli.jar, in directory: .
+[2019-04-17 23:35:42.285]:             [return]: 0
+[2019-04-17 23:35:42.285]:         ... command execution finished
+[2019-04-17 23:35:42.286]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\tomcat-juli.jar.pack.gz
+[2019-04-17 23:35:42.290]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-jni.jar.pack.gz
+[2019-04-17 23:35:42.294]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-jni.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-jni.jar, in directory: .
+[2019-04-17 23:35:42.589]:             [return]: 0
+[2019-04-17 23:35:42.589]:         ... command execution finished
+[2019-04-17 23:35:42.590]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-jni.jar.pack.gz
+[2019-04-17 23:35:42.594]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-api.jar.pack.gz
+[2019-04-17 23:35:42.599]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-api.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-api.jar, in directory: .
+[2019-04-17 23:35:42.807]:             [return]: 0
+[2019-04-17 23:35:42.808]:         ... command execution finished
+[2019-04-17 23:35:42.808]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\tomcat-api.jar.pack.gz
+[2019-04-17 23:35:42.814]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\websocket
+[2019-04-17 23:35:42.817]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\dates
+[2019-04-17 23:35:42.819]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\async
+[2019-04-17 23:35:42.821]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\error
+[2019-04-17 23:35:42.823]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\status.xsd
+[2019-04-17 23:35:42.831]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\bg-middle.png
+[2019-04-17 23:35:42.838]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\bg-button.png
+[2019-04-17 23:35:42.849]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev\sample
+[2019-04-17 23:35:42.851]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\comments.html
+[2019-04-17 23:35:42.859]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\building.html
+[2019-04-17 23:35:42.868]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\ecj-4.4.2.jar.pack.gz
+[2019-04-17 23:35:42.887]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\ecj-4.4.2.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\ecj-4.4.2.jar, in directory: .
+[2019-04-17 23:35:43.500]:             [return]: 0
+[2019-04-17 23:35:43.500]:         ... command execution finished
+[2019-04-17 23:35:43.501]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\ecj-4.4.2.jar.pack.gz
+[2019-04-17 23:35:43.505]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\jasper-el.jar.pack.gz
+[2019-04-17 23:35:43.512]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\jasper-el.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\jasper-el.jar, in directory: .
+[2019-04-17 23:35:43.844]:             [return]: 0
+[2019-04-17 23:35:43.844]:         ... command execution finished
+[2019-04-17 23:35:43.844]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\jasper-el.jar.pack.gz
+[2019-04-17 23:35:43.847]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\servlets
+[2019-04-17 23:35:43.850]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\jsp2
+[2019-04-17 23:35:43.851]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\index.jsp
+[2019-04-17 23:35:43.854]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\xform.xsl
+[2019-04-17 23:35:43.866]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\asf-logo.png
+[2019-04-17 23:35:43.876]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\bg-upper.png
+[2019-04-17 23:35:43.885]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\BUILDING.txt
+[2019-04-17 23:35:43.892]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\logging.html
+[2019-04-17 23:35:43.898]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\websocketapi
+[2019-04-17 23:35:43.898]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\architecture
+[2019-04-17 23:35:43.900]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\rewrite.html
+[2019-04-17 23:35:43.906]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images\fonts
+[2019-04-17 23:35:43.908]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\bootstrap.jar.pack.gz
+[2019-04-17 23:35:43.910]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\bootstrap.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\bootstrap.jar, in directory: .
+[2019-04-17 23:35:44.022]:             [return]: 0
+[2019-04-17 23:35:44.022]:         ... command execution finished
+[2019-04-17 23:35:44.022]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\bootstrap.jar.pack.gz
+[2019-04-17 23:35:44.025]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina.jar.pack.gz
+[2019-04-17 23:35:44.028]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina.jar, in directory: .
+[2019-04-17 23:35:44.492]:             [return]: 0
+[2019-04-17 23:35:44.492]:         ... command execution finished
+[2019-04-17 23:35:44.493]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\catalina.jar.pack.gz
+[2019-04-17 23:35:44.497]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\WEB-INF
+[2019-04-17 23:35:44.499]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\snp
+[2019-04-17 23:35:44.500]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\num
+[2019-04-17 23:35:44.501]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\cal
+[2019-04-17 23:35:44.503]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp\xml
+[2019-04-17 23:35:44.504]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\META-INF
+[2019-04-17 23:35:44.505]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\favicon.ico
+[2019-04-17 23:35:44.514]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\extras.html
+[2019-04-17 23:35:44.525]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\RUNNING.txt
+[2019-04-17 23:35:44.531]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\conf\catalina.properties
+[2019-04-17 23:35:44.539]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\tomcat-native.tar.gz
+[2019-04-17 23:35:44.554]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\jsp-api.jar.pack.gz
+[2019-04-17 23:35:44.557]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\jsp-api.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\jsp-api.jar, in directory: .
+[2019-04-17 23:35:44.785]:             [return]: 0
+[2019-04-17 23:35:44.785]:         ... command execution finished
+[2019-04-17 23:35:44.785]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\jsp-api.jar.pack.gz
+[2019-04-17 23:35:44.787]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\WEB-INF
+[2019-04-17 23:35:44.787]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\bg-nav.png
+[2019-04-17 23:35:44.789]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\tomcat.gif
+[2019-04-17 23:35:44.791]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\tomcat.css
+[2019-04-17 23:35:44.794]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\tomcat.svg
+[2019-04-17 23:35:44.798]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\tomcat.png
+[2019-04-17 23:35:44.803]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\servletapi
+[2019-04-17 23:35:44.804]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\index.html
+[2019-04-17 23:35:44.806]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\setup.html
+[2019-04-17 23:35:44.810]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\conf\logging.properties
+[2019-04-17 23:35:44.813]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\jasper.jar.pack.gz
+[2019-04-17 23:35:44.815]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\jasper.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\jasper.jar, in directory: .
+[2019-04-17 23:35:45.129]:             [return]: 0
+[2019-04-17 23:35:45.129]:         ... command execution finished
+[2019-04-17 23:35:45.129]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\jasper.jar.pack.gz
+[2019-04-17 23:35:45.132]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\el-api.jar.pack.gz
+[2019-04-17 23:35:45.135]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\unpack200.exe C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\el-api.jar.pack.gz C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\el-api.jar, in directory: .
+[2019-04-17 23:35:45.350]:             [return]: 0
+[2019-04-17 23:35:45.350]:         ... command execution finished
+[2019-04-17 23:35:45.350]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib\el-api.jar.pack.gz
+[2019-04-17 23:35:45.352]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager\images
+[2019-04-17 23:35:45.352]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\index.jsp
+[2019-04-17 23:35:45.356]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\build.xml
+[2019-04-17 23:35:45.358]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\funcspecs
+[2019-04-17 23:35:45.360]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\catalina-tasks.xml
+[2019-04-17 23:35:45.363]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\aio.html
+[2019-04-17 23:35:45.370]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\apr.html
+[2019-04-17 23:35:45.382]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\conf\tomcat-users.xsd
+[2019-04-17 23:35:45.389]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\conf\tomcat-users.xml
+[2019-04-17 23:35:45.395]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\temp\safeToDelete.tmp
+[2019-04-17 23:35:45.405]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples\jsp
+[2019-04-17 23:35:45.407]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT\WEB-INF
+[2019-04-17 23:35:45.410]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\host-manager
+[2019-04-17 23:35:45.410]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\WEB-INF
+[2019-04-17 23:35:45.414]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\conf\catalina.policy
+[2019-04-17 23:35:45.423]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\setclasspath.bat
+[2019-04-17 23:35:45.432]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\tool-wrapper.bat
+[2019-04-17 23:35:45.439]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\jspapi
+[2019-04-17 23:35:45.441]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\appdev
+[2019-04-17 23:35:45.442]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\config
+[2019-04-17 23:35:45.442]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\images
+[2019-04-17 23:35:45.446]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\tribes
+[2019-04-17 23:35:45.449]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\setclasspath.sh
+[2019-04-17 23:35:45.456]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\tool-wrapper.sh
+[2019-04-17 23:35:45.466]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\elapi
+[2019-04-17 23:35:45.469]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\configtest.bat
+[2019-04-17 23:35:45.475]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\configtest.sh
+[2019-04-17 23:35:45.481]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\examples
+[2019-04-17 23:35:45.482]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs\api
+[2019-04-17 23:35:45.484]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\conf\context.xml
+[2019-04-17 23:35:45.489]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\shutdown.bat
+[2019-04-17 23:35:45.492]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\catalina.bat
+[2019-04-17 23:35:45.498]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\tomcat8w.exe
+[2019-04-17 23:35:45.507]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\manager
+[2019-04-17 23:35:45.508]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\conf\server.xml
+[2019-04-17 23:35:45.514]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\service.bat
+[2019-04-17 23:35:45.518]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\shutdown.sh
+[2019-04-17 23:35:45.523]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\version.bat
+[2019-04-17 23:35:45.528]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\startup.bat
+[2019-04-17 23:35:45.533]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\tomcat8.exe
+[2019-04-17 23:35:45.542]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\catalina.sh
+[2019-04-17 23:35:45.548]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\version.sh
+[2019-04-17 23:35:45.553]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\digest.bat
+[2019-04-17 23:35:45.558]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\startup.sh
+[2019-04-17 23:35:45.561]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\daemon.sh
+[2019-04-17 23:35:45.566]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\digest.sh
+[2019-04-17 23:35:45.570]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\RELEASE-NOTES
+[2019-04-17 23:35:45.573]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\ROOT
+[2019-04-17 23:35:45.574]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps\docs
+[2019-04-17 23:35:45.575]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\conf\web.xml
+[2019-04-17 23:35:45.579]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\RUNNING.txt
+[2019-04-17 23:35:45.581]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\LICENSE
+[2019-04-17 23:35:45.585]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\webapps
+[2019-04-17 23:35:45.586]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\NOTICE
+[2019-04-17 23:35:45.588]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\conf
+[2019-04-17 23:35:45.588]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\temp
+[2019-04-17 23:35:45.589]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\work
+[2019-04-17 23:35:45.590]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\logs
+[2019-04-17 23:35:45.593]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\lib
+[2019-04-17 23:35:45.594]:         extracting C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin
+[2019-04-17 23:35:45.617]:         deleting file: C:\Users\Owner\.nbi\tmp\data,1.jar
+[2019-04-17 23:35:45.623]:         ... saving legal artifacts if required
+[2019-04-17 23:35:45.627]:         ... running installation logic
+[2019-04-17 23:35:45.629]:         NameResolver - to parse C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:45.629]:         ... loading registry from resource:data/registry.xml
+[2019-04-17 23:35:45.666]:         entering -- org.netbeans.installer.product.Registry.loadProductRegistry():1001
+[2019-04-17 23:35:45.666]:         validating previous installations
+[2019-04-17 23:35:45.666]:         ... validating installations finished
+[2019-04-17 23:35:45.666]:         exiting -- org.netbeans.installer.product.Registry.loadProductRegistry():1001
+[2019-04-17 23:35:45.666]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-04-17 23:35:45.666]:         ... checking if Apache Tomcat 8.0.27 can be integrated with ベースIDE at C:\Program Files (x86)\NetBeans 8.2
+[2019-04-17 23:35:45.666]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-04-17 23:35:45.671]:         ... will be integrated since this produce is also bundled
+[2019-04-17 23:35:45.671]:         NameResolver - to parse C:\Program Files (x86)\NetBeans 8.2
+[2019-04-17 23:35:45.671]:         ... integrate Apache Tomcat 8.0.27 with ベースIDE installed at C:\Program Files (x86)\NetBeans 8.2
+[2019-04-17 23:35:45.672]:         executing command: C:\Program Files (x86)\Java\jre1.8.0_171\bin\java.exe -cp platform/core/core.jar;platform/core/core-base.jar;platform/lib/boot.jar;platform/lib/org-openide-modules.jar;platform/core/org-openide-filesystems.jar;platform/lib/org-openide-util.jar;platform/lib/org-openide-util-lookup.jar;platform/lib/org-openide-util-ui.jar;enterprise/modules/org-netbeans-modules-j2eeapis.jar;enterprise/modules/org-netbeans-modules-j2eeserver.jar;enterprise/modules/org-netbeans-modules-tomcat5.jar org.netbeans.modules.tomcat5.registration.AutomaticRegistration --add C:\Program Files (x86)\NetBeans 8.2\nb C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27, in directory: C:\Program Files (x86)\NetBeans 8.2
+[2019-04-17 23:35:46.466]:             [return]: 0
+[2019-04-17 23:35:46.467]:         ... command execution finished
+[2019-04-17 23:35:46.468]:         ... register in system, create uninstaller, etc
+[2019-04-17 23:35:46.470]:         NameResolver - to parse C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:46.471]:         NameResolver - to parse C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27
+[2019-04-17 23:35:46.473]:         creating uninstaller...
+[2019-04-17 23:35:46.475]:         cache engine data locally to run uninstall in the future
+[2019-04-17 23:35:46.475]:             NBI Engine URL for Installer.Class = jar:file:/C:/Users/Owner/AppData/Local/Temp/NBI34975.tmp/bundle.jar!/org/netbeans/installer/Installer.class
+[2019-04-17 23:35:46.475]:             URL Path = file:/C:/Users/Owner/AppData/Local/Temp/NBI34975.tmp/bundle.jar!/org/netbeans/installer/Installer.class
+[2019-04-17 23:35:46.476]:             ... running engine as a .jar file
+[2019-04-17 23:35:46.476]:             ... classloader says that jar file is on the disk
+[2019-04-17 23:35:46.478]:             ... checking if it runs from cached engine
+[2019-04-17 23:35:46.478]:             ... false
+[2019-04-17 23:35:46.478]:             ... starting copying engine content to the new jar file
+[2019-04-17 23:35:46.522]:             ... total entries : 638
+[2019-04-17 23:35:47.166]:             ... adding content list and some other stuff
+[2019-04-17 23:35:47.616]:             Installer Engine has been cached to C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\uninstall.jar
+[2019-04-17 23:35:47.616]:         ... finished caching engine data
+[2019-04-17 23:35:47.617]:         Create native launcher for windows-x86
+[2019-04-17 23:35:47.619]:             Checking EXE launcher parameters...
+[2019-04-17 23:35:47.619]:             Checking bundled jars...
+[2019-04-17 23:35:47.619]:             Checking JVMs...
+[2019-04-17 23:35:47.619]:             Checking output file name...
+[2019-04-17 23:35:47.619]:             ... output is defined, adding extension
+[2019-04-17 23:35:47.619]:             ... out file : C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\uninstall.exe
+[2019-04-17 23:35:47.619]:             Check i18n...
+[2019-04-17 23:35:47.619]:             ... i18n properties were not set. using default from resources
+[2019-04-17 23:35:47.619]:             ... loading i18n properties using prefix "native/launcher/windows/i18n/" with base name "launcher"
+[2019-04-17 23:35:47.621]:             ... total engine resources: 638
+[2019-04-17 23:35:47.621]:             ... total i18n resources: 5
+[2019-04-17 23:35:47.623]:             Checking main class...
+[2019-04-17 23:35:47.644]:             Checking testJVM file...
+[2019-04-17 23:35:47.644]:             Checking testJVM class...
+[2019-04-17 23:35:47.644]:             Checking compatible java properties...
+[2019-04-17 23:35:47.889]:             Adding i18n...
+[2019-04-17 23:35:47.902]:             JVM Arguments: -Xmx256m -Xms64m -Dnbi.local.directory.path=C:\Users\Owner\.nbi
+[2019-04-17 23:35:47.902]:             App Arguments: --target tomcat 8.0.27.0.0 --force-uninstall
+[2019-04-17 23:35:47.902]:             Main Class : org.netbeans.installer.Installer
+[2019-04-17 23:35:47.902]:             TestJVM Class : TestJDK
+[2019-04-17 23:35:47.902]:             Total compatible java properties : 1
+[2019-04-17 23:35:47.902]:                 ... adding compatible jvm [0] : <min version=1.8.0.0.0>
+[2019-04-17 23:35:47.902]:             Adding JVM external locations and bundled files
+[2019-04-17 23:35:47.902]:             ... overall number of files : 1
+[2019-04-17 23:35:47.902]:                 adding file C:\Program Files (x86)\Java\jre1.8.0_171
+[2019-04-17 23:35:47.902]:             Adding bundled and external jars
+[2019-04-17 23:35:47.902]:             ... overall number of files : 1
+[2019-04-17 23:35:47.902]:                 adding file C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\uninstall.jar
+[2019-04-17 23:35:47.902]:             Adding other resources
+[2019-04-17 23:35:47.902]:             ... overall number of files : 0
+[2019-04-17 23:35:47.908]:         [launcher] Time : 0.283 seconds
+[2019-04-17 23:35:47.908]:         deleting file: C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\uninstall.jar
+[2019-04-17 23:35:47.908]:         adding new Add or Remove Programs entry with id [nbi-tomcat-8.0.27.0.0]
+[2019-04-17 23:35:47.909]:         Set 'DisplayName' = [Apache Tomcat 8.0.27]
+[2019-04-17 23:35:47.909]:         Set 'DisplayIcon' = [C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\bin\tomcat7.exe]
+[2019-04-17 23:35:47.911]:         Set 'InstallLocation' = [C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27]
+[2019-04-17 23:35:47.911]:         Set 'NoModify' = [1]
+[2019-04-17 23:35:47.911]:         Set 'UninstallString' = ["C:\Program Files (x86)\Apache Software Foundation\Apache Tomcat 8.0.27\uninstall.exe"]
+[2019-04-17 23:35:47.911]:         setting 0 values
+[2019-04-17 23:35:47.911]:         ... save installation files list
+[2019-04-17 23:35:48.268]:     ... finished installation of Apache Tomcat 8.0.27(tomcat/8.0.27.0.0)
+[2019-04-17 23:35:48.482]: ... finished products installation
+[2019-04-17 23:35:48.518]: Checking if java.awt.Desktop.getDesktop().browse() functionality is supported
+[2019-04-17 23:35:48.549]: NameResolver - to parse ヘルプ(&H)
+[2019-04-17 23:35:48.554]: NameResolver - to parse < 戻る(&B)
+[2019-04-17 23:35:48.557]: NameResolver - to parse 終了(&F)
+[2019-04-17 23:35:48.557]: NameResolver - to parse 取消
+[2019-04-17 23:35:48.561]: NameResolver - to parse 終了(&F)
+[2019-04-17 23:35:48.569]: NameResolver - to parse text/html
+[2019-04-17 23:35:48.569]: NameResolver - to parse <html><b>インストールが正常に完了しました。</b></html>
+[2019-04-17 23:35:48.600]: NameResolver - to parse セットアップ完了
+[2019-04-17 23:35:48.600]: NameResolver - to parse セットアップ完了
+[2019-04-17 23:35:48.603]: NameResolver - to parse セットアップ完了
+[2019-04-17 23:35:48.604]: NameResolver - to parse セットアップ完了
+[2019-04-17 23:35:48.604]: NameResolver - to parse NetBeans IDEセットアップを終了するには「終了」をクリックしてください。
+[2019-04-17 23:35:48.620]: NameResolver - to parse セットアップ完了
+[2019-04-17 23:35:48.620]: NameResolver - to parse NetBeans IDEセットアップを終了するには「終了」をクリックしてください。
+[2019-04-17 23:35:51.810]: entering -- org.netbeans.installer.wizard.components.actions.FinalizeRegistryAction.execute():66
+[2019-04-17 23:35:51.810]: finalizing product registry
+[2019-04-17 23:35:51.810]:     ... removing remaining installation data for all the products
+[2019-04-17 23:35:51.810]:     ... save local registry if necessary
+[2019-04-17 23:35:51.810]:     ... save registry to file C:\Users\Owner\.nbi\registry.xml
+[2019-04-17 23:35:51.811]:     entering -- org.netbeans.installer.product.Registry.finalizeRegistry():349
+[2019-04-17 23:35:51.811]:     saving product registry file
+[2019-04-17 23:35:51.811]:         ... getting registry document
+[2019-04-17 23:35:51.842]:         ... saving registry document to file C:\Users\Owner\.nbi\registry.xml
+[2019-04-17 23:35:51.842]:         entering -- org.netbeans.installer.product.Registry.saveProductRegistry():1027
+[2019-04-17 23:35:51.842]:         saving document to xml file : C:\Users\Owner\.nbi\registry.xml
+[2019-04-17 23:35:51.923]:         ... document saved
+[2019-04-17 23:35:51.923]:         exiting -- org.netbeans.installer.product.Registry.saveProductRegistry():1027
+[2019-04-17 23:35:51.923]:         ... saving XML file succesfully finished
+[2019-04-17 23:35:51.923]:     ... saving product registry done
+[2019-04-17 23:35:51.923]:     exiting -- org.netbeans.installer.product.Registry.finalizeRegistry():349
+[2019-04-17 23:35:51.923]:     ... save state file if necessary
+[2019-04-17 23:35:51.923]: finalizing product registry
+[2019-04-17 23:35:51.923]: exiting -- org.netbeans.installer.wizard.components.actions.FinalizeRegistryAction.execute():66
