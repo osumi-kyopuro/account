@@ -8,6 +8,8 @@
  
 <body>
     <h1>シフト追加フォーム</h1>
+    出勤予定時刻～退勤時刻までの入力例</p>
+    2020-09-30 18:00:00</p>
     <form method="POST" novalidate>
         {% csrf_token %}
         {{ form.as_p }}
@@ -15,5 +17,7 @@
     </form>
     <p>{{ message }}</p>
 </body>
+</a><a href='../attendance2'>TOPページ</a><p />
+</a><a href='../attendance2/list'>シフトデータ</a><p />
  
 </html>

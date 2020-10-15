@@ -177,38 +177,55 @@ def leave_time(request):
 def home(request):
     from .models import Attendance
     urlName = reverse('home')
-    #params = {'message': str(request.user)}
-    if Attendance.objects.filter(user=request.user,scheduled_leave_time__gt=datetime.now()).exists():
-        data=Attendance.objects.filter(user=request.user,scheduled_leave_time__gt=datetime.now()).earliest('scheduled_attend_time')
-        params={'data_flag':True,
-                'data':data
-        }
+    params = {'message': str(request.user)}
     if Attendance.objects.filter(Q(user=request.user),Q(scheduled_attend_time__lt=datetime.now()+timedelta(minutes=30)),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None),Q(leave_time=None)).exists():
-        params = {'message': str(request.user),
-                'attend_flag':True,
-                'leave_flag':False,
-                'data_flag':True,
-                'data':data}
+        if Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).exists():
+            data=Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).earliest('scheduled_attend_time')
+            params = {'message': str(request.user),
+                    'attend_flag':True,
+                    'leave_flag':False,
+                    'data_flag':True,
+                    'data':data}
+        else:
+            params = {'message': str(request.user),
+                    'attend_flag':True,
+                    'leave_flag':False,
+                    'data_flag':False}
+
     elif Attendance.objects.filter(Q(user=request.user),Q(leave_time=None),Q(attend_time__isnull=False)).exists():
-        params = {'message': str(request.user),
-                'attend_flag':False,
-                'leave_flag':True,
-                'data_flag':True,
-                'data':data}
+        if Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).exists():
+            data=Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).earliest('scheduled_attend_time')
+            params = {'message': str(request.user),
+                    'attend_flag':False,
+                    'leave_flag':True,
+                    'data_flag':True,
+                    'data':data}
+        else:
+            params = {'message': str(request.user),
+                    'attend_flag':False,
+                    'leave_flag':True,
+                    'data_flag':False}
+
     elif Attendance.objects.filter(user=request.user,scheduled_leave_time__gt=datetime.now()).exists():
-        data=Attendance.objects.filter(user=request.user,scheduled_leave_time__gt=datetime.now()).earliest('scheduled_attend_time')
-        params={'message': str(request.user),
-                'attend_flag':False,
-                'leave_flag':False,
-                'data_flag':True,
-                'data':data
-        }
+        if Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).exists():
+            data=Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).earliest('scheduled_attend_time')
+            params={'message': str(request.user),
+                    'attend_flag':False,
+                    'leave_flag':False,
+                    'data_flag':True,
+                    'data':data
+            }
+        else:
+            params = {'message': str(request.user),
+                    'attend_flag':False,
+                    'leave_flag':False,
+                    'data_flag':False
+                }
     else:
         params = {'message': str(request.user),
                 'attend_flag':False,
                 'leave_flag':False,
                 'data_flag':False
             }
-        
     return render(request, 'attendance2/home.html',params)
 
