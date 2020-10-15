@@ -74,14 +74,14 @@
             <!-- 権限確認 -->
             <div class="form-group row">
                 <label for="authority" class="col-md-3 col-form-label">
-                    権限の確認 <span class="badge badge-warning">「管理者」or「一般人」　必須</span></p>
-                    「管理者」は「シフト追加、データ削除、出勤、退勤の打刻、シフト確認」が可能</p>
-                    「一般人」は「出勤、退勤の打刻、シフト確認」が可能
+                    権限の確認 <span class="badge badge-warning">必須</span></p>
                 </label>
                 <div class="col-md-9">
                     {% csrf_token %}
                     {{ form.authority }}
                 </div>
+                「管理者」は「シフト追加、データ削除、出勤、退勤の打刻、シフト確認」が可能</p>
+                「一般人」は「出勤、退勤の打刻、シフト確認」が可能
             </div>
             <!-- /パスワード確認 -->
 

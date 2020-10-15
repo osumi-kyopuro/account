@@ -23,19 +23,20 @@
 
 <!DOCTYPE html>
 <html>
+    <div class="container">
+        <p></p>
+        <h1>勤怠管理OSUMI</h1>
+    </div>
  
-<head>
-    <meta charset="utf-8" />
-    <title>勤怠管理</title>
-</head>
  
-<body>
-    <h1>勤怠管理</h1>
+    <div class="py-3">
+        <div class="container">
  
-    <p>こんにちは{{ user.username }}さん</p>
-    <p>これは{{user.authority}}です。</p>
- 
-    <p><a href="{% url 'logout' %}">ログアウト</a></p>
-</body>
+            <p>こんにちは{{ user.username }}さん</p>
+            <p>これは{{user.authority}}です。</p>
+    
+            <p><a href="{% url 'logout' %}">ログアウト</a></p>
+        <div>
+    <div>
  
 </html>

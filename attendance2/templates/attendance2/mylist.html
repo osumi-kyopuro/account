@@ -23,61 +23,64 @@
 
 <!DOCTYPE html>
 <html>
+    <div class="container">
+        <p></p>
+        <h1>{{user}}のシフトデータ</h1>
+    </div>
  
-<head>
-    <meta charset="utf-8" />
-    <title>勤怠管理表</title>
-</head>
 
-<body>
-    <h1>{{user}}のシフトデータ</h1>
-    <p>{{ message }}</p>
-    <table border="1">
-        <tr>
-            <th>出勤予定時刻</th>
-            <th>退勤予定時刻</th>
-            <th>出勤時刻</th>
-            <th>退勤時刻</th>
-            <th>労働時間</th>
-            <th>遅刻</th>
-            <th>早退</th>
-            <th>欠勤</th>
-            <th>備考欄</th>
-            
-        </tr>
-        {% for member in data %}
-        <tr>
-            <td>{{ member.scheduled_attend_time}}</td>
-            <td>{{ member.scheduled_leave_time}}</td>
-            <td>{{ member.attend_time }}</td>
-            <td>{{ member.leave_time}}</td>
-            <td>{{member.work_time}}</td>
-            <td>{{ member.is_late}}</td>
-            <td>{{ member.is_early}}</td>
-            <td>{{ member.is_absence}}</td>
-            <td>{{ member.remarks }}</td>
-        </tr>
-        {% endfor %}
-            <tr>
-                <th>総労働時間</th>
-                <th>遅刻回数</th>
-                <th>早退回数</th>
-                <th>欠勤回数</th>
-            </tr>
-            <tr>
-                <td>{{sum.work_time__sum}}</td>
-                <td>{{late_count}}</td>
-                <td>{{early_count}}</td>
-                <td>{{absence_count}}</td>
-            </tr>
-    </table>
-</body>
-<p/>
-    </a><a href='../attendance2'>TOPページ</a><p />
-    </a><a href='../attendance2/list'>全体のシフトデータ</a><p />
-{% if request.user.authority == '管理者' %}
-    </a><a href='../attendance2/new'>シフト追加</a><p />
-    </a><a href='../attendance2/erase'>データ消去</a><p />
-{% endif %}
+    <div class="py-3">
+        <div class="container">
+    
+            <p>{{ message }}</p>
+            <table border="1">
+                <tr>
+                    <th>出勤予定時刻</th>
+                    <th>退勤予定時刻</th>
+                    <th>出勤時刻</th>
+                    <th>退勤時刻</th>
+                    <th>労働時間</th>
+                    <th>遅刻</th>
+                    <th>早退</th>
+                    <th>欠勤</th>
+                    <th>備考欄</th>
+                    
+                </tr>
+                {% for member in data %}
+                <tr>
+                    <td>{{ member.scheduled_attend_time}}</td>
+                    <td>{{ member.scheduled_leave_time}}</td>
+                    <td>{{ member.attend_time }}</td>
+                    <td>{{ member.leave_time}}</td>
+                    <td>{{member.work_time}}</td>
+                    <td>{{ member.is_late}}</td>
+                    <td>{{ member.is_early}}</td>
+                    <td>{{ member.is_absence}}</td>
+                    <td>{{ member.remarks }}</td>
+                </tr>
+                {% endfor %}
+                    <tr>
+                        <th>総労働時間</th>
+                        <th>遅刻回数</th>
+                        <th>早退回数</th>
+                        <th>欠勤回数</th>
+                    </tr>
+                    <tr>
+                        <td>{{sum.work_time__sum}}</td>
+                        <td>{{late_count}}</td>
+                        <td>{{early_count}}</td>
+                        <td>{{absence_count}}</td>
+                    </tr>
+            </table>
+            <p/>
+                </a><a href='../attendance2'>TOPページ</a><p />
+                </a><a href='../attendance2/list'>全体のシフトデータ</a><p />
+            {% if request.user.authority == '管理者' %}
+                </a><a href='../attendance2/new'>シフト追加</a><p />
+                </a><a href='../attendance2/erase'>データ消去</a><p />
+            {% endif %}
+        <div>
+    <div>
+
  
 </html>

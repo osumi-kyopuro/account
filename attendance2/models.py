@@ -6,7 +6,7 @@ from django.utils import timezone
 from myapp.models import CustomUser
 # Create your models here.
 class Attendance(models.Model): 
-    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, verbose_name="スタッフ情報")
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, verbose_name="スタッフ名")
     scheduled_attend_time = models.DateTimeField(blank=True, null=True,verbose_name="出勤予定時刻")
     scheduled_leave_time = models.DateTimeField(blank=True, null=True,verbose_name="退勤予定時刻")
     attend_time = models.DateTimeField(blank=True, null=True, verbose_name="出勤時刻")

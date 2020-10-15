@@ -24,19 +24,26 @@
 
 <!DOCTYPE html>
 <html>
+
+    <div class="container">
+        <p></p>
+        <h1>勤怠管理OSUMI</h1>
+    </div>
+
+
  
-<head>
-    <meta charset="utf-8" />
-    <title>ログインフォーム画面</title>
-</head>
- 
-<body>
-    <h1>ログインフォーム画面</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">ログイン</button>
-    </form>
-</body>
- 
+    <div class="py-3">
+        <div class="container">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <!-- ログインボタン -->
+                <div class="form-group row justify-content-end">
+                  <div class="col-md-9">
+                      <button type="submit" class="btn btn-primary">ログイン</button>
+                  </div>
+              </div>
+            </form>
+        <div>
+    <div> 
 </html>
