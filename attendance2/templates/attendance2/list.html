@@ -7,7 +7,7 @@
 </head>
  
 <body>
-    <h1>全体の勤怠管理データ(登録順)</h1>
+    <h1>全体のシフトデータ(登録順)</h1>
     <p>{{ message }}</p>
     <table border="1">
         <tr>
@@ -39,12 +39,11 @@
         {% endfor %}
     </table>
 </body>
-{% if request.user.is_superuser %}
-    </a><a href='../attendance2/new'>データ登録フォームへ</a><p />
-    </a><a href='../attendance2/erase'>データ消去メニューへ</a><p />
-{% endif %}
-</a><a href='../attendance2/sortlist'>時系列順で表示</a><p />
-</a><a href='../attendance2/mylist'>自分のデータ表示</a><p />
-</a><a href='../attendance2'>勤怠管理ページへ</a><p />
- 
+</a><a href='../attendance2'>TOPページ</a><p />
+</a><a href='../attendance2/mylist'>自分のシフトデータ</a><p />
+</a><a href='../attendance2/sortlist'>時系列順表示</a><p />
+{% if request.user.authority == '管理者' %}
+    </a><a href='../attendance2/new'>シフト追加</a><p />
+    </a><a href='../attendance2/erase'>データ消去</a><p />
+{% endif %} 
 </html>

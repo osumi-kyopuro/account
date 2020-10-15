@@ -7,24 +7,29 @@
 </head>
  
 <body>
-    <h1>勤怠管理</h1>
+    <h1>勤怠管理TOP</h1>
     お疲れ様です。
     <p>{{ message }}さん！！<p />
-    {% if request.user.is_superuser %}
+    {% if request.user.authority == '管理者'%}
         これは管理者アカウントです。
-    {% elif request.user.is_authenticated %}
+    {% elif request.user.authority == '一般人' %}
+    <!--request.user.is_authenticated-->
         これは一般ユーザーアカウントです。
     {% else %}
         このアカウントはログインしていません。
 
     {% endif %}
     <p />
-    {% if data_flag %}
+    {% if data_flag and attend_flag == False and leave_flag ==　False　%}
         次のシフトは
         {{data.scheduled_attend_time}}から
         {{data.scheduled_leave_time}}<p />
+    {% elif data_flag %}
+        現在のシフトは
+        {{data.scheduled_attend_time}}から
+        {{data.scheduled_leave_time}}<p />
     {% else %}
-        「勤怠管理データ」にてデータ登録してください。<p />
+        「シフト追加」からデータ作成してください。<p />
     {% endif %}
     {% if attend_flag == False and leave_flag　== False %}
         出退勤できません。<p />
@@ -35,14 +40,17 @@
     {% endif %}
     注:出勤予定時刻の30分前にならないと出勤できません。
     <p />
-    <a href='time'>現在時刻</a><p />
+    <!--<a href='time'>現在時刻</a><p />-->
+    {% if data_flag == False and request.user.authority == '管理者'%}
+        <a href='new'>シフト追加</a><p />
+    {% endif %}
     {% if attend_flag %}
         <a href='attendance_time'>出勤</a><p />
     {% endif %}
     {% if leave_flag %}
         <a href='leave_time'>退勤</a><p />
     {% endif %}
-    <a href='list'>勤怠管理データ</a><p />
+    <a href='list'>シフトデータ</a><p />
     <a href='../myapp'>ログアウト</a><p />
 </body>
 

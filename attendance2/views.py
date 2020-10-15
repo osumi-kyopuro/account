@@ -137,7 +137,7 @@ def attendance_time(request):
     #else:
     #    s += "通常<p />"
         
-    s += "<a href='../attendance2'>勤怠管理ページへ</a><p />"
+    s += "<a href='../attendance2/mylist'>自分のシフトデータ</a><p />"
     data.save()
     return HttpResponse(s)
 
@@ -170,7 +170,7 @@ def leave_time(request):
     #    s += "早退<p />"
     #else:
     #    s += "通常<p />"
-    s += "<a href='../attendance2'>勤怠管理ページへ</a><p />"
+    s += "<a href='../attendance2/mylist'>自分のシフトデータ</a><p />"
     data.save()
     return HttpResponse(s)
 
@@ -183,16 +183,6 @@ def home(request):
         params={'data_flag':True,
                 'data':data
         }
-    #if Attendance.objects.filter(user=request.user).count()>0:
-    #    d=Attendance.objects.filter(user=request.user).earliest('scheduled_attend_time')
-    #    c={'data_flag':True,
-    #        'data':d
-    #    }
-    #else:
-    #    c={
-    #        'data_flag':False,
-    #        'data':d
-    #    }
     if Attendance.objects.filter(Q(user=request.user),Q(scheduled_attend_time__lt=datetime.now()+timedelta(minutes=30)),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None),Q(leave_time=None)).exists():
         params = {'message': str(request.user),
                 'attend_flag':True,
