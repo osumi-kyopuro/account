@@ -15,7 +15,7 @@ from django.conf.locale import ja
 # Create your views here.
 def list_check(request):
     from .models import Attendance
-    urlName = reverse('list')
+    #urlName = reverse('list')
     Attendance.objects.filter(scheduled_attend_time__gt=F('scheduled_leave_time')).delete()
     latest_order = Attendance.objects.latest('id')
     if latest_order.attend_time!=None and latest_order.leave_time!=None:
@@ -30,7 +30,7 @@ def list_check(request):
 
 def new(request):
     from .models import Attendance
-    urlName = reverse('new')    
+    #urlName = reverse('new')    
     params = {'message': '', 'form': None}
     if request.method == 'POST':
         form = AttendForm(request.POST)
@@ -45,29 +45,25 @@ def new(request):
     return render(request, 'attendance2/new.html', params)
 
 
-def sortlist(request):
+def sortlist(request):#データ時系列順
     from .models import Attendance
     from django.db.models import Sum
-    urlName=reverse('sortlist')
     data = Attendance.objects.order_by("scheduled_attend_time")
     params = {'message': 'データ一覧', 'data': data}
     return render(request, 'attendance2/sortlist.html', params)
  
  
-def list(request):
+def list(request):#データ登録順
     from .models import Attendance
-    urlName=reverse('list')
     data = Attendance.objects.all()
     params = {'message': 'データ一覧', 'data': data}
     return render(request, 'attendance2/list.html', params)
 
 
 
-def mylist(request):
+def mylist(request):#自分のデータ
     from .models import Attendance
     from django.db.models import Sum
-    urlName = reverse('list')
-    
     data = Attendance.objects.filter(user=request.user).order_by("scheduled_attend_time")
     absence_count=Attendance.objects.filter(user=request.user,attend_time=None ,leave_time=None,scheduled_leave_time__lt= datetime.now()).count()
     late_count = Attendance.objects.filter(user=request.user,attend_time__gt = F('scheduled_attend_time')).count()
@@ -76,123 +72,73 @@ def mylist(request):
     params = {'message': 'データ一覧', 'data': data,'sum':sum,'user':request.user,'absence_count':absence_count,'late_count':late_count,'early_count':early_count}
     return render(request, 'attendance2/mylist.html', params)
 
-def erase(request):
+def erase(request):#データ消去メニュー
     from .models import Attendance
-    urlName = reverse('erase')
     return render(request, 'attendance2/erase_menu.html')
 
-def all_erase(request):
+def all_erase(request):#データ全消去
     from .models import Attendance
-    urlName = reverse('all_erase')
     Attendance.objects.all().delete()
     return redirect('list')
 
-def sub_erase(request):
+def sub_erase(request):#最新データ消去
     from .models import Attendance
-    urlName = reverse('sub_erase')
     if Attendance.objects.count()!=0:
         Attendance.objects.latest('id').delete()
     return redirect('list')
     
-
-
-
-
-def time(request):
-    urlName=reverse('time')
-    n = datetime.now().strftime('%H:%M:%S')
-    n+='<p />'
-    n+="<a href='../attendance2'>勤怠管理ページへ</a><p />"
-    return HttpResponse(n)
-
-def attendance_time(request):
+def attend_time(request):#出勤
     from .models import Attendance
-    urlName = reverse('attendance_time')
-    if Attendance.objects.filter(user=request.user, attend_time__isnull=False, leave_time=None).exists():
-        c=Attendance.objects.filter(user=request.user, attend_time=None, leave_time=None)
-        contexts = {
-            'c':c,
-        }
-
-    data = get_object_or_404(Attendance, Q(user=request.user), Q(scheduled_attend_time__lt=datetime.now()+timedelta(minutes=30)),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None),Q(leave_time=None))
-    contexts = {
-        'data':data,
-    }
-    
+    data=Attendance.objects.get(Q(user=request.user),Q(scheduled_attend_time__lt=datetime.now()+timedelta(minutes=30)),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None),Q(leave_time=None))
     data.attend_time = timezone.now()
     if data.attend_time > data.scheduled_attend_time:
         data.late=True
     data.save()
-    #data_is_late = data.is_late()
-    x = timezone.now()
-    x2 = datetime.now().strftime('%H:%M:%S')
-    s = ""
-    s += str(request.user)
-    s+="さん出勤！！<p />"
-    s += x2 + '<p />'
-    #s += "出勤予定時間<p />"
-    #s+=data.scheduled_attend_time.strftime('%H:%M:%S')+'<p />'
-    #if data.is_late()==True:
-    #    s += "遅刻<p />"
-    #else:
-    #    s += "通常<p />"
-        
-    s += "<a href='../attendance2/mylist'>自分のシフトデータ</a><p />"
-    data.save()
-    return HttpResponse(s)
+    params = {'message': str(request.user),
+                    'attend_time':datetime.now().strftime('%H:%M:%S')}
+    return render(request, 'attendance2/attend_time.html',params)
 
 
  
 
-def leave_time(request):
+def leave_time(request):#退勤
     from .models import Attendance
-    data = get_object_or_404(Attendance,Q(user=request.user),Q(leave_time=None),Q(attend_time__isnull=False))
-    contexts = {
-        'data':data,
-    }
+    data=Attendance.objects.get(Q(user=request.user),Q(leave_time=None),Q(attend_time__isnull=False))
     data.leave_time = timezone.now()
     if data.leave_time < data.scheduled_leave_time:
         data.early=True
     data.save()
-    #data_is_early = data.is_early()
-    urlName = reverse('leave_time')
     y2 = datetime.now().strftime('%H:%M:%S')
     data.work_time=data.leave_time - data.attend_time
-    s = ""
-    s += str(request.user)
-    s+="さん退勤！！<p />"
-    s += y2 + '<p />'
-    #s += "退勤予定時間<p />"
-    #s+=data.scheduled_leave_time.strftime('%H:%M:%S')+'<p />'
-    s += "今日の労働時間<p />"
-    s += str(data.work_time) + '<p />'
-    #f data.is_early()==True:
-    #    s += "早退<p />"
-    #else:
-    #    s += "通常<p />"
-    s += "<a href='../attendance2/mylist'>自分のシフトデータ</a><p />"
     data.save()
-    return HttpResponse(s)
+    params = {'message': str(request.user),
+                'leave_time':datetime.now().strftime('%H:%M:%S'),
+                'work_time':data.work_time
+                }
+    return render(request, 'attendance2/leave_time.html',params)
 
-def home(request):
+def home(request):#TOPページ
     from .models import Attendance
-    urlName = reverse('home')
     params = {'message': str(request.user)}
+    #現在時刻が出勤予定時刻から30分以内であり、出勤も退勤もしていない時
     if Attendance.objects.filter(Q(user=request.user),Q(scheduled_attend_time__lt=datetime.now()+timedelta(minutes=30)),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None),Q(leave_time=None)).exists():
+        #シフトデータがある時
         if Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).exists():
             data=Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).earliest('scheduled_attend_time')
-            params = {'message': str(request.user),
-                    'attend_flag':True,
-                    'leave_flag':False,
-                    'data_flag':True,
-                    'data':data}
+            params = {'message': str(request.user),#アカウントユーザー名表示
+                    'attend_flag':True,#出勤ボタン表示flag
+                    'leave_flag':False,#退勤ボタン表示flag
+                    'data_flag':True,#データ存在flag
+                    'data':data}#次のシフト表示
+        #シフトデータがない時
         else:
             params = {'message': str(request.user),
                     'attend_flag':True,
                     'leave_flag':False,
                     'data_flag':False}
-
+    #出勤している時
     elif Attendance.objects.filter(Q(user=request.user),Q(leave_time=None),Q(attend_time__isnull=False)).exists():
+        #シフトデータがある時
         if Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).exists():
             data=Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).earliest('scheduled_attend_time')
             params = {'message': str(request.user),
@@ -200,13 +146,15 @@ def home(request):
                     'leave_flag':True,
                     'data_flag':True,
                     'data':data}
+        #シフトデータがない時
         else:
             params = {'message': str(request.user),
                     'attend_flag':False,
                     'leave_flag':True,
                     'data_flag':False}
-
+    #退勤したか欠勤した時
     elif Attendance.objects.filter(user=request.user,scheduled_leave_time__gt=datetime.now()).exists():
+        #シフトデータがある時
         if Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).exists():
             data=Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).earliest('scheduled_attend_time')
             params={'message': str(request.user),
@@ -215,12 +163,14 @@ def home(request):
                     'data_flag':True,
                     'data':data
             }
+        #シフトデータがない時
         else:
             params = {'message': str(request.user),
                     'attend_flag':False,
                     'leave_flag':False,
                     'data_flag':False
                 }
+    #シフトデータがない場合
     else:
         params = {'message': str(request.user),
                 'attend_flag':False,

@@ -24,7 +24,7 @@ SECRET_KEY = 'w_!b139(#q3(=$9pqr5^(3q=hiw52_zji$5o#8_t_mbx%7@a$x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['osumi.pythonanywhere.com','127.0.0.1']
 
 # Application definition
 
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'myapp',
     'attendance2',
     'bootstrap_datepicker_plus',
+    #'bootstrap4'
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT  =  "/home/osumi/.virtualenvs/myenv/lib/python3.6/site-packages/bootstrap_datepicker_plus/static/"
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')
+                    ]
