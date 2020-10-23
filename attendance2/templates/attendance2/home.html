@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>勤怠管理OSUMI</title>
+    <title>TOPページ - 勤怠管理OSUMI</title>
   </head>
   <body>
     <!--<h1>Hello, world!</h1>-->
@@ -28,7 +28,7 @@
     <div class="container">
         <p></p>
         <h1>勤怠管理OSUMI</h1>
-        
+        <p>TOPページ</p>
     </div>
 
 
@@ -57,14 +57,12 @@
                 「シフト追加」からデータ作成してください。<p />
             {% endif %}
             {% if attend_flag == False and leave_flag　== False %}
-                出退勤できません。<p />
+                現在時刻から30分以内にシフトがないので出勤できません。<p />
             {% elif attend_flag == True %}
                 出勤できます。出勤ボタンを押してください。<p />
             {% elif leave_flag == True %}
                 退勤できます。退勤ボタンを押してください。<p />
             {% endif %}
-            注:出勤予定時刻の30分前にならないと出勤できません。
-            <p />
             <!--<a href='time'>現在時刻</a><p />-->
             {% if data_flag == False and request.user.authority == '管理者'%}
                 <a href='new'>シフト追加</a><p />
