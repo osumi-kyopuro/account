@@ -38,7 +38,6 @@
             {% if request.user.authority == '管理者'%}
                 これは管理者アカウントです。
             {% elif request.user.authority == '一般人' %}
-            <!--request.user.is_authenticated-->
                 これは一般ユーザーアカウントです。
             {% else %}
                 このアカウントはログインしていません。
@@ -63,7 +62,6 @@
             {% elif leave_flag == True %}
                 退勤できます。退勤ボタンを押してください。<p />
             {% endif %}
-            <!--<a href='time'>現在時刻</a><p />-->
             {% if data_flag == False and request.user.authority == '管理者'%}
                 <a href='new'>シフト追加</a><p />
             {% endif %}

@@ -9,8 +9,7 @@ urlpatterns = [
     path('list', views.list, name='list'),#全シフトデータ
     path('mylist', views.mylist, name='mylist'),#自分のシフトデータ
     path('sortlist', views.sortlist, name='sortlist'),#シフトデータ時系列順
-    path('erase', views.erase, name='erase'),#データ消去メニュー
-    path('all_erase', views.all_erase, name='all_erase'),#データ全消去
-    path('sub_erase', views.sub_erase, name='sub_erase'),#最新データ消去
     path('list_check', views.list_check, name='list_check'),#データ整合
+    path('delete_menu', views.delete_menu, name='delete_menu'),#データ整合
+    path('delete', views.delete, name='delete'),#データ削除
 ]

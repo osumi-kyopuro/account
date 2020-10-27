@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>データ消去メニュー - 勤怠管理OSUMI</title>
+    <title>データ削除 - 勤怠管理OSUMI</title>
   </head>
   <body>
     <!--<h1>Hello, world!</h1>-->
@@ -25,16 +25,52 @@
 <html>
   <div class="container">
     <p></p>
-    <h1>データ消去メニュー</h1>
+    <h1>データ削除</h1>
   </div>
  
-
   <div class="py-3">
     <div class="container">
+      <p>削除したいデータをチェックして削除ボタンを押してください。</p>
+      <p>データ一覧</p>
+      <form method="post" action="{% url 'delete' %}">{# actionを変更する #}
+      <table border="1">
+        <tr>
+            <th> </th>
+            <th>スタッフ名</th>
+            <th>出勤予定時刻</th>
+            <th>退勤予定時刻</th>
+            <th>出勤時刻</th>
+            <th>退勤時刻</th>
+            <th>労働時間</th>
+            <th>遅刻</th>
+            <th>早退</th>
+            <th>欠勤</th>
+            <th>備考欄</th>
+            
+        </tr>
+        {% for member in data %}
+        <tr>
+          <td><input type="checkbox" name="delete" value="{{ member.id }}"></td>{# 追加する #}
+            <td>{{ member.user}}</td>
+            <td>{{ member.scheduled_attend_time}}</td>
+            <td>{{ member.scheduled_leave_time}}</td>
+            <td>{{ member.attend_time }}</td>
+            <td>{{ member.leave_time}}</td>
+            <td>{{ member.work_time}}</td>
+            <td>{{ member.is_late}}</td>
+            <td>{{ member.is_early}}</td>
+            <td>{{ member.is_absence}}</td>
+            <td>{{ member.remarks }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+
+      <p />
+      {% csrf_token %}{##}
+      <input type="submit" value="削除">
+      </form>
       <!--<p>{{ message }}</p>-->
       <p />
-          </a><a href='../attendance2/sub_erase'>最新登録データ消去</a><p />
-          </a><a href='../attendance2/all_erase'>データ全消去</a><p />
           </a><a href='../attendance2/list'>前のページへ戻る</a><p />
     <div>
   <div>

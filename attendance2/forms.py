@@ -62,3 +62,6 @@ class AttendForm(forms.ModelForm):
             ),
 
         }
+        
+
+

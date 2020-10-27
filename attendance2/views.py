@@ -7,9 +7,11 @@ from .forms import AttendForm
 from builtins import str
 from _datetime import timezone
 from django.utils import timezone
-from django.shortcuts import get_object_or_404
 from django.db.models import F, Q
 from django.conf.locale import ja
+from django.shortcuts import redirect, render
+from django import forms
+from .models import Attendance
 #import .models
 
 # Create your views here.
@@ -62,6 +64,29 @@ def list(request):#データ登録順
     return render(request, 'attendance2/list.html', params)
 
 
+from django.shortcuts import (
+        render,
+        redirect,
+        get_object_or_404,
+    )
+from django.views.decorators.http import require_POST  # 追加する
+from .models import Attendance
+from .forms import AttendForm
+def delete_menu(request):#データ削除メニュー
+    from .models import Attendance
+    data = Attendance.objects.all()
+    params = {'message': 'データ一覧', 'data': data}
+    return render(request, 'attendance2/delete_menu.html', params)
+    
+@require_POST
+def delete(request):#データ削除関数
+    delete_ids = request.POST.getlist('delete')
+    if delete_ids:    
+        Attendance.objects.filter(id__in=delete_ids).delete()
+    return redirect('list')
+    
+
+
 
 def mylist(request):#自分のシフトデータ
     from .models import Attendance
@@ -81,20 +106,8 @@ def mylist(request):#自分のシフトデータ
             }
     return render(request, 'attendance2/mylist.html', params)
 
-def erase(request):#データ消去メニュー
-    from .models import Attendance
-    return render(request, 'attendance2/erase_menu.html')
 
-def all_erase(request):#データ全消去
-    from .models import Attendance
-    Attendance.objects.all().delete()
-    return redirect('list')
 
-def sub_erase(request):#最新データ消去
-    from .models import Attendance
-    if Attendance.objects.count()!=0:
-        Attendance.objects.latest('id').delete()
-    return redirect('list')
     
 def attend_time(request):#出勤
     from .models import Attendance
