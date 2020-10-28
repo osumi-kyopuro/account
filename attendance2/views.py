@@ -17,21 +17,43 @@ from .models import Attendance
 # Create your views here.
 def list_check(request):#データ整合チェック
     from .models import Attendance
-    Attendance.objects.filter(scheduled_attend_time__gt=F('scheduled_leave_time')).delete()
-    latest_order = Attendance.objects.latest('id')
-    if latest_order.attend_time!=None and latest_order.leave_time!=None:
-        latest_order.work_time = latest_order.leave_time - latest_order.attend_time
-    latest_order.save()
-    c = Attendance.objects.filter(Q(user=latest_order.user), Q(scheduled_attend_time__range=(latest_order.scheduled_attend_time-timedelta(minutes=30),latest_order.scheduled_leave_time+timedelta(minutes=30)))|Q(scheduled_leave_time__range=(latest_order.scheduled_attend_time-timedelta(minutes=30),latest_order.scheduled_leave_time+timedelta(minutes=30)))|Q(scheduled_attend_time__lte=latest_order.scheduled_attend_time,scheduled_leave_time__gte=latest_order.scheduled_leave_time)).count()
-    if c > 1:
-        Attendance.objects.latest('id').delete()
+    time_series_flag=True
+    data_alignment_flag=True
+    time_over_flag=True
+    if Attendance.objects.filter(scheduled_attend_time__gt=F('scheduled_leave_time')).exists():
+        time_series_flag=False
+        Attendance.objects.filter(scheduled_attend_time__gt=F('scheduled_leave_time')).delete()
+    check_record=Attendance.objects.all()
+    for i in range(Attendance.objects.count()):
+        if Attendance.objects.count() <= i:
+            break
+        if check_record[i].attend_time!=None and check_record[i].leave_time!=None:
+            check_record[i].work_time = check_record[i].leave_time - check_record[i].attend_time
+        check_record[i].save()
+        if check_record[i].scheduled_leave_time - check_record[i].scheduled_attend_time >= timedelta(days=1):
+            time_over_flag=False
+        check = Attendance.objects.filter(Q(user=check_record[i].user), Q(scheduled_attend_time__range=(check_record[i].scheduled_attend_time-timedelta(minutes=30),check_record[i].scheduled_leave_time+timedelta(minutes=30)))|Q(scheduled_leave_time__range=(check_record[i].scheduled_attend_time-timedelta(minutes=30),check_record[i].scheduled_leave_time+timedelta(minutes=30)))|Q(scheduled_attend_time__lte=check_record[i].scheduled_attend_time,scheduled_leave_time__gte=check_record[i].scheduled_leave_time))
+        if check.count() > 1:
+            data_alignment_flag=False
+            for j in range(check.count()):
+                if check.count() <= j:
+                    break
+                check[check.count()-1].delete()
+
+    
     data = Attendance.objects.all()
     params = {  'message': 'データ一覧', 
-                'data': data#データ整合完了データ
+                'data': data,#データ整合完了データ
+                'time_series_flag' :time_series_flag,
+                'time_over_flag' :time_over_flag,
+                'data_alignment_flag':data_alignment_flag
             }
     return render(request, 'attendance2/list.html', params)
+def shift_addition_menu(request):#シフト追加メニュー
+    from .models import Attendance
+    return render(request, 'attendance2/shift_addition_menu.html')
 
-def new(request):#シフト追加
+def add_shift(request):#シフト1件追加
     from .models import Attendance
     params = {'message': '', 'form': None}
     if request.method == 'POST':
@@ -44,23 +66,78 @@ def new(request):#シフト追加
             params['form'] = form
     else:
         params['form'] = AttendForm()
-    return render(request, 'attendance2/new.html', params)
+    return render(request, 'attendance2/add_shift.html', params)
+
+from django.forms.models import modelformset_factory
+from django.db import transaction
+ 
+def add_manyshift(request):#シフト複数件追加
+    # フォームセット定義
+    # modelformset_factoryを使う。
+    # modelformじゃない時はforms.formset_factory
+    MyFormSet= modelformset_factory(
+        model=Attendance,
+        form=AttendForm,
+        extra=5, # セットの表示数 defaultは1
+        max_num=5, # 最大表示数 defaultは1
+    )
+ 
+    if request.method == 'GET' :
+        # フォームの初期値を指定する場合
+        #form_initial = [{
+        #    'field_1' : 'initial_value_1',
+        #    'field_2' : 'initial_value_2',
+        #}]
+        # フォームセットのオブジェクト生成
+        form_set = MyFormSet(
+            #initial=form_initial,
+            # 新規作成フォームのみ表示(既存レコードは表示しない)
+            queryset=Attendance.objects.none()
+        )
+    else : # POST
+        form_set = MyFormSet(request.POST)
+        if form_set.is_valid() :
+            posts = form_set.save(commit=False)
+            # 保存処理
+            with transaction.atomic() :
+                # 各々save(m2mってのもあるらしいが試してない)
+                for p in posts :
+                    # 他のフォームを併設している場合、そこでsaveしたレコードのPKを使う場合はobject.pkでとれる
+                    #p.parent_pk = other_post.pk
+                    p.save()
+ 
+            #messages.info(request, f'保存しました。')
+            return redirect('list_check')
+ 
+    # レンダリング
+    context = {
+        'form_set': form_set,
+    }
+    return render(request, 'attendance2/add_manyshift.html', context)
+
+
 
 
 def sortlist(request):#データ時系列順
     from .models import Attendance
     from django.db.models import Sum
     data = Attendance.objects.order_by("scheduled_attend_time")
+    sort_flag=True
     params = {  'message': 'データ一覧', 
-                'data': data
+                'data': data,
+                'sort_flag':sort_flag,
+                'title':'全体のシフトデータ(時系列順)'
             }
-    return render(request, 'attendance2/sortlist.html', params)
+    return render(request, 'attendance2/list.html', params)
  
  
 def list(request):#データ登録順
     from .models import Attendance
     data = Attendance.objects.all()
-    params = {'message': 'データ一覧', 'data': data}
+    params = {  'message': 'データ一覧', 
+                'data': data,
+                'title':'全体のシフトデータ(登録順)'
+            }
     return render(request, 'attendance2/list.html', params)
 
 
