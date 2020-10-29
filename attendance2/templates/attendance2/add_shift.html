@@ -46,7 +46,83 @@
       
       <form method="POST" novalidate>
           {% csrf_token %}
-          {{ form.as_p }}
+          
+          <!--{{ form.as_p }}-->
+          <!-- ユーザ名 -->
+          <div class="form-group row">
+            <label for="user" class="col-md-3 col-form-label">
+                スタッフ <span class="badge badge-warning">必須</span>
+            </label>
+            <div class="col-md-9">
+                {% csrf_token %}
+                {{ form.user }}
+            </div>
+          </div>
+          <!-- /ユーザ名 -->
+
+        <!-- 出勤予定時刻 -->
+        <div class="form-group row">
+          <label for="user" class="col-md-3 col-form-label">
+              出勤予定時刻 <span class="badge badge-warning">必須</span>
+          </label>
+          <div class="col-md-9">
+              {% csrf_token %}
+              {{ form.scheduled_attend_time }}
+          </div>
+        </div>
+         <!-- /出勤予定時刻 -->
+
+
+      <!-- 退勤予定時刻 -->
+      <div class="form-group row">
+        <label for="user" class="col-md-3 col-form-label">
+            退勤予定時刻 <span class="badge badge-warning">必須</span>
+        </label>
+        <div class="col-md-9">
+            {% csrf_token %}
+            {{ form.scheduled_leave_time }}
+        </div>
+      </div>
+      <!-- /退勤予定時刻 -->
+
+      <!-- 出勤時刻 -->
+      <div class="form-group row">
+        <label for="user" class="col-md-3 col-form-label">
+            出勤時刻 <span class="badge badge-warning">任意</span>
+        </label>
+        <div class="col-md-9">
+            {% csrf_token %}
+            {{ form.attend_time }}
+        </div>
+      </div>
+       <!-- /出勤時刻 -->
+
+
+    <!-- 退勤時刻 -->
+    <div class="form-group row">
+      <label for="user" class="col-md-3 col-form-label">
+          退勤時刻 <span class="badge badge-warning">任意</span>
+      </label>
+      <div class="col-md-9">
+          {% csrf_token %}
+          {{ form.leave_time }}
+      </div>
+    </div>
+    <!-- /退勤時刻 -->
+
+    <!-- 備考欄 -->
+    <div class="form-group row">
+      <label for="user" class="col-md-3 col-form-label">
+          備考欄 <span class="badge badge-warning">任意</span>
+      </label>
+      <div class="col-md-9">
+          {% csrf_token %}
+          {{ form.remarks }}
+      </div>
+    </div>
+    <!-- /備考欄 -->
+
+
           
           <!-- 確認ボタン -->
           <div class="form-group row justify-content-end">

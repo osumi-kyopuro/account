@@ -46,7 +46,8 @@ def list_check(request):#データ整合チェック
                 'data': data,#データ整合完了データ
                 'time_series_flag' :time_series_flag,
                 'time_over_flag' :time_over_flag,
-                'data_alignment_flag':data_alignment_flag
+                'data_alignment_flag':data_alignment_flag,
+                'title':'(登録順)'
             }
     return render(request, 'attendance2/list.html', params)
 def shift_addition_menu(request):#シフト追加メニュー
@@ -55,7 +56,7 @@ def shift_addition_menu(request):#シフト追加メニュー
 
 def add_shift(request):#シフト1件追加
     from .models import Attendance
-    params = {'message': '', 'form': None}
+    params = {'message': '','title':'(登録順)', 'form': None}
     if request.method == 'POST':
         form = AttendForm(request.POST)
         if form.is_valid():
@@ -126,7 +127,7 @@ def sortlist(request):#データ時系列順
     params = {  'message': 'データ一覧', 
                 'data': data,
                 'sort_flag':sort_flag,
-                'title':'全体のシフトデータ(時系列順)'
+                'title':'(時系列順)'
             }
     return render(request, 'attendance2/list.html', params)
  
@@ -136,7 +137,7 @@ def list(request):#データ登録順
     data = Attendance.objects.all()
     params = {  'message': 'データ一覧', 
                 'data': data,
-                'title':'全体のシフトデータ(登録順)'
+                'title':'(登録順)'
             }
     return render(request, 'attendance2/list.html', params)
 
