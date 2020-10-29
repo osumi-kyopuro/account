@@ -187,27 +187,26 @@ def user_search(request):#user検索機能
 def personal_list(request):#個人シフトデータ
     from .models import Attendance
     from django.db.models import Sum
+    from myapp.models import CustomUser
     if request.method == 'POST':
         form = AttendForm(request.POST)
-        if form.is_valid():
-            username = form.cleaned_data.get('user')#ユーザー名
-            user_data=Attendance.objects.filter(user=require_POST['user'])
-            data = user_data.order_by("scheduled_attend_time")
-            absence_count=user_data.filter(attend_time=None ,leave_time=None,scheduled_leave_time__lt= datetime.now()).count()
-            late_count = user_data.filter(attend_time__gt = F('scheduled_attend_time')).count()
-            early_count = user_data.filter(leave_time__lt=F('scheduled_leave_time')).count()
-            sum = data.aggregate(Sum('work_time'))
-            params = {  'message': 'データ一覧', #メッセージ
-                        'data': data,#自分のシフトデータ
-                        'sum':sum,#総労働時間
-                        'user':require_POST['user'],#ログインユーザー名
-                        'absence_count':absence_count,#欠席回数
-                        'late_count':late_count,#遅刻回数
-                        'early_count':early_count#早退回数
-                    }
-            return render(request, 'attendance2/mylist.html', params)
-        else :
-            return render(request, 'attendance2/mylist.html')
+        user_data=Attendance.objects.filter(user=request.POST['user'])
+        data = user_data.order_by("scheduled_attend_time")
+        absence_count=user_data.filter(attend_time=None ,leave_time=None,scheduled_leave_time__lt= datetime.now()).count()
+        late_count = user_data.filter(attend_time__gt = F('scheduled_attend_time')).count()
+        early_count = user_data.filter(leave_time__lt=F('scheduled_leave_time')).count()
+        sum = data.aggregate(Sum('work_time'))
+        params = {  'message': 'データ一覧', #メッセージ
+                    'data': data,#自分のシフトデータ
+                    'sum':sum,#総労働時間
+                    'user':'スタッフ個人',#ログインユーザー名
+                    'absence_count':absence_count,#欠席回数
+                    'late_count':late_count,#遅刻回数
+                    'early_count':early_count#早退回数
+                }
+        return render(request, 'attendance2/mylist.html', params)
+    else :
+        return render(request, 'attendance2/mylist.html')
 
 
 
