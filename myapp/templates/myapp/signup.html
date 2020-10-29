@@ -34,7 +34,7 @@
     <div class="container">
         <!-- フォーム -->
         <form action="{% url 'signup' %}" method="post">
-
+            {% csrf_token %}
             <!-- ユーザ名 -->
             <div class="form-group row">
                 <label for="name" class="col-md-3 col-form-label">

@@ -1,6 +1,8 @@
 from django import forms
 from .models import Attendance
 import bootstrap_datepicker_plus as datetimepicker
+from django.contrib.auth import get_user_model
+from myapp.models import CustomUser
 class AttendForm(forms.ModelForm):
 
     class Meta:
@@ -62,6 +64,11 @@ class AttendForm(forms.ModelForm):
             ),
 
         }
+
+
+        
+
+    
         
 
 

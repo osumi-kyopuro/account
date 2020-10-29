@@ -75,13 +75,14 @@
         </table>
     <p />
     </a><a href='../attendance2'>TOPページ</a><p />
-    </a><a href='../attendance2/mylist'>自分のシフトデータ</a><p />
     {% if sort_flag == True %}
       </a><a href='../attendance2/list'>登録順表示</a><p />
     {% else %}
       </a><a href='../attendance2/sortlist'>時系列順表示</a><p />
     {% endif %}
+    </a><a href='../attendance2/mylist'>自分のシフトデータ</a><p />
     {% if request.user.authority == '管理者' %}
+        </a><a href='../attendance2/user_search'>スタッフ別個人シフトデータ</a><p />
         </a><a href='../attendance2/shift_addition_menu'>シフト追加</a><p />
         </a><a href='../attendance2/delete_menu'>データ削除</a><p />
     {% endif %}
