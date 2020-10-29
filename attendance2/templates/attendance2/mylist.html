@@ -23,9 +23,9 @@
 
 <!DOCTYPE html>
 <html>
-    <div class="container">
+    <div class="jumbotron">
         <p></p>
-        <h1>{{user}}のシフトデータ</h1>
+        <h1 class='display-5'>{{user}}のシフトデータ</h1>
     </div>
  
 
@@ -33,7 +33,7 @@
         <div class="container">
     
             <p>{{ message }}</p>
-            <table border="1">
+            <table class ='table table-striped' >
                 <tr>
                     <th>出勤予定時刻</th>
                     <th>退勤予定時刻</th>
@@ -73,12 +73,12 @@
                     </tr>
             </table>
             <p/>
-                </a><a href='../attendance2'>TOPページ</a><p />
-                </a><a href='../attendance2/list'>全体のシフトデータ</a><p />
+                </a><a href='../attendance2' class='btn btn-primary'>TOPページ</a><p />
+                </a><a href='../attendance2/list' class='btn btn-primary'>全体のシフトデータ</a><p />
             {% if request.user.authority == '管理者' %}
-                </a><a href='../attendance2/user_search'>スタッフ別個人シフトデータ</a><p />
-                </a><a href='../attendance2/shift_addition_menu'>シフト追加</a><p />
-                </a><a href='../attendance2/delete_menu'>データ削除</a><p />
+                </a><a href='../attendance2/user_search' class='btn btn-primary'>スタッフ別個人シフトデータ</a><p />
+                </a><a href='../attendance2/shift_addition_menu' class='btn btn-primary'>シフト追加</a><p />
+                </a><a href='../attendance2/delete_menu' class='btn btn-primary'>データ削除</a><p />
             {% endif %}
         <div>
     <div>

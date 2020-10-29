@@ -23,9 +23,9 @@
 
 <!DOCTYPE html>
 <html>
-  <div class="container">
+  <div class="jumbotron">
     <p></p>
-    <h1>データ削除</h1>
+    <h1 class='display-5'>データ削除</h1>
   </div>
  
   <div class="py-3">
@@ -33,7 +33,7 @@
       <p>削除したいデータをチェックして削除ボタンを押してください。</p>
       <p>データ一覧</p>
       <form method="post" action="{% url 'delete' %}">{# actionを変更する #}
-      <table border="1">
+        <table class ='table table-striped' >
         <tr>
             <th> </th>
             <th>スタッフ名</th>
@@ -67,11 +67,11 @@
 
       <p />
       {% csrf_token %}{##}
-      <input type="submit" value="削除">
+      <input type="submit" value="削除" class='btn btn-primary'>
       </form>
       <!--<p>{{ message }}</p>-->
       <p />
-          </a><a href='../attendance2/list'>前のページへ戻る</a><p />
+          </a><a href='../attendance2/list' class='btn btn-primary'>前のページへ戻る</a><p />
     <div>
   <div>
 

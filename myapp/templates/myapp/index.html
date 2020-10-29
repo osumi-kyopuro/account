@@ -26,20 +26,20 @@
 
 <!DOCTYPE html>
 <html>
-    <div class="container">
+    <div class="jumbotron">
         <p></p>
-        <h1>勤怠管理OSUMI</h1>
+        <h1 class='display-4'>勤怠管理OSUMI</h1>
     </div>
 
     <div class="py-3">
         <div class="container">
 
             {% if user.is_authenticated %}
-              <p><a href="../attendance2">TOPページ</a></p>
-              <p><a href="{% url 'logout' %}">ログアウト</a></p>
+              <p><a href="../attendance2" class="btn btn-primary">TOPページ</a></p>
+              <p><a href="{% url 'logout' %}" class="btn btn-primary">ログアウト</a></p>
             {% else %}
-              <p><a href="{% url 'login' %}">ログイン</a></p>
-              <p><a href="{% url 'signup' %}">アカウント作成</a></p>
+              <p><a href="{% url 'login' %}" class="btn btn-primary">ログイン</a></p>
+              <p><a href="{% url 'signup' %}" class="btn btn-primary">アカウント作成</a></p>
             {% endif %}
         <div>
     <div>
