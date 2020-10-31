@@ -190,6 +190,7 @@ def personal_list(request):#個人シフトデータ
     from myapp.models import CustomUser
     if request.method == 'POST':
         form = AttendForm(request.POST)
+        user=get_object_or_404(CustomUser, pk=request.POST['user'])#user名抽出
         user_data=Attendance.objects.filter(user=request.POST['user'])
         data = user_data.order_by("scheduled_attend_time")
         absence_count=user_data.filter(attend_time=None ,leave_time=None,scheduled_leave_time__lt= datetime.now()).count()
@@ -199,7 +200,7 @@ def personal_list(request):#個人シフトデータ
         params = {  'message': 'データ一覧', #メッセージ
                     'data': data,#自分のシフトデータ
                     'sum':sum,#総労働時間
-                    'user':'スタッフ個人',#ログインユーザー名
+                    'user':user,#ログインユーザー名
                     'absence_count':absence_count,#欠席回数
                     'late_count':late_count,#遅刻回数
                     'early_count':early_count#早退回数
