@@ -19,7 +19,7 @@ class AttendForm(forms.ModelForm):
             'remarks': '備考欄     (任意)' 
         }
         widgets={
-            'remarks':forms.Textarea(attrs={'rows':5,'cols':40}),
+            'remarks':forms.Textarea(attrs={'rows':5,'cols':35}),
 
             #カレンダー機能
             'scheduled_attend_time': datetimepicker.DateTimePickerInput(
