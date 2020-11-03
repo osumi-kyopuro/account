@@ -27,7 +27,6 @@
   <div class="jumbotron">
     <h1 class='display-5'>全体のシフトデータ{{title}}</h1>
   </div>
- 
   <div class="py-3">
     <div class="container">
       {% if time_series_flag == False %}
@@ -40,9 +39,8 @@
         <p>シフトがかぶっているので登録不可です。</p>
         <p>一時間空けてシフトを登録するようお願いします。</p>
       {% endif %}
-
-
-        <p>データ一覧</p>
+      <p>データ一覧</p>
+      <div class="table-responsive">
         <table class ='table table-striped' >
         <!--<table border="1">-->
             <tr>
@@ -72,20 +70,22 @@
                 <td>{{ member.remarks }}</td>
             </tr>
             {% endfor %}
+          
         </table>
+        </div>
     <p />
-    </a><a href='../attendance2' class='btn btn-primary'>TOPページ</a><p />
+    </a><a href='../attendance2' class='btn btn-info'>TOPページ</a><p />
     {% if sort_flag == True %}
-      </a><a href='../attendance2/list' class='btn btn-primary'>登録順表示</a><p />
+      </a><a href='../attendance2/list' class='btn btn-info'>登録順表示</a><p />
     {% else %}
-      </a><a href='../attendance2/sortlist' class='btn btn-primary'>時系列順表示</a><p />
+      </a><a href='../attendance2/sortlist' class='btn btn-info'>時系列順表示</a><p />
     {% endif %}
-    </a><a href='../attendance2/mylist' class='btn btn-primary'>自分のシフトデータ</a><p />
+    </a><a href='../attendance2/mylist' class='btn btn-info'>自分のシフトデータ</a><p />
     {% if request.user.authority == '管理者' %}
-        </a><a href='../attendance2/user_search' class='btn btn-primary'>スタッフ別個人シフトデータ</a><p />
-        </a><a href='../attendance2/shift_addition_menu' class='btn btn-primary'>シフト追加</a><p />
-        </a><a href='../attendance2/delete_menu' class='btn btn-primary'>データ削除</a><p />
+        </a><a href='../attendance2/user_search' class='btn btn-info'>スタッフ別個人シフトデータ</a><p />
+        </a><a href='../attendance2/shift_addition_menu' class='btn btn-info'>シフト追加</a><p />
+        </a><a href='../attendance2/delete_menu' class='btn btn-info'>データ削除</a><p />
     {% endif %}
-    <div>
-  <div> 
+      </div>
+    </div> 
 </html>

@@ -36,7 +36,30 @@
         <div class="container">
             <form method="post">
                 {% csrf_token %}
-                {{ form.as_p }}
+                <!-- ユーザ名 -->
+                  <div class="form-group row">
+                    <label for="user" class="col-md-3 col-form-label">
+                        ユーザー名 <span class="badge badge-warning">必須</span>
+                    </label>
+                    <div class="col-md-9">
+                        {% csrf_token %}
+                        {{ form.username }}
+                    </div>
+                  </div>
+                  <!-- /ユーザ名 -->
+
+                <!-- 出勤予定時刻 -->
+                <div class="form-group row">
+                  <label for="user" class="col-md-3 col-form-label">
+                      パスワード <span class="badge badge-warning">必須</span>
+                  </label>
+                  <div class="col-md-9">
+                      {% csrf_token %}
+                      {{ form.password }}
+                  </div>
+                </div>
+                <!-- /出勤予定時刻 -->
+
                 <!-- ログインボタン -->
                 <div class="form-group row justify-content-end">
                   <div class="col-md-9">

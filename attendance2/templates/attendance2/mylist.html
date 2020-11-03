@@ -30,8 +30,8 @@
 
     <div class="py-3">
         <div class="container">
-    
             <p>{{ message }}</p>
+            <div class="table-responsive">
             <table class ='table table-striped' >
                 <tr>
                     <th>出勤予定時刻</th>
@@ -71,16 +71,17 @@
                         <td>{{absence_count}}</td>
                     </tr>
             </table>
+            </div>
             <p/>
-                </a><a href='../attendance2' class='btn btn-primary'>TOPページ</a><p />
-                </a><a href='../attendance2/list' class='btn btn-primary'>全体のシフトデータ</a><p />
+                </a><a href='../attendance2' class='btn btn-info'>TOPページ</a><p />
+                </a><a href='../attendance2/list' class='btn btn-info'>全体のシフトデータ</a><p />
             {% if request.user.authority == '管理者' %}
-                </a><a href='../attendance2/user_search' class='btn btn-primary'>スタッフ別個人シフトデータ</a><p />
-                </a><a href='../attendance2/shift_addition_menu' class='btn btn-primary'>シフト追加</a><p />
-                </a><a href='../attendance2/delete_menu' class='btn btn-primary'>データ削除</a><p />
+                </a><a href='../attendance2/user_search' class='btn btn-info'>スタッフ別個人シフトデータ</a><p />
+                </a><a href='../attendance2/shift_addition_menu' class='btn btn-info'>シフト追加</a><p />
+                </a><a href='../attendance2/delete_menu' class='btn btn-info'>データ削除</a><p />
             {% endif %}
-        <div>
-    <div>
+        </div>
+    </div>
 
  
 </html>

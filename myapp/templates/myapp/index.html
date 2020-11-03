@@ -35,11 +35,11 @@
         <div class="container">
 
             {% if user.is_authenticated %}
-              <p><a href="../attendance2" class="btn btn-primary">TOPページ</a></p>
+              <p><a href="../attendance2" class="btn btn-info">TOPページ</a></p>
               <p><a href="{% url 'logout' %}" class="btn btn-primary">ログアウト</a></p>
             {% else %}
-              <p><a href="{% url 'login' %}" class="btn btn-primary">ログイン</a></p>
-              <p><a href="{% url 'signup' %}" class="btn btn-primary">アカウント作成</a></p>
+              <p><a href="{% url 'login' %}" class="btn btn-info">ログイン</a></p>
+              <p><a href="{% url 'signup' %}" class="btn btn-info">アカウント作成</a></p>
             {% endif %}
         <div>
     <div>
