@@ -61,7 +61,7 @@ def add_shift(request):#シフト1件追加
     params = {'message': '','title':'(登録順)', 'form': None}
     if request.method == 'POST':
         form = AttendForm(request.POST)
-        if form.is_valid():
+        if form.is_valid() :
             form.save()
             return redirect('list_check')#データ整合チェック
         else:

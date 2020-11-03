@@ -18,7 +18,10 @@ class AttendForm(forms.ModelForm):
             'leave_time': '退勤時刻   (任意)' ,
             'remarks': '備考欄     (任意)' 
         }
-        widgets={#カレンダー機能
+        widgets={
+            'remarks':forms.Textarea(attrs={'rows':5,'cols':40}),
+
+            #カレンダー機能
             'scheduled_attend_time': datetimepicker.DateTimePickerInput(
                 format='%Y-%m-%d %H:%M:%S',
                 attrs={'readonly': 'true'},

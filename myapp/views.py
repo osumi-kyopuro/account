@@ -28,3 +28,5 @@ def signup(request):#アカウント作成
     return render(request, 'myapp/signup.html', {'form': form})
 
 
+
+
