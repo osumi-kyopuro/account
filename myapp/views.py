@@ -4,6 +4,7 @@ from .forms import SignUpForm
 from django.contrib.auth import get_user_model
 from django.contrib.auth import authenticate, login
 
+
 User = get_user_model()
 def index(request):
     return render(request, 'myapp/index.html')
@@ -12,6 +13,9 @@ def index(request):
 @login_required
 def home(request):
     return render(request, 'myapp/home.html')
+
+
+
 
 def signup(request):#アカウント作成
     if request.method == 'POST':
