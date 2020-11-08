@@ -35,46 +35,50 @@
 
     <div class="py-3">
         <div class="container">
-            <p>お疲れ様です。{{ message }}さん！！<p />
-            {% if request.user.authority == '管理者'%}
-                これは管理者アカウントです。
-            {% elif request.user.authority == '一般人' %}
-                これは一般ユーザーアカウントです。
-            {% else %}
-                このアカウントはログインしていません。
+            {% if user.is_authenticated %}
+                <p>お疲れ様です。{{ message }}さん！！<p />
+                {% if request.user.authority == '管理者'%}
+                    これは管理者アカウントです。
+                {% elif request.user.authority == '一般人' %}
+                    これは一般ユーザーアカウントです。
+                {% else %}
+                    このアカウントはログインしていません。
 
-            {% endif %}
-            <p />
-            {% if data_flag and attend_flag == False and leave_flag ==　False　%}
-                次のシフトは
-                {{data.scheduled_attend_time}}から
-                {{data.scheduled_leave_time}}<p />
-            {% elif data_flag %}
-                現在のシフトは
-                {{data.scheduled_attend_time}}から
-                {{data.scheduled_leave_time}}<p />
+                {% endif %}
+                <p />
+                {% if data_flag and attend_flag == False and leave_flag ==　False　%}
+                    次のシフトは
+                    {{data.scheduled_attend_time}}から
+                    {{data.scheduled_leave_time}}<p />
+                {% elif data_flag %}
+                    現在のシフトは
+                    {{data.scheduled_attend_time}}から
+                    {{data.scheduled_leave_time}}<p />
+                {% else %}
+                    「シフト追加」からデータ作成してください。<p />
+                {% endif %}
+                {% if attend_flag == False and leave_flag　== False %}
+                    現在時刻から30分以内にシフトがないので出勤できません。<p />
+                {% elif attend_flag == True %}
+                    出勤できます。出勤ボタンを押してください。<p />
+                {% elif leave_flag == True %}
+                    退勤できます。退勤ボタンを押してください。<p />
+                {% endif %}
+                {% if data_flag == False and request.user.authority == '管理者'%}
+                    <a href='shift_addition_menu' class='btn btn-info'>シフト追加</a><p />
+                    
+                {% endif %}
+                {% if attend_flag %}
+                    <a href='attend_time' class='btn btn-primary'>出勤</a><p />
+                {% endif %}
+                {% if leave_flag %}
+                    <a href='leave_time' class='btn btn-primary'>退勤</a><p />
+                {% endif %}
+                    <a href='list' class='btn btn-info'>シフトデータ</a><p />
+                    <a href='../myapp' class='btn btn-info'>ログアウト</a><p />
             {% else %}
-                「シフト追加」からデータ作成してください。<p />
+                <p><a href="{% url 'login' %}" class="btn btn-info">ログイン</a></p>
             {% endif %}
-            {% if attend_flag == False and leave_flag　== False %}
-                現在時刻から30分以内にシフトがないので出勤できません。<p />
-            {% elif attend_flag == True %}
-                出勤できます。出勤ボタンを押してください。<p />
-            {% elif leave_flag == True %}
-                退勤できます。退勤ボタンを押してください。<p />
-            {% endif %}
-            {% if data_flag == False and request.user.authority == '管理者'%}
-                <a href='shift_addition_menu' class='btn btn-info'>シフト追加</a><p />
-                
-            {% endif %}
-            {% if attend_flag %}
-                <a href='attend_time' class='btn btn-primary'>出勤</a><p />
-            {% endif %}
-            {% if leave_flag %}
-                <a href='leave_time' class='btn btn-primary'>退勤</a><p />
-            {% endif %}
-            <a href='list' class='btn btn-info'>シフトデータ</a><p />
-            <a href='../myapp' class='btn btn-info'>ログアウト</a><p />
         <div>
     <div>
 

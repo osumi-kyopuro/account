@@ -148,5 +148,4 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT  =  "/home/osumi/.virtualenvs/myenv/lib/python3.6/site-packages/bootstrap_datepicker_plus/static/"
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')
-                    ]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
