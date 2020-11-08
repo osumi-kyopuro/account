@@ -24,6 +24,14 @@ SECRET_KEY = 'w_!b139(#q3(=$9pqr5^(3q=hiw52_zji$5o#8_t_mbx%7@a$x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+#SECURE_SSL_REDIRECT = True
+#SESSION_COOKIE_SECURE = True
+#CSRF_COOKIE_SECURE = True
+
+#CERT_ROOT = os.path.join(BASE_DIR, '.well-known')
+#CERT_URL = '/.well-known/'
+
 ALLOWED_HOSTS = ['osumi.pythonanywhere.com','127.0.0.1']
 
 # Application definition
@@ -56,7 +64,7 @@ ROOT_URLCONF = 'myproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -105,7 +113,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_HOST_USER='osumiyuki1123@gmail.com'
+EMAIL_HOST_PASSWORD='*19991123Oy'
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
 
 
 
@@ -129,6 +141,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
+
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
 
 STATIC_URL = '/static/'
 

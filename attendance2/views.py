@@ -155,7 +155,11 @@ from .forms import AttendForm
 def delete_menu(request):#データ削除メニュー
     from .models import Attendance
     data = Attendance.objects.all()
-    params = {'message': 'データ一覧', 'data': data}
+    if Attendance.objects.exists():
+        data_flag=True
+    else:
+        data_flag=False
+    params = {'message': 'データ一覧', 'data': data,'data_flag':data_flag}
     return render(request, 'attendance2/delete_menu.html', params)
     
 @require_POST

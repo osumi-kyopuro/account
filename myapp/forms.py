@@ -8,5 +8,10 @@ from .models import CustomUser
 class SignUpForm(UserCreationForm):
     class Meta:
         model = get_user_model()
-        fields = ('username', 'password1', 'password2','authority')
+        fields = ('username', 'mail','password1', 'password2','authority')
     
+
+
+    widgets={
+            'mail':forms.TextInput(attrs={'size':'10'})
+        }

@@ -5,8 +5,8 @@ from .models import CustomUser
  
 class CustomUserAdmin(UserAdmin):
     
-    fieldsets = UserAdmin.fieldsets + ((None, {'fields': ('authority',)}),)
-    list_display = ['username', 'email', 'authority']
+    fieldsets = UserAdmin.fieldsets + ((None, {'fields': ('authority','mail',)}),)
+    list_display = ['username', 'mail', 'authority']
  
  
 admin.site.register(CustomUser, CustomUserAdmin)

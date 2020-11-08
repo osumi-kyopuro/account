@@ -46,6 +46,18 @@
             </div>
             <!-- /ユーザ名 -->
 
+            <!-- メールアドレス -->
+            <div class="form-group row">
+                <label for="password" class="col-md-3 col-form-label">
+                    メールアドレス <span class="badge badge-warning">必須</span>
+                </label>
+                <div class="col-md-9">
+                    {% csrf_token %}
+                    {{ form.mail }}
+                </div>
+            </div>
+            <!-- /メールアドレス -->
+
             <!-- パスワード -->
             <div class="form-group row">
                 <label for="password" class="col-md-3 col-form-label">

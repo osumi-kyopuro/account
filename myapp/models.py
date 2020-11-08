@@ -13,6 +13,6 @@ CHOICES = (
 )
 
 class CustomUser(AbstractUser):
-    #authority = models.BooleanField(null=True,default=False)
+    mail = models.EmailField(max_length=100)
     authority = models.CharField(verbose_name="カラム名",choices=CHOICES,max_length=100)
     

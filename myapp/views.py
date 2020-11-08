@@ -22,9 +22,10 @@ def signup(request):#アカウント作成
         form = SignUpForm(request.POST)
         if form.is_valid():
             username = form.cleaned_data.get('username')#ユーザー名
+            mail=form.cleaned_data.get('mail')#メールアドレス
             raw_pass = form.cleaned_data.get('password1')#パスワード
             authority=form.cleaned_data.get('authority')#権限
-            user = authenticate(request, username=username, password1=raw_pass,authority=authority)
+            user = authenticate(request, username=username, password1=raw_pass,authority=authority,mail=mail)
             user=form.save()
             return render(request, 'myapp/index.html')
     else:

@@ -28,7 +28,12 @@
   </div>
   <div class="py-3">
     <div class="container">
-      <p>削除したいデータをチェックして削除ボタンを押してください。</p>
+      {% if data_flag　==　True%}
+        <p>削除したいデータを選択して削除してください。</p>
+      {% else %}
+        <p>データがないので削除出来ません。</p>
+      {% endif %}
+      <p>{{message2}}</p>
       <p>データ一覧</p>
       <div class="table-responsive">
       <form method="post" action="{% url 'delete' %}">{# actionを変更する #}
@@ -66,11 +71,13 @@
       </div>
       <p />
       {% csrf_token %}{##}
-      <input type="submit" value="削除" class='btn btn-danger'>
+      {% if data_flag　==　True %}
+        <input type="submit" value="削除" class='btn btn-danger'>
+      {% endif %}
       </form>
       <!--<p>{{ message }}</p>-->
       <p />
-          </a><a href='../attendance2/list' class='btn btn-info'>前のページへ戻る</a><p />
+          </a><a href='../attendance2/list' class='btn btn-info'>シフトデータ</a><p />
       </div>
     </div>
 

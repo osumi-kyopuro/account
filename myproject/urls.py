@@ -17,11 +17,14 @@ from django.contrib import admin
 from django.urls import include,path
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import email
+from .views import mail
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('myapp/', include('myapp.urls')),
     path('myapp/', include('django.contrib.auth.urls')),
     path('attendance2/', include('attendance2.urls')),
+    path('mail/',mail),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+#urlpatterns+= static(settings.CERT_URL, document_root=settings.CERT_ROOT)
+
