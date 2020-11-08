@@ -1,84 +1,84 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>データ削除 - 勤怠管理OSUMI</title>
-  </head>
-  <body>
-    <!--<h1>Hello, world!</h1>-->
+        <title>データ削除 - 勤怠管理OSUMI</title>
+    </head>
+    <body>
+        <!--<h1>Hello, world!</h1>-->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
 </html>
 
 <!DOCTYPE html>
 <html>
-  <div class="jumbotron">
-    <h1 class='display-5'>データ削除</h1>
-  </div>
-  <div class="py-3">
-    <div class="container">
-      {% if data_flag　==　True%}
-        <p>削除したいデータを選択して削除してください。</p>
-      {% else %}
-        <p>データがないので削除出来ません。</p>
-      {% endif %}
-      <p>{{message2}}</p>
-      <p>データ一覧</p>
-      <div class="table-responsive">
-      <form method="post" action="{% url 'delete' %}">{# actionを変更する #}
-        <table class ='table table-striped' >
-        <tr>
-            <th> </th>
-            <th>スタッフ名</th>
-            <th>出勤予定時刻</th>
-            <th>退勤予定時刻</th>
-            <th>出勤時刻</th>
-            <th>退勤時刻</th>
-            <th>労働時間</th>
-            <th>遅刻</th>
-            <th>早退</th>
-            <th>欠勤</th>
-            <th>備考欄</th>
+    <div class="jumbotron">
+        <h1 class='display-5'>データ削除</h1>
+    </div>
+    <div class="py-3">
+        <div class="container">
+        {% if data_flag　==　True%}
+            <p>削除したいデータを選択して削除してください。</p>
+        {% else %}
+            <p>データがないので削除出来ません。</p>
+        {% endif %}
+        <p>{{message2}}</p>
+        <p>データ一覧</p>
+        <div class="table-responsive">
+        <form method="post" action="{% url 'delete' %}">{# actionを変更する #}
+            <table class ='table table-striped' >
+            <tr>
+                <th> </th>
+                <th>スタッフ名</th>
+                <th>出勤予定時刻</th>
+                <th>退勤予定時刻</th>
+                <th>出勤時刻</th>
+                <th>退勤時刻</th>
+                <th>労働時間</th>
+                <th>遅刻</th>
+                <th>早退</th>
+                <th>欠勤</th>
+                <th>備考欄</th>
             
-        </tr>
-        {% for member in data %}
-        <tr>
-          <td><input type="checkbox" name="delete" value="{{ member.id }}"></td>{# 追加する #}
-            <td>{{ member.user}}</td>
-            <td>{{ member.scheduled_attend_time}}</td>
-            <td>{{ member.scheduled_leave_time}}</td>
-            <td>{{ member.attend_time }}</td>
-            <td>{{ member.leave_time}}</td>
-            <td>{{ member.work_time}}</td>
-            <td>{{ member.is_late}}</td>
-            <td>{{ member.is_early}}</td>
-            <td>{{ member.is_absence}}</td>
-            <td>{{ member.remarks }}</td>
-        </tr>
-        {% endfor %}
-      </table>
-      </div>
-      <p />
-      {% csrf_token %}{##}
-      {% if data_flag　==　True %}
-        <input type="submit" value="削除" class='btn btn-danger'>
-      {% endif %}
-      </form>
-      <!--<p>{{ message }}</p>-->
-      <p />
-          </a><a href='../attendance2/list' class='btn btn-info'>シフトデータ</a><p />
-      </div>
+            </tr>
+            {% for member in data %}
+            <tr>
+            <td><input type="checkbox" name="delete" value="{{ member.id }}"></td>{# 追加する #}
+                <td>{{ member.user}}</td>
+                <td>{{ member.scheduled_attend_time}}</td>
+                <td>{{ member.scheduled_leave_time}}</td>
+                <td>{{ member.attend_time }}</td>
+                <td>{{ member.leave_time}}</td>
+                <td>{{ member.work_time}}</td>
+                <td>{{ member.is_late}}</td>
+                <td>{{ member.is_early}}</td>
+                <td>{{ member.is_absence}}</td>
+                <td>{{ member.remarks }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        </div>
+        <p />
+        {% csrf_token %}{##}
+        {% if data_flag　==　True %}
+            <input type="submit" value="削除" class='btn btn-danger'>
+        {% endif %}
+        </form>
+        <!--<p>{{ message }}</p>-->
+        <p />
+            </a><a href='../attendance2/list' class='btn btn-info'>シフトデータ</a><p />
+        </div>
     </div>
 
  
