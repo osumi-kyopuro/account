@@ -26,5 +26,5 @@ urlpatterns = [
     path('attendance2/', include('attendance2.urls')),
     path('mail/',mail),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-#urlpatterns+= static(settings.CERT_URL, document_root=settings.CERT_ROOT)
+urlpatterns+= static(settings.CERT_URL, document_root=settings.CERT_ROOT)
 
