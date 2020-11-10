@@ -12,6 +12,7 @@ from django.conf.locale import ja
 from django.shortcuts import redirect, render
 from django import forms
 from .models import Attendance
+from myapp.models import Images
 #import .models
 
 # Create your views here.
@@ -43,7 +44,8 @@ def list_check(request):#データ整合チェック
                         break
                     check[check.count()-1].delete()
     else:
-        return render(request,'myapp/index.html')
+        object=Images.objects.get(pk=1)
+        return render(request, 'myapp/index.html',{'object':object})
 
     
     data = Attendance.objects.all()
@@ -55,12 +57,15 @@ def list_check(request):#データ整合チェック
                 'title':'(登録順)'
             }
     return render(request, 'attendance2/list.html', params)
+
+
 def shift_addition_menu(request):#シフト追加メニュー
     from .models import Attendance
     if request.user.is_authenticated:
         return render(request, 'attendance2/shift_addition_menu.html')
     else:
-        return render(request,'myapp/index.html')
+        object=Images.objects.get(pk=1)
+        return render(request, 'myapp/index.html',{'object':object})
 
 def add_shift(request):#シフト1件追加
     from .models import Attendance
@@ -78,7 +83,8 @@ def add_shift(request):#シフト1件追加
             params['form'] = AttendForm()
         return render(request, 'attendance2/add_shift.html', params)
     else:
-        return render(request,'myapp/index.html')
+        object=Images.objects.get(pk=1)
+        return render(request, 'myapp/index.html',{'object':object})
 
 from django.forms.models import modelformset_factory
 from django.db import transaction
@@ -128,7 +134,8 @@ def add_manyshift(request):#シフト複数件追加
         }
         return render(request, 'attendance2/add_manyshift.html', context)
     else:
-        return render(request,'myapp/index.html')
+        object=Images.objects.get(pk=1)
+        return render(request, 'myapp/index.html',{'object':object})
 
 
 
@@ -146,7 +153,8 @@ def sortlist(request):#データ時系列順
                 }
         return render(request, 'attendance2/list.html', params)
     else:
-        return render(request,'myapp/index.html')
+        object=Images.objects.get(pk=1)
+        return render(request, 'myapp/index.html',{'object':object})
  
  
 def list(request):#データ登録順
@@ -159,7 +167,8 @@ def list(request):#データ登録順
                 }
         return render(request, 'attendance2/list.html', params)
     else:
-        return render(request,'myapp/index.html')
+        object=Images.objects.get(pk=1)
+        return render(request, 'myapp/index.html',{'object':object})
 
 
 from django.shortcuts import (
@@ -181,7 +190,8 @@ def delete_menu(request):#データ削除メニュー
         params = {'message': 'データ一覧', 'data': data,'data_flag':data_flag}
         return render(request, 'attendance2/delete_menu.html', params)
     else:
-        return render(request,'myapp/index.html')
+        object=Images.objects.get(pk=1)
+        return render(request, 'myapp/index.html',{'object':object})
     
 @require_POST
 def delete(request):#データ削除関数
@@ -191,7 +201,8 @@ def delete(request):#データ削除関数
             Attendance.objects.filter(id__in=delete_ids).delete()
         return redirect('list')
     else:
-        return render(request,'myapp/index.html')
+        object=Images.objects.get(pk=1)
+        return render(request, 'myapp/index.html',{'object':object})
     
 
 
@@ -214,7 +225,8 @@ def user_search(request):#user検索機能
             params['form'] = AttendForm()
         return render(request, 'attendance2/user_search.html', params)
     else:
-        return render(request,'myapp/index.html')
+        object=Images.objects.get(pk=1)
+        return render(request, 'myapp/index.html',{'object':object})
 
 @require_POST
 def personal_list(request):#個人シフトデータ
@@ -243,7 +255,8 @@ def personal_list(request):#個人シフトデータ
         else :
             return render(request, 'attendance2/mylist.html')
     else:
-        return render(request,'myapp/index.html')
+        object=Images.objects.get(pk=1)
+        return render(request, 'myapp/index.html',{'object':object})
 
 
 
@@ -268,7 +281,8 @@ def mylist(request):#自分のシフトデータ
                 }
         return render(request, 'attendance2/mylist.html', params)
     else:
-        return render(request,'myapp/index.html')
+        object=Images.objects.get(pk=1)
+        return render(request, 'myapp/index.html',{'object':object})
 
 
 
@@ -286,7 +300,8 @@ def attend_time(request):#出勤
                 }
         return render(request, 'attendance2/attend_time.html',params)
     else:
-        return render(request,'myapp/index.html')
+        object=Images.objects.get(pk=1)
+        return render(request, 'myapp/index.html',{'object':object})
 
 
  
@@ -306,7 +321,8 @@ def leave_time(request):#退勤
                 }
         return render(request, 'attendance2/leave_time.html',params)
     else:
-        return render(request,'myapp/index.html')
+        object=Images.objects.get(pk=1)
+        return render(request, 'myapp/index.html',{'object':object})
 
 def home(request):#TOPページ
     from .models import Attendance
@@ -375,5 +391,6 @@ def home(request):#TOPページ
                     }
         return render(request, 'attendance2/home.html',params)
     else:
-        return render(request,'myapp/index.html')
+        object=Images.objects.get(pk=1)
+        return render(request, 'myapp/index.html',{'object':object})
 

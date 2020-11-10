@@ -25,6 +25,6 @@ urlpatterns = [
     path('myapp/', include('django.contrib.auth.urls')),
     path('attendance2/', include('attendance2.urls')),
     path('mail/',mail),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-urlpatterns+= static(settings.CERT_URL, document_root=settings.CERT_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
+urlpatterns+=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

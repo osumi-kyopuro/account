@@ -12,6 +12,10 @@ CHOICES = (
     ("一般人", "一般人"),
 )
 
+class Images(models.Model):
+    images=models.ImageField(upload_to='')
+
+
 class CustomUser(AbstractUser):
     mail = models.EmailField(max_length=100)
     authority = models.CharField(verbose_name="カラム名",choices=CHOICES,max_length=100)

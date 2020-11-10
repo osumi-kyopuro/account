@@ -24,14 +24,24 @@ SECRET_KEY = 'w_!b139(#q3(=$9pqr5^(3q=hiw52_zji$5o#8_t_mbx%7@a$x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-SECURE_SSL_REDIRECT = False
-SECURE_HSTS_SECONDS = 3600
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+#SECURE_SSL_REDIRECT = True
+#SESSION_COOKIE_SECURE = True
+#CSRF_COOKIE_SECURE = True
 
-CERT_ROOT = os.path.join(BASE_DIR, '.well-known')
-CERT_URL = '/.well-known/'
+#CERT_ROOT = os.path.join(BASE_DIR, '.well-known')
+#CERT_URL = '/.well-known/'
+
+#CORS_REPLACE_HTTPS_REFERER      = False
+#HOST_SCHEME                     = "http://"
+#SECURE_PROXY_SSL_HEADER         = None
+#SECURE_SSL_REDIRECT             = False
+#SESSION_COOKIE_SECURE           = True
+#CSRF_COOKIE_SECURE              = True
+#SECURE_HSTS_SECONDS             = None
+#SECURE_HSTS_INCLUDE_SUBDOMAINS  = False
+#SECURE_FRAME_DENY               = False
+
 
 ALLOWED_HOSTS = ['osumi.pythonanywhere.com','127.0.0.1']
 
@@ -47,8 +57,7 @@ INSTALLED_APPS = [
     'myapp',
     'attendance2',
     'bootstrap_datepicker_plus',
-    'django_extensions',
-    'sslserver'
+    #'sslserver'
     #'bootstrap4'
 ]
 
@@ -125,6 +134,8 @@ EMAIL_USE_TLS=True
 
 
 
+
+
 AUTH_USER_MODEL = 'myapp.CustomUser'
 
 LOGIN_URL = 'login'
@@ -147,8 +158,11 @@ USE_TZ = True
 
 EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
 
-STATIC_URL = '/static/'
 
+MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
+MEDIA_URL='/image/'
+
+STATIC_URL = '/static/'
 STATIC_ROOT  =  "/home/osumi/.virtualenvs/myenv/lib/python3.6/site-packages/bootstrap_datepicker_plus/static/"
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]

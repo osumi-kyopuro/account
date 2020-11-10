@@ -25,9 +25,11 @@
 <!DOCTYPE html>
 <html>
 
-    <div class="jumbotron">
-        <h1 class='display-4'>勤怠管理OSUMI</h1>
-        <p class='lead'>アカウントページ</p>
+    <div class="w-auto p-4" style="background-color: #eee;">
+        <div class="container">
+            <h5>勤怠管理OSUMI</h5>
+            <h3>ログインページ</h3>
+        </div>
     </div>
 
 
@@ -37,8 +39,8 @@
           {% for error in form.non_field_errors %}
                 <p>{{ error }}</p>
             {% endfor %}
+            {% csrf_token %}
             <form method="post">
-                {% csrf_token %}
                 <!-- ユーザ名 -->
                 <div class="form-group row">
                     <label for="user" class="col-md-3 col-form-label">
@@ -70,7 +72,7 @@
                     </div>
                 </div>
             </form>
-            <p><a href="{% url 'password_reset' %}" class="btn btn-info">パスワード忘れた方へ</a></p>        
+            <!--<p><a href="{% url 'password_reset' %}" class="btn btn-info">パスワード忘れた方へ</a></p>-->        
         <div>
     <div> 
 </html>
