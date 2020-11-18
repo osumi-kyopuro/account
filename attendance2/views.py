@@ -26,16 +26,16 @@ def list_check(request):#データ整合チェック
             time_series_flag=False
             Attendance.objects.filter(scheduled_attend_time__gt=F('scheduled_leave_time')).delete()
         check_record=Attendance.objects.all()
+        if  Attendance.objects.filter(attend_time__isnull=False,leave_time__isnull=False).exists():
+            wk=Attendance.objects.filter(attend_time__isnull=False,leave_time__isnull=False)
+            wk.update(work_time = F('leave_time') - F('attend_time'))
+            #wk.save()
+        if Attendance.objects.filter(scheduled_leave_time__gte = timedelta(days=1)+F('scheduled_attend_time')).exists():
+            Attendance.objects.filter(scheduled_leave_time__gte = timedelta(days=1)+F('scheduled_attend_time')).delete()
+            time_over_flag=False
         for i in range(Attendance.objects.count()):
             if Attendance.objects.count() <= i:
                 break
-            if check_record[i].attend_time!=None and check_record[i].leave_time!=None:
-                check_record[i].work_time = check_record[i].leave_time - check_record[i].attend_time
-            check_record[i].save()
-            if check_record[i].scheduled_leave_time - check_record[i].scheduled_attend_time >= timedelta(days=1):
-                time_over_flag=False
-                check_record[i].delete()
-                continue
             check = Attendance.objects.filter(Q(user=check_record[i].user), Q(scheduled_attend_time__range=(check_record[i].scheduled_attend_time-timedelta(minutes=30),check_record[i].scheduled_leave_time+timedelta(minutes=30)))|Q(scheduled_leave_time__range=(check_record[i].scheduled_attend_time-timedelta(minutes=30),check_record[i].scheduled_leave_time+timedelta(minutes=30)))|Q(scheduled_attend_time__lte=check_record[i].scheduled_attend_time,scheduled_leave_time__gte=check_record[i].scheduled_leave_time))
             if check.count() > 1:
                 data_alignment_flag=False
