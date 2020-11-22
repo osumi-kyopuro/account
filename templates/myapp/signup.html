@@ -1,6 +1,31 @@
 <!doctype html>
 <html lang="ja">
     <head>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="../attendance2">勤怠管理OSUMI</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto"></ul>
+                    <ul class="navbar-nav">
+                        <ul style="list-style: none;">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    アカウント
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{% url 'login' %}">ログイン</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="{% url 'signup' %}">新規作成</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+        </nav>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,8 +51,14 @@
 
 <div class="w-auto p-4" style="background-color: #eee;">
     <div class="container">
-        <h3>ユーザ登録</h3>
-        <p>勤怠管理のユーザ登録をするにはこちらのフォームをご利用ください。</p>
+        <nav aria-label="パンくずリスト">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../"><h6>アカウントページ</h6></a></li>
+                <li class="breadcrumb-item active" aria-current="page"><h6>新規作成</h6></li>
+            </ol>
+        </nav>
+        <h4>新規作成</h4>
+        <p>勤怠管理の新規作成をするにはこちらのフォームをご利用ください。</p>
     </div>
 </div>
 
