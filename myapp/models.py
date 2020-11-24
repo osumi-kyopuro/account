@@ -18,5 +18,5 @@ class Images(models.Model):
 
 class CustomUser(AbstractUser):
     mail = models.EmailField(max_length=100)
-    authority = models.CharField(verbose_name="カラム名",choices=CHOICES,max_length=100)
+    authority = models.CharField(verbose_name="カラム名",default='一般人',choices=CHOICES,max_length=100,blank=True, null=True)
     

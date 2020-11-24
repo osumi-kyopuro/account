@@ -4,6 +4,7 @@ from .forms import SignUpForm
 from django.contrib.auth import get_user_model
 from django.contrib.auth import authenticate, login
 from .models import Images
+from .models import CustomUser
 
 
 

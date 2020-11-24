@@ -19,11 +19,11 @@
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href='../attendance2/list'>全体のシフトデータ</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="../attendance2/mylist">自分のシフトデータ</a>
                                     {% if request.user.authority == '管理者' %}
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="../attendance2/user_search">スタッフ別個人シフトデータ</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="../attendance2/mylist">自分のシフトデータ</a>
                                     {% endif %}
                                 </div>
                             </li>
@@ -122,7 +122,7 @@
                     現在のシフトは
                     {{data.scheduled_attend_time}}から
                     {{data.scheduled_leave_time}}<p />
-                {% else %}
+                {% elif  request.user.authority == '管理者'%}
                     「シフト追加」からデータ作成してください。<p />
                 {% endif %}
                 {% if attend_flag == False and leave_flag　== False %}
