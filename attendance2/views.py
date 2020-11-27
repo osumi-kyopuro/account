@@ -258,7 +258,13 @@ def personal_list(request):#個人シフトデータ
         object=Images.objects.get(pk=1)
         return render(request, 'myapp/index.html',{'object':object})
 
-
+def list_menu(request):
+    from .models import Attendance
+    if request.user.is_authenticated:
+        return render(request, 'attendance2/list_menu.html')
+    else:
+        object=Images.objects.get(pk=1)
+        return render(request, 'myapp/index.html',{'object':object})
 
 
 
@@ -271,14 +277,109 @@ def mylist(request):#自分のシフトデータ
         late_count = Attendance.objects.filter(user=request.user,attend_time__gt = F('scheduled_attend_time')).count()
         early_count = Attendance.objects.filter(user=request.user,leave_time__lt=F('scheduled_leave_time')).count()
         sum = data.aggregate(Sum('work_time'))
-        params = {  'message': 'データ一覧', #メッセージ
-                    'data': data,#自分のシフトデータ
-                    'sum':sum,#総労働時間
-                    'user':request.user,#ログインユーザー名
-                    'absence_count':absence_count,#欠席回数
-                    'late_count':late_count,#遅刻回数
-                    'early_count':early_count#早退回数
-                }
+        if Attendance.objects.filter(Q(user=request.user),Q(scheduled_attend_time__lt=datetime.now()+timedelta(minutes=30)),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None),Q(leave_time=None)).exists():
+            #シフトデータがある時
+            if Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).exists():
+                display=Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).earliest('scheduled_attend_time')
+                params = {  'message': request.user,#アカウントユーザー名表示
+                            'attend_flag':True,#出勤ボタン表示flag
+                            'leave_flag':False,#退勤ボタン表示flag
+                            'data_flag':True,#データ存在flag
+                            'display':display,#次のシフト表示
+                            'data': data,#自分のシフトデータ
+                            'sum':sum,#総労働時間
+                            'user':request.user,#ログインユーザー名
+                            'absence_count':absence_count,#欠席回数
+                            'late_count':late_count,#遅刻回数
+                            'early_count':early_count#早退回数
+                        }
+            #シフトデータがない時
+            else:
+                params = {  'message': request.user,
+                            'attend_flag':True,
+                            'leave_flag':False,
+                            'data_flag':False,
+                            'data': data,#自分のシフトデータ
+                            'sum':sum,#総労働時間
+                            'user':request.user,#ログインユーザー名
+                            'absence_count':absence_count,#欠席回数
+                            'late_count':late_count,#遅刻回数
+                            'early_count':early_count#早退回数
+                        }
+        #出勤している時
+        elif Attendance.objects.filter(Q(user=request.user),Q(leave_time=None),Q(attend_time__isnull=False)).exists():
+            #シフトデータがある時
+            if Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).exists():
+                display=Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).earliest('scheduled_attend_time')
+                params = {  'message': request.user,
+                            'attend_flag':False,
+                            'leave_flag':True,
+                            'data_flag':True,
+                            'display':display,
+                            'data': data,#自分のシフトデータ
+                            'sum':sum,#総労働時間
+                            'user':request.user,#ログインユーザー名
+                            'absence_count':absence_count,#欠席回数
+                            'late_count':late_count,#遅刻回数
+                            'early_count':early_count#早退回数
+                        }
+            #シフトデータがない時
+            else:
+                params = {  'message': request.user,
+                            'attend_flag':False,
+                            'leave_flag':True,
+                            'data_flag':False,
+                            'data': data,#自分のシフトデータ
+                            'sum':sum,#総労働時間
+                            'user':request.user,#ログインユーザー名
+                            'absence_count':absence_count,#欠席回数
+                            'late_count':late_count,#遅刻回数
+                            'early_count':early_count#早退回数                        
+                        }
+
+        #退勤したか欠勤した時
+        elif Attendance.objects.filter(user=request.user,scheduled_leave_time__gt=datetime.now()).exists():
+            #シフトデータがある時
+            if Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).exists():
+                display=Attendance.objects.filter(Q(user=request.user),Q(scheduled_leave_time__gt=datetime.now()),Q(attend_time=None)|Q(leave_time=None)).earliest('scheduled_attend_time')
+                params = {  'message': request.user,
+                            'attend_flag':False,
+                            'leave_flag':False,
+                            'data_flag':True,
+                            'data':data,
+                            'display': display,#自分のシフトデータ
+                            'sum':sum,#総労働時間
+                            'user':request.user,#ログインユーザー名
+                            'absence_count':absence_count,#欠席回数
+                            'late_count':late_count,#遅刻回数
+                            'early_count':early_count#早退回数
+                        }
+            #シフトデータがない時
+            else:
+                params = {  'message': request.user,
+                            'attend_flag':False,
+                            'leave_flag':False,
+                            'data_flag':False,
+                            'data': data,#自分のシフトデータ
+                            'sum':sum,#総労働時間
+                            'user':request.user,#ログインユーザー名
+                            'absence_count':absence_count,#欠席回数
+                            'late_count':late_count,#遅刻回数
+                            'early_count':early_count#早退回数
+                        }
+        #シフトデータがない場合
+        else:
+            params = {  'message': request.user,
+                        'attend_flag':False,
+                        'leave_flag':False,
+                        'data_flag':False,
+                        'data': data,#自分のシフトデータ
+                        'sum':sum,#総労働時間
+                        'user':request.user,#ログインユーザー名
+                        'absence_count':absence_count,#欠席回数
+                        'late_count':late_count,#遅刻回数
+                        'early_count':early_count#早退回数
+                    }
         return render(request, 'attendance2/mylist.html', params)
     else:
         object=Images.objects.get(pk=1)

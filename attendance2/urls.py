@@ -16,4 +16,5 @@ urlpatterns = [
     path('delete', views.delete, name='delete'),#データ1件削除
     path('add_manyshift', views.add_manyshift, name='add_manyshift'),#データ複数件削除
     path('shift_addition_menu', views.shift_addition_menu, name='shift_addition_menu'),#データ削除メニュー
+    path('list_menu', views.list_menu, name='list_menu'),#データ削除メニュー
 ]

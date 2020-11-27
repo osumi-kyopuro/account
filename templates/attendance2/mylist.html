@@ -85,18 +85,46 @@
         <div class="container">
         <nav aria-label="パンくずリスト">
             <ol class="breadcrumb mb-1">
-              <li class="breadcrumb-item"><a href="../attendance2/"><h6>TOPページ</h6></a></li>
-              <li class="breadcrumb-item"><a href="../attendance2/list"><h6>全体のシフトデータ</h6></a></li>
-              <li class="breadcrumb-item active" aria-current="page"><h6>{{user}}のシフトデータ</h6></li>
+                <li class="breadcrumb-item"><a href="../attendance2/"><h6>TOPページ</h6></a></li>
+                <li class="breadcrumb-item"><a href="../attendance2/list_menu"><h6>シフトデータメニュー</h6></a></li>
+                <li class="breadcrumb-item active" aria-current="page"><h6>{{user}}のシフトデータ</h6></li>
             </ol>
-          </nav>
+        </nav>
         <h4>{{user}}のシフトデータ</h4>
     </div>
     </div>
 
     <div class="py-3">
         <div class="container">
-            <p>{{ message }}</p>
+            {% if data_flag and attend_flag == False and leave_flag ==　False　%}
+                次のシフトは
+                {{display.scheduled_attend_time}}から
+                {{display.scheduled_leave_time}}<p />
+            {% elif data_flag %}
+                現在のシフトは
+                {{display.scheduled_attend_time}}から
+                {{display.scheduled_leave_time}}<p />
+            {% elif  request.user.authority == '管理者'%}
+                「シフト追加」からデータ作成してください。<p />
+            {% endif %}
+            {% if attend_flag == False and leave_flag　== False %}
+                現在時刻から30分以内にシフトがないので出勤できません。<p />
+            {% elif attend_flag == True %}
+                出勤できます。出勤ボタンを押してください。<p />
+            {% elif leave_flag == True %}
+                退勤できます。退勤ボタンを押してください。<p />
+            {% endif %}
+            {% if data_flag == False and request.user.authority == '管理者'%}
+                <a href='shift_addition_menu' class='btn btn-info'>シフト追加</a><p />
+                
+            {% endif %}
+            {% if attend_flag %}
+                <a href='attend_time' class='btn btn-primary'>出勤</a><p />
+            {% endif %}
+            {% if leave_flag %}
+                <a href='leave_time' class='btn btn-primary'>退勤</a><p />
+            {% endif %}
+            <p>データ一覧</p>
             <div class="table-responsive">
             <table class ='table table-striped' >
                 <tr>

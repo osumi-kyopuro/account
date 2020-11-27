@@ -87,6 +87,7 @@
             <nav aria-label="パンくずリスト">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../attendance2"><h6>TOPページ<h6></a></li>
+                    <li class="breadcrumb-item"><a href="../attendance2/list_menu"><h6>シフトデータメニュー</h6></a></li>
                     <li class="breadcrumb-item active" aria-current="page"><h6>全体のシフトデータ</h6></li>
                 </ol>
             </nav>
@@ -105,6 +106,8 @@
                 <p>シフトがかぶっているので登録不可です。</p>
                 <p>一時間空けてシフトを登録するようお願いします。</p>
             {% endif %}
+
+            
             {% if sort_flag == True %}
                 </a><a href='../attendance2/list' class='btn btn-primary'>登録順</a><p />
             {% else %}
@@ -145,10 +148,7 @@
             </table>
             </div>
         <p />
-        </a><a href='../attendance2/mylist' class='btn btn-info'>自分のシフトデータ</a><p />
-        {% if request.user.authority == '管理者' %}
-            </a><a href='../attendance2/user_search' class='btn btn-info'>スタッフ別個人シフトデータ</a><p />
-        {% endif %}
+        
         </div>
     </div> 
 </html>

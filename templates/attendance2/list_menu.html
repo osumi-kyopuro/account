@@ -59,6 +59,7 @@
                     </ul>
                 </div>
         </nav>
+
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -66,7 +67,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-        <title>スタッフ検索 - 勤怠管理OSUMI</title>
+        <title>シフトデータメニュー - 勤怠管理OSUMI</title>
     </head>
     <body>
         <!--<h1>Hello, world!</h1>-->
@@ -76,67 +77,32 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <link href="/static/bootstrap_datepicker_plus/css/datepicker-widget.css" type="text/css" media="all" rel="stylesheet">
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
-        <script type="text/javascript" src="/static/bootstrap_datepicker_plus/js/datepicker-widget.js"></script> 
-        
     </body>
-
 </html>
-
 
 <!DOCTYPE html>
 <html>
     <div class="w-auto p-2" style="background-color: #eee;">
         <div class="container">
-        <nav aria-label="パンくずリスト">
-            <ol class="breadcrumb mb-1">
-              <li class="breadcrumb-item"><a href="../attendance2/"><h6>TOPページ</h6></a></li>
-              <li class="breadcrumb-item"><a href="../attendance2/list_menu"><h6>シフトデータメニュー</h6></a></li>
-              <li class="breadcrumb-item active" aria-current="page"><h6>スタッフ検索</h6></li>
-            </ol>
-          </nav>
-        <h4>スタッフ検索</h4>
-    </div>
-    </div>
-    <div class="py-3">
-        <div class="container">
-        
-        <form method="POST"  action="{% url 'personal_list' %}">
-            <!-- ユーザ名 -->
-            <div class="form-group row">
-                <label for="user"  class="col-md-3 col-form-label">
-                    スタッフ <span class="badge badge-warning">必須</span>
-                </label>
-                <div class="col-md-9" id='user' name='user'>
-                    {% csrf_token %}
-                    {{ form.user }}
-                </div>
-            </div>
-            <!-- /ユーザ名 -->
-
-
-            
-                
-                
-            
-            <!-- 確認ボタン -->
-            <div class="form-group row justify-content-end">
-                <div class="col-md-9">
-                    <button type="submit" class="btn btn-primary">検索する</button>
-                </div>
-            </div>
-        </form>
-
-        <p />
+            <nav aria-label="パンくずリスト">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../attendance2"><h6>TOPページ</h6></a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><h6>シフトデータメニュー</h6></li>
+                </ol>
+            </nav>
+            <h4>シフトデータメニュー</h4>
         </div>
     </div>
+    
+    <div class="py-3">
+        <div class="container">
+            <p></a><a href='../attendance2/list' class='btn btn-info'>全体のシフトデータ</a><p />
+            <p></a><a href='../attendance2/mylist' class='btn btn-info'>自分のシフトデータ</a><p />
+            {% if request.user.authority == '管理者' %}
+                <p></a><a href='../attendance2/user_search' class='btn btn-info'>スタッフ別個人シフトデータ</a><p />
+            {% endif %}
+            <div>
+    <div>
+
  
 </html>
