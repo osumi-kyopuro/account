@@ -116,12 +116,12 @@
                 <p />
                 {% if data_flag and attend_flag == False and leave_flag ==　False　%}
                     次のシフトは
-                    {{data.scheduled_attend_time}}から
-                    {{data.scheduled_leave_time}}<p />
+                    {{display.scheduled_attend_time}}から
+                    {{display.scheduled_leave_time}}<p />
                 {% elif data_flag %}
                     現在のシフトは
-                    {{data.scheduled_attend_time}}から
-                    {{data.scheduled_leave_time}}<p />
+                    {{display.scheduled_attend_time}}から
+                    {{display.scheduled_leave_time}}<p />
                 {% elif  request.user.authority == '管理者'%}
                     「シフト追加」からデータ作成してください。<p />
                 {% endif %}
@@ -134,7 +134,6 @@
                 {% endif %}
                 {% if data_flag == False and request.user.authority == '管理者'%}
                     <a href='shift_addition_menu' class='btn btn-info'>シフト追加</a><p />
-                    
                 {% endif %}
                 {% if attend_flag %}
                     <a href='attend_time' class='btn btn-primary'>出勤</a><p />
@@ -145,6 +144,48 @@
             {% else %}
                 <p><a href="{% url 'login' %}" class="btn btn-info">ログイン</a></p>
             {% endif %}
+            <div class="table-responsive">
+                <table class ='table table-striped' >
+                    <tr>
+                        <th>出勤予定時刻</th>
+                        <th>退勤予定時刻</th>
+                        <th>出勤時刻</th>
+                        <th>退勤時刻</th>
+                        <th>労働時間</th>
+                        <th>遅刻</th>
+                        <th>早退</th>
+                        <th>欠勤</th>
+                        <th>備考欄</th>
+                        
+                    </tr>
+                    {% for member in data %}
+                    <tr>
+                        <td>{{ member.scheduled_attend_time}}</td>
+                        <td>{{ member.scheduled_leave_time}}</td>
+                        <td>{{ member.attend_time }}</td>
+                        <td>{{ member.leave_time}}</td>
+                        <td>{{member.work_time}}</td>
+                        <td>{{ member.is_late}}</td>
+                        <td>{{ member.is_early}}</td>
+                        <td>{{ member.is_absence}}</td>
+                        <td>{{ member.remarks }}</td>
+                    </tr>
+                    {% endfor %}
+                        <tr>
+                            <th>総労働時間</th>
+                            <th>遅刻回数</th>
+                            <th>早退回数</th>
+                            <th>欠勤回数</th>
+                        </tr>
+                        <tr>
+                            <td>{{sum.work_time__sum}}</td>
+                            <td>{{late_count}}</td>
+                            <td>{{early_count}}</td>
+                            <td>{{absence_count}}</td>
+                        </tr>
+                </table>
+                </div>
+            <p/>
         <div>
     <div>
 
